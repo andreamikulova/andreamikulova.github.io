@@ -112,4 +112,5 @@ exclude:
    - LICENSE
    - README.md
    - makefile
+   - docs
 
