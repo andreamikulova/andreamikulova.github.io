@@ -29,7 +29,6 @@ nav_external_links:
     url: https://github.com/just-the-docs/just-the-docs
 
 #posts
-
 collections:
   posts:
     output: true
@@ -41,8 +40,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-
-
 
 # Footer content
 # appears at the bottom of every page's main content
