@@ -113,20 +113,7 @@ layout: table_wrappers
   </div>
   <div class="main" id="top">
     <div id="main-header" class="main-header">
-      {% if site.search_enabled != false %}
-
-        {% capture search_placeholder %}{% include search_placeholder_custom.html %}{% endcapture %}
-
-        <div class="search">
-          <div class="search-input-wrap">
-            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="{{ search_placeholder | strip_html | strip }}" aria-label="{{ search_placeholder | strip_html| strip }}" autocomplete="off">
-            <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
-          </div>
-          <div id="search-results" class="search-results"></div>
-        </div>
-      {% else %}
         <div></div>
-      {% endif %}
       {% include header_custom.html %}
       {% if site.aux_links %}
         <nav aria-label="Auxiliary" class="aux-nav">
@@ -229,13 +216,5 @@ layout: table_wrappers
       <div class="search-overlay"></div>
     {% endif %}
   </div>
-
-  {% if site.mermaid %}
-  <script>
-    var config = {% include mermaid_config.js %};
-    mermaid.initialize(config);
-    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
-  </script>
-  {% endif %}
 </body>
 </html>
