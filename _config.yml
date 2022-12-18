@@ -6,9 +6,9 @@ url: "https://andreamikulova.github.io" # the base hostname & protocol for your 
 permalink: pretty
 
 exclude:
- # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
    - .sass-cache/
    - .jekyll-cache/
+   - .jektex-cache
    - gemfiles/
    - Gemfile
    - Gemfile.lock
@@ -18,14 +18,8 @@ exclude:
    - vendor/gems/
    - vendor/ruby/
  # specific to the theme website:
-   - bin/
    - lib/
-   - "*.gemspec"
-   - "*.gem"
-   - LICENSE.txt
-   - package.json
-   - package-lock.json
-   - Rakefile
+   - LICENSE
    - README.md
 
 # Set a path/url to a logo that will be displayed instead of the title
@@ -131,13 +125,10 @@ callouts:
     title: Warning
     color: red
 
-# Google Analytics Tracking (optional)
-# e.g, UA-1234567-89
-ga_tracking: UA-2709176-10
-ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
 plugins:
   - jekyll-seo-tag
+  - jektex
 
 kramdown:
   syntax_highlighter_opts:
@@ -151,5 +142,5 @@ compress_html:
   startings: []
   blanklines: false
   profile: false
-  # ignore:
-  #   envs: all
+  ignore:
+    envs: all
