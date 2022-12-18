@@ -1,29 +1,13 @@
-title: Just the Docs
-description: A Jekyll theme for documentation
+title: "Andin blog"
+description: "Ostravačka a matfyzačka v jednom"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://andreamikulova.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 
-exclude:
-   - .sass-cache/
-   - .jekyll-cache/
-   - .jektex-cache
-   - gemfiles/
-   - Gemfile
-   - Gemfile.lock
-   - node_modules/
-   - vendor/bundle/
-   - vendor/cache/
-   - vendor/gems/
-   - vendor/ruby/
- # specific to the theme website:
-   - lib/
-   - LICENSE
-   - README.md
 
 # Set a path/url to a logo that will be displayed instead of the title
-logo: "/assets/images/just-the-docs.png"
+#logo: "/assets/images/just-the-docs.png"
 
 # Enable or disable heading anchors
 heading_anchors: true
@@ -58,8 +42,6 @@ footer_content: "Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
-
-
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub"
@@ -69,7 +51,7 @@ gh_edit_branch: "main" # the branch that your docs is served from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
 # Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
-color_scheme: nil
+color_scheme: dark
 
 callouts_level: quiet # or loud
 callouts:
@@ -98,6 +80,15 @@ kramdown:
     block:
       line_numbers: false
 
+# Latex rendering settings
+jektex:
+  cache_dir: ".jekyll-cache"
+  ignore: ["*.xml", "*.css", "*.sass", "*.svg", "*.js", "*.map"]
+  macros:
+    - ["\\Q", "\\mathbb{Q}"]
+    - ["\\C", "\\mathbb{C}"]
+    - ["\\P", "\\mathbb{P}"]
+
 compress_html:
   clippings: all
   comments: all
@@ -107,3 +98,20 @@ compress_html:
   profile: false
   ignore:
     envs: all
+
+exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+   - .jektex-cache
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
+   - LICENSE
+   - README.md
+   - makefile
+
