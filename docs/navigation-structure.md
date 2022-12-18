@@ -5,7 +5,6 @@ nav_order: 5
 ---
 
 # Navigation Structure
-
 {: .no_toc }
 
 <details open markdown="block">
@@ -13,7 +12,7 @@ nav_order: 5
     Table of contents
   </summary>
   {: .text-delta }
-1. TOC
+- TOC
 {:toc}
 </details>
 
@@ -32,7 +31,6 @@ By default, all pages will appear as top level pages in the main nav unless a pa
 To specify a page order, you can use the `nav_order` parameter in your pages' YAML front matter.
 
 #### Example
-
 {: .no_toc }
 
 ```yaml
@@ -46,11 +44,10 @@ nav_order: 4
 
 The parameter values determine the order of the top-level pages, and of child pages with the same parent. You can reuse the same parameter values (e.g., integers starting from 1) for the child pages of different parents.
 
-The parameter values can be numbers (integers, floats) and/or strings. When you omit `nav_order` parameters, they default to the titles of the pages, which are ordered alphabetically. Pages with numerical `nav_order` parameters always come before those with strings or default `nav_order` parameters. If you want to make the page order independent of the page titles, you can set explicit `nav_order` parameters on all pages.
+The parameter values can be numbers (integers, floats) and/or strings. Pages with numerical `nav_order` parameters always come before those with string `nav_order` parameters. When you omit `nav_order` parameters, they default to the titles of the pages. If you want to make the page order independent of the page titles, you can set explicit `nav_order` parameters on all pages. All pages with explicit `nav_order` parameters
+come before all pages ordered by their `title` values.
 
-By default, all Capital letters come before all lowercase letters; you can add `nav_sort: case_insensitive` in the configuration file to ignore the case. Enclosing strings in quotation marks is optional.
-
-> _Note for users of previous versions:_ `nav_sort: case_insensitive` previously affected the ordering of numerical `nav_order` parameters: e.g., `10` came before `2`. Also, all pages with explicit `nav_order` parameters previously came before all pages with default parameters. Both were potentially confusing, and they have now been eliminated.
+By default, all Capital letters come before all lowercase letters; you can add `nav_sort: case_insensitive` in the configuration file to ignore the case. Enclosing strings in (single or double) quotation marks is optional. Numeric values are not enclosed in quotation marks, e.g., `42`, `-1.0`; numbers in quotation marks are lexicographically ordered, so `"10"` comes before `"2"`, for example.
 
 ---
 
@@ -59,7 +56,6 @@ By default, all Capital letters come before all lowercase letters; you can add `
 For specific pages that you do not wish to include in the main navigation, e.g. a 404 page or a landing page, use the `nav_exclude: true` parameter in the YAML front matter for that page.
 
 #### Example
-
 {: .no_toc }
 
 ```yaml
@@ -73,7 +69,7 @@ nav_exclude: true
 
 The `nav_exclude` parameter does not affect the [auto-generating list of child pages](#auto-generating-table-of-contents), which you can use to access pages excluded from the main navigation.
 
-Pages with no `title` are automatically excluded from the navigation.
+Pages with no `title` are automatically excluded from the main navigation.
 
 ---
 
@@ -113,7 +109,6 @@ On the parent pages, add this YAML front matter parameter:
 - `has_children: true` (tells us that this is a parent page)
 
 #### Example
-
 {: .no_toc }
 
 ```yaml
@@ -135,7 +130,6 @@ Here we're setting up the UI Components landing page that is available at `/docs
 On child pages, simply set the `parent:` YAML front matter to whatever the parent's page title is and set a nav order (this number is now scoped within the section).
 
 #### Example
-
 {: .no_toc }
 
 ```yaml
@@ -150,12 +144,27 @@ nav_order: 2
 
 The Buttons page appears as a child of UI Components and appears second in the UI Components section.
 
+### Ordering child pages
+
+You can optionally add the following to the YAML front matter to reverse the default sort order of child pages:
+
+- `child_nav_order: reversed`
+
+#### Example
+{: .no_toc }
+```yaml
+---
+layout: default
+title: Reversed Child Pages
+child_nav_order: reversed
+---
+```
+
 ### Auto-generating Table of Contents
 
 By default, all pages with children will automatically append a Table of Contents which lists the child pages after the parent page's content. To disable this auto Table of Contents, set `has_toc: false` in the parent page's YAML front matter.
 
 #### Example
-
 {: .no_toc }
 
 ```yaml
@@ -179,7 +188,6 @@ Child pages can also have children (grandchildren). This is achieved by using a 
 1. Add the `parent` and `grand_parent` attribute to the grandchild
 
 #### Example
-
 {: .no_toc }
 
 ```yaml
@@ -220,10 +228,16 @@ This would create the following navigation structure:
 +-- ..
 ```
 
+{: .note }
+Currently, the navigation structure is limited to 3 levels: grandchild pages cannot themselves have child pages.
+
 ---
 
-#### Example
+## Auxiliary Links
 
+To add auxiliary links to your site (in the upper right on all pages), add it to the `aux_links` [configuration option]({{ site.baseurl }}{% link docs/configuration.md %}#aux-links) in your site's `_config.yml` file.
+
+#### Example
 {: .no_toc }
 
 ```yaml
@@ -235,25 +249,43 @@ aux_links:
 
 ---
 
+## External Navigation Links
+
+To add external links to the navigation, add them to the `nav_external_links` [configuration]({{ site.baseurl }}{% link docs/configuration.md %}) option in your site's `_config.yml` file.
+External links will appear in the navigation after the links to ordinary pages, but before any collections.
+
+#### Example
+{: .no_toc }
+
+```yaml
+# External navigation links
+nav_external_links:
+  - title: Just the Docs on GitHub
+    url: https://github.com/just-the-docs/just-the-docs
+    hide_icon: false # set to true to hide the external link icon - defaults to false
+```
+
+The external links are decorated by an icon, which distinguishes them from internal links.
+You can suppress the icon by setting `hide_icon: true`.
+
+---
+
 ## In-page navigation with Table of Contents
 
 To generate a Table of Contents on your docs pages, you can use the `{:toc}` method from Kramdown, immediately after an `<ol>` in Markdown. This will automatically generate an ordered list of anchor links to various sections of the page based on headings and heading levels. There may be occasions where you're using a heading and you don't want it to show up in the TOC, so to skip a particular heading use the `{: .no_toc }` CSS class.
 
 #### Example
-
 {: .no_toc }
 
 ```markdown
 # Navigation Structure
-
 {: .no_toc }
 
 ## Table of contents
-
 {: .no_toc .text-delta }
 
 1. TOC
-   {:toc}
+{:toc}
 ```
 
 This example skips the page name heading (`#`) from the TOC, as well as the heading for the Table of Contents itself (`##`) because it is redundant, followed by the table of contents itself. To get an unordered list, replace `1. TOC` above by `- TOC`.
