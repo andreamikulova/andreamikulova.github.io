@@ -17,6 +17,10 @@ Just the Docs gives your documentation a jumpstart with a responsive Jekyll them
 
 ---
 
+{%- include post-archive.html -%}
+
+---
+
 {: .warning }
 > Ostrava
 
