@@ -2,7 +2,7 @@
 layout: default
 title: Home
 nav_order: 1
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+description: "Andin osobní blog. Najdete zde články o matematice, computer science, mé projekty a mnoho dalšího."
 permalink: /
 ---
 
