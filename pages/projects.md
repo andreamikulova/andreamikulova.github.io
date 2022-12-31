@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Projects
+title: Projekty
 nav_order: 3
 ---
 
-# Andiny projekty
+# Mé projekty
 
 - cool projekt
 - další cool projekt
+{: .fs-4 .fw-300 }

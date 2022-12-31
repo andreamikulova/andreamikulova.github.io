@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Úvod
 nav_order: 1
 description: "Andin osobní blog. Najdete zde články o matematice, computer science, mé projekty a mnoho dalšího."
 permalink: /
