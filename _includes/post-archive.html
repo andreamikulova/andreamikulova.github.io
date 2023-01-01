@@ -1,10 +1,10 @@
-
-{% for post in site.posts %}
-<blockquote>
-	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-	<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-	<br>
-	{% assign excerptParts = post.excerpt | split: "<!--excerpt-start-->" %}
-	{{ excerptParts[1] | strip_html | strip_newlines | truncatewords: 50 }}
-</blockquote>
-{% endfor %}
+{% assign sorted_categories = site.categories | sort %}
+{% for category in sorted_categories %}
+<div id="{{ category | first | downcase }}"><h2>{{ category | first }}</h2></div>
+	{%- assign sorted_posts = category.last | sort: "date" | reverse -%}
+	{%- for post in sorted_posts -%}
+		<ul>
+			<li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%d. %m. %Y" }})</li>
+		</ul>
+	{%- endfor -%}
+{%- endfor -%}
