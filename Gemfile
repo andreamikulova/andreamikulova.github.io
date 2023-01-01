@@ -7,7 +7,6 @@ gem "jekyll", "4.2.1"
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jektex", "~> 0.1.0"
-  #gem "github-pages"
   gem "jekyll-seo-tag"
 end
 
