@@ -6,7 +6,7 @@ nav_order: 4
 
 # Kontakt
 
-- Email: andreamikulova02@gmail.com
+- Email: [andreamikulova02@gmail.com](mailto:andreamikulova02@gmail.com)
 {: .fs-5 .fw-300 }
 
 # Sociální sítě
