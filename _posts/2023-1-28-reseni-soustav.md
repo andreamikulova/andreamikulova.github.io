@@ -12,5 +12,9 @@ category: Matematika
 *Řešit soustavu rovnic* znamená určit všechny dvojice čísel x; y, které vyhovují oběma rovnicím současně.
 *Grafický význam rovnic:* každá rovnice reprezentuje přímku v rovině.
 
+## Dosazovací metoda
+
+
+## Sčítačí metoda
 
 
