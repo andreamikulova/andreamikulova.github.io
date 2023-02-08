@@ -1,5 +1,5 @@
 ---
-title: Výpočetní technika 
+title: Úvod do výpočetní techniky
 category: Informatika
 ---
 
