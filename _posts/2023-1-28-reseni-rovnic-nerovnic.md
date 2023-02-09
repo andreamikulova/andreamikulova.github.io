@@ -110,7 +110,8 @@ $$x_1 + x_2 = \frac{-b}{a}$$, $$x_1x_2 = \frac{c}{a}$$
 # Kvadratické nerovnice
 Způsoby řešení:
 - Rozložíme na kvadratické činitele (kvadratický trojčlen), nalezneme nulové body - množinou všech řešení je nalezený interval
-- Grafické řešení
+- Grafické řešení - má-li nerovnice dava kořeny, protíná přímka parabolu ve dvou bodech, pokud má jeden dvojnásobný kořen, protíná přímka parabolu pouze v ednom místě, když nemá žádný kořen, neprotíná ji vůbec.
+
 
 
 # Soustava rovnic
@@ -161,4 +162,8 @@ Tyto přímky mohou být různoběžné, nebo rovnoběžné různé, nebo splýv
 - vynechání rovnice, která je násobkem jiné rovnice soustavy
 
 ## Soustava lineárních a kvadratických rovnic
+Souřadnice x, y hledaných průsečíků musí splňvat rovnice obou křivek. Po dosazení lineární rovnice do rovnice paraboly, získáme kvadratickou rovnici a její kořeny. Poté vypočteme dosazením funkční hodnoty průsečíků.
+
+## Soustava dvou nebo více lineárních nerovnic s dvěma neznámými
+Můžeme postupovat tak, že vyřešíme každou nerovnici zvlášť, množina řešení je pak průnik množin všech řešení jednotlivých nerovnic.
 
