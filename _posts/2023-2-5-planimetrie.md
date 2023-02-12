@@ -23,15 +23,19 @@ Speciální případ přímky je *osa*.
 Přímku lze algebraicky popsat pomocí lineárních rovnic nebo lineárních funkcí.
 
 ### Rovina
-**Rovina** je dvourozměrný geometrický útvar, je abstrakcí neomezeně, dokonale rovné plochy. Algebraicky vyjádřeno jde o množinu bodů izomorfní s dvoudimenzionálním lineárním prostorem. Rovina může být určena třemi různými body, nebo přímkou a bodem, který leží mimo tuto přímku. 
+**Rovina** je dvourozměrný geometrický útvar. Je abstrakcí neomezené, dokonale rovné plochy. Algebraicky vyjádřeno jde o množinu bodů izomorfní s dvoudimenzionálním lineárním prostorem. Rovina může být určena třemi různými body, nebo přímkou a bodem, který leží mimo tuto přímku. 
 
 ### Polopřímka
+Bod rozděluje přímku na dvě navzájem opačné **polopřímky** a je jejich společným počátkem.
 
 ### Polorovina
+Přímka dělí rovinu na dvě navzájem opačné poloroviny a je jejich společnoou hranicí neboli hraniční přímkou a patří do obou polorovin.
 
 ### Úsečka
+**Úsečku** AB tvoří všechny body přímky AB, které leží mezi body A, B a body A, B.
 
 ### Úhel
+Dvě různé polopřímky VA, VB dělí rovinu na dva úhly AVB. Polopřímky VA, VB se nazývají ramena, bod V vrchol obou úhlů.
 
 #### Dvojice úhlů
 
