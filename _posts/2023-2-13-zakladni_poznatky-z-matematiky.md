@@ -31,10 +31,11 @@ Disjunkce výroků a, b je pravdivá pouze tehdy, je-li pravdivý alespoň jeden
 
 
 ### Implikace
-Implikace výroků a, b je výrok, který vznikne spojením obratem "JESTLIŽE, PAK". Zápis.
+Implikace výroků a, b je výrok, který vznikne spojením obratem "JESTLIŽE, PAK". Zápis. Implikace je pravdivá pouze tehdy, když jsou pravdivé oba výroky a, b nebo když je výrok a nepravdivý a výrob b jakýkoli. 
 
 ### Ekvivalence
 Ekvivalence výroku a, b vznikne přidáním slovního spojení "PRÁVĚ TEHDY KDYŽ". Zápis.
+Ekvivalence je pravdivá pouze tehdy, když výroky a, b jsou oba pravdivé neb oba nepravdivé. 
 
 ### Tautologie a kontradikce
 **Tautologie** nastává, pokud je výrok vždy pravdivý.
@@ -58,6 +59,19 @@ Kvantifikátory slouží k vymezení prvků s nějakou vlastností. Po použití
 
 ## Množiny
 Množinou rozumíme souhrn nějakých objektů (předmětů), které nazýváme prvky uvedené množiny. K vyjádření skutečnosti, že x je prvkem množiny A, používáme zápis x e A; x není prvkem množiny
+
+Množinu zapisujeme:
+1. Výčtem prvků
+- nezáleží na pořadí prvků a každý z těchto prvků musí být ve výčtu zastoupen právě jednu
+- A = 1, 2, 3
+2. Uvedením charakteristické vlastnosti prvků množiny 
+- Uvedeme takovou vlastnost, kterou mají všechny prvky množiny a kromě této množiny žádný jiný prvek tuto vlastnost nemá
+- A = 
+
+Množina, která neobsahuje žádný prvek se nazývá prázdná množina a značí se . B je podmnožinou A právě tehdy, když každý prvek množiny B je zároveň prvkem množiny A. Každá množina je vždy o sobě sama podmnožinou.
+
+### Rovnost množin
+Množiny A, B se rovnají (zapisujeme A = B) právě tehdy, když každ prvek množiny A je prvkem množiny B a zároveň každý prvek množiny B  
 
 ### Intervaly
 
