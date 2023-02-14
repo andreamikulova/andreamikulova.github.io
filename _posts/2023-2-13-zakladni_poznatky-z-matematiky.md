@@ -10,32 +10,40 @@ category: Matematika
 # Výroky, množiny, základní typy důkazů
 
 ## Výroky
-Výroky jsou oznamovací věty, kterými se srotumitelně vyjadřuje neěco, co může být jen pravdivé nebo jen nepravdivé. Značíme je malými písmeny.
+Výroky jsou oznamovací věty, kterými se srozumitelně vyjadřuje něco, co může být jen pravdivé nebo jen nepravdivé. Značíme je malými písmeny.
 
-**Negace** výroku v je výrok "Není pravda, že v".
+**Negace** výroku v je výrok "Není pravda, že $$v$$".
 Zřejmě platí:
-- je-li výrok v pravdivý, je výrok v' nepravdivý
-- je-li výrok v nepravdivý, je výrok v' pravdivý
+- je-li výrok $$v$$ pravdivý, je výrok $$v'$$ nepravdivý
+- je-li výrok $$v$$ nepravdivý, je výrok $$v'$$ pravdivý
 
-Každý výrok může mít jednu z pravdivostních hodnot: PRAVDA (1, p), NEPRAVDA(1, p).
+Každý výrok může mít jednu z pravdivostních hodnot: *PRAVDA* (1, p), *NEPRAVDA*(1, p).
 
 ### Konjunkce
-Konjunkce libovolných výroků a, b je výrok, který vznikne spojením těchto výroků spojkou "A". Zápis.
+Konjunkce libovolných výroků $$a$$, $$b$$ je výrok, který vznikne spojením těchto výroků spojkou "A".
 
-Konjunkce libovolných výroků a, b je pravdivá pouze tehdy, když jsou pravdivé oba výroky a, b.
+$$a \land b$$
+
+Konjunkce libovolných výroků $$a$$, $$b$$ je pravdivá pouze tehdy, když jsou pravdivé oba výroky $$a$$, $$b$$.
 
 ### Disjunkce
-Disjunkce libovolných výroků a, b vznikne spojením těchto výroků spojkou "NEBO". Zápis.
+Disjunkce libovolných výroků $$a$$, $$b$$ vznikne spojením těchto výroků spojkou "NEBO".
 
-Disjunkce výroků a, b je pravdivá pouze tehdy, je-li pravdivý alespoň jeden z výroků a, b.
+$$a \lor b$$
+
+Disjunkce výroků $$a$$, $$b$$ je pravdivá pouze tehdy, je-li pravdivý alespoň jeden z výroků $$a$$, $$b$$.
 
 
 ### Implikace
-Implikace výroků a, b je výrok, který vznikne spojením obratem "JESTLIŽE, PAK". Zápis. Implikace je pravdivá pouze tehdy, když jsou pravdivé oba výroky a, b nebo když je výrok a nepravdivý a výrob b jakýkoli. 
+Implikace výroků $$a$$, $$b$$ je výrok, který vznikne spojením obratem "JESTLIŽE, PAK". Zápis. Implikace je pravdivá pouze tehdy, když jsou pravdivé oba výroky $$a$$, $$b$$ nebo když je výrok a nepravdivý $$a$$ výrok $$b$$ jakýkoli. 
+
+$$a \implies b$$
 
 ### Ekvivalence
 Ekvivalence výroku a, b vznikne přidáním slovního spojení "PRÁVĚ TEHDY KDYŽ". Zápis.
 Ekvivalence je pravdivá pouze tehdy, když výroky a, b jsou oba pravdivé neb oba nepravdivé. 
+
+$$a \leftrightarrow b$$
 
 ### Tautologie a kontradikce
 **Tautologie** nastává, pokud je výrok vždy pravdivý.
@@ -46,19 +54,19 @@ Kvantifikátory slouží k vymezení prvků s nějakou vlastností. Po použití
 
 1. Obecný kvantifikátor
 - říká, že daná vlastnost platí pro všechny prvky
-- značí se
+- značí se $$\forall$$
 - pro každé n patřící do N platí...
 - negace: pro každý prvek platí -> existuje jeden prvek, pro který neplatí...
 - Každá kočka je černá -> Existuje alespoň jedna kočka, který není černá. 
 2. Existenční kvantifikátor
 - říká, že existuje alespoň jeden prvek s  danou vlastností
-- značí se
+- značí se $$\exists$$
 - existuje alespoň jedno reálné číslo x, pro které platí, že je kladné
 - negace: existuje prvek, pro který platí -> pro každý prvek neplatí...
 - Alespoň jeden má kalkulačku. -> Nikdo nemá kalkulačku.
 
 ## Množiny
-Množinou rozumíme souhrn nějakých objektů (předmětů), které nazýváme prvky uvedené množiny. K vyjádření skutečnosti, že x je prvkem množiny A, používáme zápis x e A; x není prvkem množiny
+Množinou rozumíme souhrn nějakých objektů (předmětů), které nazýváme prvky uvedené množiny. K vyjádření skutečnosti, že x je prvkem množiny A, používáme zápis $$x \in A$$; x není prvkem množiny
 
 Množinu zapisujeme:
 1. Výčtem prvků
@@ -71,7 +79,7 @@ Množinu zapisujeme:
 Množina, která neobsahuje žádný prvek se nazývá prázdná množina a značí se . B je podmnožinou A právě tehdy, když každý prvek množiny B je zároveň prvkem množiny A. Každá množina je vždy o sobě sama podmnožinou.
 
 ### Rovnost množin
-Množiny A, B se rovnají (zapisujeme A = B) právě tehdy, když každ prvek množiny A je prvkem množiny B a zároveň každý prvek množiny B  
+Množiny A, B se rovnají (zapisujeme A = B) právě tehdy, když každý prvek množiny A je prvkem množiny B a zároveň každý prvek množiny B.
 
 ### Intervaly
 
@@ -88,9 +96,12 @@ Množiny A, B se rovnají (zapisujeme A = B) právě tehdy, když každ prvek mn
 
 ### Matematické věty
 V matematice jsou nejčastěji tyto typy matematických vět:
-1. Věty, které mají tvar elementárního výroku, např. druhá odmocnina ze dvou je číslo iracionální.
-2. Věty, které mají tvar implikace, např. rozmístime-li do deseti přihrádek jedenáct předmětů, pak aspoň v jedné přihrádce jsou aspoň dva předměty.
-3. Věty, které mají tvar ekvivalence, např. počet prvočísel je nekonečný právě tehdy, když neexistuje největší prvočíslo.
+1. Věty, které mají tvar elementárního výroku, např.:
+   > druhá odmocnina ze dvou je číslo iracionální.
+2. Věty, které mají tvar implikace, např.: 
+   > rozmístíme-li do deseti přihrádek jedenáct předmětů, pak aspoň v jedné přihrádce jsou aspoň dva předměty.
+3. Věty, které mají tvar ekvivalence, např.:
+   > počet prvočísel je nekonečný právě tehdy, když neexistuje největší prvočíslo.
 
 ### Důkazy vět elementárního výroku
 
