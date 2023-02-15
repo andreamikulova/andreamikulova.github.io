@@ -20,9 +20,14 @@ Zřejmě platí:
 Každý výrok může mít jednu z pravdivostních hodnot: *PRAVDA* (1, p), *NEPRAVDA*(1, p).
 
 ### Konjunkce
-Konjunkce libovolných výroků $$a$$, $$b$$ je výrok, který vznikne spojením těchto výroků spojkou "A".
+Konjunkce libovolných výroků $$a$$, $$b$$ je výrok, který vznikne spojením těchto výroků spojkou "A". $$a \land b$$
 
-$$a \land b$$
+| $$a$$ | $$b$$ | $$a \land b$$ |
+|:-----:|:-----:|:-------------:|
+| 1     | 1     | 1             |
+| 0     | 1     | 0             |
+| 1     | 0     | 0             |
+| 0     | 0     | 0             |
 
 Konjunkce libovolných výroků $$a$$, $$b$$ je pravdivá pouze tehdy, když jsou pravdivé oba výroky $$a$$, $$b$$.
 
