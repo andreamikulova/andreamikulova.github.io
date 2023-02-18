@@ -24,10 +24,10 @@ Konjunkce libovolných výroků $$a$$, $$b$$ je výrok, který vznikne spojením
 
 | $$a$$ | $$b$$ | $$a \land b$$ |
 |:-----:|:-----:|:-------------:|
-| 1     | 1     | 1             |
-| 0     | 1     | 0             |
-| 1     | 0     | 0             |
-| 0     | 0     | 0             |
+|   1   |   1   | 1             |
+|   1   |   0   | 0             |
+|   0   |   1   | 0             |
+|   0   |   0   | 0             |
 
 Konjunkce libovolných výroků $$a$$, $$b$$ je pravdivá pouze tehdy, když jsou pravdivé oba výroky $$a$$, $$b$$.
 
@@ -35,6 +35,13 @@ Konjunkce libovolných výroků $$a$$, $$b$$ je pravdivá pouze tehdy, když jso
 Disjunkce libovolných výroků $$a$$, $$b$$ vznikne spojením těchto výroků spojkou "NEBO".
 
 $$a \lor b$$
+
+| $$a$$ | $$b$$ | $$a \lor b$$ |
+|:-----:|:-----:|:------------:|
+|   1   |   1   |      1       |
+|   1   |   0   |      1       |
+|   0   |   1   |      1       |
+|   0   |   0   |      0       |
 
 Disjunkce výroků $$a$$, $$b$$ je pravdivá pouze tehdy, je-li pravdivý alespoň jeden z výroků $$a$$, $$b$$.
 
@@ -44,11 +51,25 @@ Implikace výroků $$a$$, $$b$$ je výrok, který vznikne spojením obratem "JES
 
 $$a \implies b$$
 
+| $$a$$ | $$b$$ | $$a \implies b$$ |
+|:-----:|:-----:|:----------------:|
+|   1   |   1   |        1         |
+|   1   |   0   |        0         |
+|   0   |   1   |        1         |
+|   0   |   0   |        1         |
+
 ### Ekvivalence
 Ekvivalence výroku a, b vznikne přidáním slovního spojení "PRÁVĚ TEHDY KDYŽ". Zápis.
 Ekvivalence je pravdivá pouze tehdy, když výroky a, b jsou oba pravdivé neb oba nepravdivé. 
 
 $$a \leftrightarrow b$$
+
+| $$a$$ | $$b$$ |$$a \leftrightarrow b$$ |
+|:-----:|:-----:|:----------------------:|
+|   1   |   1   |           1            |
+|   1   |   0   |           0            |
+|   0   |   1   |           0            |
+|   0   |   0   |           1            |
 
 ### Tautologie a kontradikce
 **Tautologie** nastává, pokud je výrok vždy pravdivý.
