@@ -26,10 +26,10 @@ Výroky, ve kterých je číselný údaj vyjádřen slovy **aspoň**, resp. **ne
 > Řekneme-li, že nějaká množina má **nejvýše** $$k$$ **prvků**, znamená to, že počet jejích prvků je **menší nebo roven číslu** $$k$$.
 
 
-|                Výrok                |              Negace výroku              |
-|:-----------------------------------:|:---------------------------------------:|
-|  "Množina M má aspoň $$k$$ prvků."  | "Množina M má nejvýše $$k - 1$$ prvků." |
-| "Množina M má nejvýše $$k$$ prvků." |  "Množina M má aspoň $$k + 1$$ prvků."  |
+|                Výrok                    |              Negace výroku                  |
+|:---------------------------------------:|:-------------------------------------------:|
+|  "Množina $$M$$ má aspoň $$k$$ prvků."  | "Množina $$M$$ má nejvýše $$k - 1$$ prvků." |
+| "Množina $$M$$ má nejvýše $$k$$ prvků." |  "Množina $$M$$ má aspoň $$k + 1$$ prvků."  |
 
 
 
@@ -76,14 +76,14 @@ $$a \implies b$$
 
  Implikace je pravdivá pouze tehdy, když jsou pravdivé oba výroky $$a$$, $$b$$ nebo když je výrok $$a$$ nepravdivý a výrok $$b$$ jakýkoli. 
 
-> Z pravdivosti impilkace  $$a \implies b$$ nevyplývá pravdivost obrácené implikace  $$b \implies a$$.
+> Z pravdivosti implikace $$a \implies b$$ nevyplývá pravdivost obrácené implikace $$b \implies a$$.
 
-> Implikace  $$a \implies b$$  a obměněná implikace  $$b' \implies a'$$  jsou ekvivalentní.
+> Implikace $$a \implies b$$ a obměněná implikace $$b' \implies a'$$ jsou ekvivalentní.
 
 ### Ekvivalence
 Ekvivalence výroku a, b vznikne přidáním slovního spojení "PRÁVĚ TEHDY KDYŽ".
 
-Ekvivalence libovolných výroků $$a$$, $$b$$ je konjunkce implikace $$a \implies b$$ a obrácené implikace $$b \implies a$$, tj. výrok $$(a \implies b) \land (b \implies a)$$. 
+Ekvivalence libovolných výroků $$a$$, $$b$$ je konjunkce implikace $$a \implies b$$ a obrácené implikace $$b \implies a$$, tj. výrok $$(a \implies b) \land (b \implies a)$$.
 
 $$a \leftrightarrow b$$
 
@@ -107,25 +107,28 @@ Kvantifikátory slouží k vymezení prvků s nějakou vlastností. Po použití
 - říká, že daná vlastnost platí pro všechny prvky
 - značí se $$\forall$$
 - $$\forall$$  $$n$$ $$\in N$$: pro každé přirozené $$n$$ platí
-- negace: pro každý prvek platí -> existuje jeden prvek, pro který neplatí...
-- Každá kočka je černá -> Existuje alespoň jedna kočka, který není černá. 
+- negace: pro každý prvek platí $$\rightarrow$$ existuje jeden prvek, pro který neplatí...
+- Každá kočka je černá $$\rightarrow$$ Existuje alespoň jedna kočka, který není černá. 
 2. Existenční kvantifikátor
 - říká, že existuje alespoň jeden prvek s  danou vlastností
 - značí se $$\exists$$
 - $$\exists$$ $$x$$ $$\in R$$: existuje alespoň jedno reálné číslo...
-- negace: existuje prvek, pro který platí -> pro každý prvek neplatí...
-- Alespoň jeden má kalkulačku. -> Nikdo nemá kalkulačku.
+- negace: existuje prvek, pro který platí $$\rightarrow$$ pro každý prvek neplatí...
+- Alespoň jeden má kalkulačku. $$\rightarrow$$ Nikdo nemá kalkulačku.
 
 ## Množiny
-Množinou rozumíme souhrn nějakých objektů (předmětů), které nazýváme prvky uvedené množiny. K vyjádření skutečnosti, že $$x$$ je prvkem množiny $$A$$, používáme zápis $$x \in A$$; x není prvkem množiny zapisujeme $$x \notin A$$.
+Množinou rozumíme souhrn nějakých objektů (předmětů), které nazýváme prvky uvedené množiny. K vyjádření skutečnosti, že $$x$$ je prvkem množiny $$A$$, používáme zápis $$x \in A$$; $$x$$ není prvkem množiny zapisujeme $$x \notin A$$.
 
 Množinu zapisujeme:
 1. Výčtem prvků
-- nezáleží na pořadí prvků a každý z těchto prvků musí být ve výčtu zastoupen právě jednu
-- $$A = \{1, 2, 3,..\}$$
+  - nezáleží na pořadí prvků a každý z těchto prvků musí být ve výčtu zastoupen právě jednu
+
+$$A = \{1, 2, 3,..\}$$
+
 2. Uvedením charakteristické vlastnosti prvků množiny 
-- Uvedeme takovou vlastnost, kterou mají všechny prvky množiny a kromě této množiny žádný jiný prvek tuto vlastnost nemá
-- $$A = \{x \in N; x \leq 3\}$$ 
+  - Uvedeme takovou vlastnost, kterou mají všechny prvky množiny a kromě této množiny žádný jiný prvek tuto vlastnost nemá
+
+$$A = \{x \in N; x \leq 3\}$$ 
 
 Množina, která neobsahuje žádný prvek se nazývá prázdná množina a značí se $$\emptyset$$. B je podmnožinou A (zapisujeme $$B\subset A$$) právě tehdy, když každý prvek množiny B je zároveň prvkem množiny A. Každá množina je vždy o sobě sama podmnožinou $$\emptyset \subset A$$. 
 
@@ -138,7 +141,7 @@ V případě, že množina $$B$$ je podmnožinou množiny $$A$$, zavádíme dál
 
 **Sjednocení množin** $$A, B$$ (zapisujeme $$A \cup B$$ )  definujeme jako množinu všech prvků, které patří aspoň do jedné z množin $$A, B$$.
 
-**Rozdil množin** $$A, B$$ (zapisujeme $$A \setminus B$$ ) definujeme jako množinu všech prvků množiny $$A$$, které nejsou prvky množiny $$B$$.
+**Rozdíl množin** $$A, B$$ (zapisujeme $$A \setminus B$$ ) definujeme jako množinu všech prvků množiny $$A$$, které nejsou prvky množiny $$B$$.
 
 ### Intervaly
 Jsou to množiny zobrazené úsečkou, polopřímkou nebo přímkou na číselné ose. Krajní body k ní mohou ale nemusí patřit. 
@@ -165,7 +168,7 @@ Intervaly mohou být:
 V matematice jsou nejčastěji tyto typy matematických vět:
 1. Věty, které mají tvar elementárního výroku, např.:
    > druhá odmocnina ze dvou je číslo iracionální.
-2. Věty, které mají tvar implikace, např.: 
+2. Věty, které mají tvar implikace, např.:
    > rozmístíme-li do deseti přihrádek jedenáct předmětů, pak aspoň v jedné přihrádce jsou aspoň dva předměty.
 3. Věty, které mají tvar ekvivalence, např.:
    > počet prvočísel je nekonečný právě tehdy, když neexistuje největší prvočíslo.
@@ -176,10 +179,10 @@ K důkazu těchto vět se obvykle používá přímý důkaz nebo důkaz sporem.
 **Přímý důkaz** je založen na této vlastnosti implikace:
 **Platí-li výrok** $$a$$ **a implikace** $$a \implies b$$, **platí i výrok** $$b$$.
 
-**Důkaz sporem** je založen na této vlastnosti implikace: 
+**Důkaz sporem** je založen na této vlastnosti implikace:
 **Platí-li implikace** $$a \implies b$$ **a neplatí-li výrok** $$b$$, **neplatí ani výrok** $$a$$.
 
-### Důkaz vět, které mají tvar implikace 
+### Důkaz vět, které mají tvar implikace
 K důkazu těchto vět se používá důkaz přímý, důkaz sporem a důkaz nepřímý.
 
 **Nepřímý důkaz** věty $$a \implies b$$ spočívá v tom, že dokážeme obměněnou implikaci $$ \neg b \implies \neg a$$, která je s implikací $$a \implies b$$ ekvivalentní.
