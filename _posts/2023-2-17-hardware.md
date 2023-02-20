@@ -7,11 +7,57 @@ category: Informatika
 {:toc}
 ---
 
-## Dělení počítačů
 
-### Podle velikosti
-- sálové počítače (mainframe) - střediskové, velice výkonné. Uživatelé se připojují pomocí terminálů. Jsou obrovské a musí být v klimatizovaných místnostech. Data jsou v něm uspořádána podle vhodného systému, ne jako na PC chaoticky. Používá se speciální OS, ale i Linux. Mohou mít větší množství procesorů. Používají se k práci s velkým objemem dat - sčítání lidu, statistické úlohy, vesmírné výpočty apod. 
-- minipočítače - velikostí je lze umístit na stůl, servery v  menších provozech
-- osobní počítače - pro uživatelskou práci (standard IBM PC = personal computers, nebo počítače řady MAC)
-- mikropočítače - jednoúčelové počítače pro speciální účely (řizení pračky, myčky nádobí,...)
+# Motherboard - Základní deska
+Představuje základní hardware většiny počítačů. Hlavním účelem základní desky je propojit jednotlivé součástky počítače do fungujícího celku a rozdělit jim elektrické napájení, které základní desce poskytne zdroj. 
+
+Postupem času se funkce základní desky rozšiřovala v tom, že sama začínala obsahovat některé komponenty, které se dříve musely připojovat externě.
+
+Typická základní deska umožňuje zapojení **procesoru** a **operační paměti**. Další komponenty - **grafické karty, zvukové karty, pevné disky, mechaniky** se připojují pomocí rozšiřujících slotů nebo kabelů, které se zastrkávají do příslušných konektorů. 
+
+Na základní desce je dále umístěna energeticky nezávislá paměť **Flash**, ve které je uložen systém **BIOS**, který slouží k oživení počítače hned po spuštění.
+
+Nejdůležitější **integrované obvody** jsou zabudovány v **čipové sadě** (chipset). Fyzicky jde buď o jeden čip, nebo o dva (v tom případě se označují jako **northbridge** a **southbridge**). Čipová sada rozhoduje, jaký procesor a operační paměť je možné k základní desce připojit.
+
+### Rozšiřující sloty
+
+## **Procesor, CPU** 
+- centrální procesorová jednotka, která je jako celek uložena do pouzdra integrovaného obvodu, 
+- postupně zpracovává jednotlivé instrukce programu, čímž realizuje požadovanou funkci
+- umí vykonávat **strojové instrukce**, ze kterých je tvořen počítačový program a obsluhovat jeho vstupy a výstupy
+- stále i moderní procesory jsou založeny na zpracování **strojového kódu** (sada strojových instrukcí), které odpovídají způsobu práce procesoru
+- každá architektura procesorů definuje svůj vlastní strojový jazyk
+- mikroprocesor představuje příklad **sekvenčního logického obvodu**, který pro uložení dat používá dvjkovou soustavu
+- mikroprocesor v dnešní době obsahují nejen osobní počítače, ale už jakákoli spotřební elektronika, automobily apod.
+- **Tranzistor** změnil situaci ve vývoji elektroniky, zejména proto, že se jednalo elektronickou součástku bez pohyblivých částí. Efektivně nahradila **elektronky** a **relé**
+- Mooreův zákon
+
+### Stavba procesoru
+Současné procesory zachovávají tradiční vnitřní uspořádání procesoru, které bylo rozpoznatelné i u prvních procesorů.
+
+Procesory obsahují:
+- **Řadič** nebo řídící jednotka, která zajišťuje součinnost jednotlivých čístí procesoru dle prováděných strojových instrukcí (jejich dekódování, načítání operandů instrukcí z operační paměti a ukládání výsledků zpracování instrukcí)
+- **Sada registrů** pro uchování operandů a mezivýsledků. Přístup k registrům je mnohem rychlejší než přístup do operační paměti připojené k procesoru pomocí sběrnice. Registry dělíme na obecné (pracovní, univerzální) a řídící (např. čítač instrukcí, stavové registry, registr vrcholu zásobníku, indexregistry). Bitová šířka pracovních registrů je jednou ze základních charakteristik procesoru.
+- **Aritmeticko-logická jednotka** může být jedna nebo více, provádí nad daty aritmetické a logické operace
+- **Matematický kompresor** (FPU - Foating Point Unit) - obsahují jej současné CPU, provádí operace s desetinnými čísly
+- Současné CPU většinou obsahují také vektorovou jednotku, která je v podstatě matematickým koprocesorem optimalizovaným pro operace s vektory desetinných čísel
+
+### Výkon procesoru
+
+### Rozdělení procesorů 
+
+#### Podle instrukční sady
+Podle instrukční sady se dělí procesory na:
+- CISC - Complex Instruction Set Computing - procesory s úplnou instrukční sadou, patří zde mikroprocesory řady x86-64
+- RISC - Reduced Instruction Set Computing - procesory s redukovanou instrukční sadou, patří zde mikroprocesory ARM, SPARC, MIPS, PowerPC a Alpha
+- VLIW - procesorová architektura, která umožňuje instrukční paralelismus - snaha o zvýšení výpočetního výkonu procesorů, patří zde mikroprocesory Tilera
+
+#### Podle šířky slova
+Jedním ze základních ukazatelů procesoru je počet bitů, tj. šířka operandu (slova), který je procesor schopný zpracovat v jednom kroku. První procesory byly 4bitové, což bylo dáno tím, že často pracovaly přímo s čísly v desítkové soustavě. Brzy přišly 8bitové, u nichž se zjednodušeně dá říci, že umí přímo počítat s čísly od 0 do 255, zatímco 16bitový procesor s čísly od 0 do 2*16.
+
+#### Podle architektury procesoru
+Jako výhodnější se ukazují instrukční sady typu RISC, avšak některé architektury z důvodu zachování zpětné kompatibility pracují i se strojovým kódem typu CISC. Procesory RISC jsou velmi úspěšné např. v mobilních telefonech nebo v superpočítačích, protože jednodušší architektura se projevuje nižší spotřebou energie.
+
+#### Podle podpory operačního systému
+
 
