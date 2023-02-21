@@ -38,12 +38,14 @@ Konjunkce libovolných výroků $$a$$, $$b$$ je výrok, který vznikne spojením
 
 $$a \land b$$
 
-| $$a$$ | $$b$$ | $$a \land b$$ |
-|:-----:|:-----:|:-------------:|
-|   1   |   1   | 1             |
-|   1   |   0   | 0             |
-|   0   |   1   | 0             |
-|   0   |   0   | 0             |
+Negace konjuknce dvou výroků je disjunkce negací $$ \neg a \lor \neg b$$.
+
+| $$a$$ | $$b$$ | $$a \land b$$  | $$ \neg a$$ | $$ \neg b$$ | $$ \neg a \lor \neg b$$ |
+|:-----:|:-----:|:--------------:|:-----------:|:-----------:|:-----------------------:|
+|   1   |   1   |       1        |      0      |      0      |            0            |
+|   1   |   0   |       0        |      0      |      1      |            1            |
+|   0   |   1   |       0        |      1      |      0      |            1            |
+|   0   |   0   |       0        |      1      |      1      |            1            |
 
 Konjunkce libovolných výroků $$a$$, $$b$$ je pravdivá pouze tehdy, když jsou pravdivé oba výroky $$a$$, $$b$$.
 
@@ -52,12 +54,14 @@ Disjunkce libovolných výroků $$a$$, $$b$$ vznikne spojením těchto výroků 
 
 $$a \lor b$$
 
-| $$a$$ | $$b$$ | $$a \lor b$$ |
-|:-----:|:-----:|:------------:|
-|   1   |   1   |      1       |
-|   1   |   0   |      1       |
-|   0   |   1   |      1       |
-|   0   |   0   |      0       |
+Negace disjunkce dvou výroků je konjunkce negací $$ \neg a \land \neg b$$.
+
+| $$a$$ | $$b$$ | $$a \lor b$$ | $$ \neg a$$ |  $$ \neg b$$ | $$ \neg a \land \neg b$$ |
+|:-----:|:-----:|:------------:|:-----------:|:-----------:|:------------------------:|
+|   1   |   1   |      1       |      0      |      0      |            0             |
+|   1   |   0   |      1       |      0      |      1      |            0             |
+|   0   |   1   |      1       |      1      |      0      |            0             |
+|   0   |   0   |      0       |      1      |      1      |            1            |
 
 Disjunkce výroků $$a$$, $$b$$ je pravdivá pouze tehdy, je-li pravdivý alespoň jeden z výroků $$a$$, $$b$$.
 
@@ -67,12 +71,14 @@ Implikace výroků $$a$$, $$b$$ je výrok, který vznikne spojením obratem "JES
 
 $$a \implies b$$
 
-| $$a$$ | $$b$$ | $$a \implies b$$ |
-|:-----:|:-----:|:----------------:|
-|   1   |   1   |        1         |
-|   1   |   0   |        0         |
-|   0   |   1   |        1         |
-|   0   |   0   |        1         |
+Negace implikace dvou výroků je konjunkce výroku $$a$$ a negace výroku $$b$$  $$a \land \neg b$$.
+
+| $$a$$ | $$b$$ | $$a \implies b$$ | $$ \neg b$$ | $$a \land \neg b$$ |
+|:-----:|:-----:|:----------------:|:-----------:|:------------------:|
+|   1   |   1   |        1         |      0      |         0          |
+|   1   |   0   |        0         |      1      |         1          |
+|   0   |   1   |        1         |      0      |         0          |
+|   0   |   0   |        1         |      0      |         1          |
 
  Implikace je pravdivá pouze tehdy, když jsou pravdivé oba výroky $$a$$, $$b$$ nebo když je výrok $$a$$ nepravdivý a výrok $$b$$ jakýkoli. 
 
@@ -87,12 +93,14 @@ Ekvivalence libovolných výroků $$a$$, $$b$$ je konjunkce implikace $$a \impli
 
 $$a \leftrightarrow b$$
 
-| $$a$$ | $$b$$ |$$a \leftrightarrow b$$ |
-|:-----:|:-----:|:----------------------:|
-|   1   |   1   |           1            |
-|   1   |   0   |           0            |
-|   0   |   1   |           0            |
-|   0   |   0   |           1            |
+Negace ekvivalence dvou výroků je buď $$ \neg a \leftrightarrow b$$ nebo $$a \leftrightarrow \neg b$$.
+
+| $$a$$ | $$b$$ |$$a \leftrightarrow b$$ | $$ \neg a$$ | $$ \neg b$$ | $$ \neg a \leftrightarrow b$$ | $$ a \leftrightarrow \neg b$$ |
+|:-----:|:-----:|:----------------------:|:-----------:|:-----------:|:-----------------------------:|:-----------------------------:|
+|   1   |   1   |           1            |      0      |      0      |               0               |               O               | 
+|   1   |   0   |           0            |      0      |      1      |               1               |               1               |
+|   0   |   1   |           0            |      1      |      0      |               1               |               1               |
+|   0   |   0   |           1            |      1      |      1      |               0               |               0               |
 
 Ekvivalence je pravdivá pouze tehdy, když výroky $$a$$, $$b$$ jsou oba pravdivé neb oba nepravdivé. 
 
