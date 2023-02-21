@@ -142,6 +142,7 @@ category: Informatika
 - 0-9 + A-F (11, 12, 13, 14, 15)
 
 ## Kódování dat
-- kódování je záměna dat za pomocí převodní tabulky s možností data opět dekódovat
-- např. base64 - převod jakýchkoli dat na obyčejný text (např. posílání příloh emailem), dvojkový polňkový kód, BCD kód
-- hlavní využití je komprimování dat - ZIP, RAR,... -> komprese dat
+Před zpracováním dat v počítači, je nutné převést znaky do tvaru, kterému počítač rozumí, to znamená přiřadit datům určité kombinace bitů. Tento proces se nazývá **kódování**.
+
+Kód je v podstatě přepis pro jednoznačné přiřazení určité kombinace bitů příslušnému znaku. Kombinací bitů se říká kódové slovo. Data lze zpátky dekódovat.
+
