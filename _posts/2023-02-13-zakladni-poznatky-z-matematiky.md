@@ -7,6 +7,92 @@ category: Matematika
 {:toc}
 ---
 
+# Číselné obory, výrazy
+
+## Číselné obory
+Jsou-li v množině čísel určitého druhu definovány operace sčítání a násobení, mluvíme o **číselném oboru**.
+
+### Obor přirozených čísel $$\N$$
+Přirozená čísla slouží k vyjádření počtu osob, zvířat, předmětů apod. Dovedeme je jmenovat, zapisovat a znázorňovat na číselné ose. Rozlišujeme významy slov **číslice** (**cifra**) a **číslo**. Číslice jsou grafické znaky.
+
+**Základní operace** s přirozenými čísly jsou sčítání a násobení. 
+
+**Pro každá tři přitozená čísla** $$a$$, $$b$$, $$c$$ **platí**:
+
+- **Věta o uzavřenosti** oboru vzhledem ke sčítání a násobení (součtem i součinem libovolných přirozených čísel je vždy přirozené číslo): $$a + b$$ , $$a \cdot b$$
+- **Věta o asociativnosti** sčítání a násobení (činitele při součtu/násobení můžeme libovolně sdružovat): $$a + (b + c) = (a + b) + c$$,  $$a \cdot (b \cdot c) = (a \cdot b) \cdot c$$
+- **Věta o komutativnosti** sčítání a násobení (pořadí činitelů můžeme zaměnit): $$a + b = b + a$$, $$ a\cdot b = b \cdot a$$
+- **Věta o distributivnosti** násobení vzhledem ke sčítání (vynásobíme-li číslem součet dvou nebo více čísel, vynásobíme číslem každého sčítance): $$a(b + c) = ab + ac$$
+- **Věta o neutrálnosti** čísla $$1$$ vzhledem k násobení: $$1 \cdot a = a$$
+
+Ostatní operace v oboru přirozených čísel můžeme definovat takto:
+
+**Rozdíl** $$a - b$$ dvou přirozených čísel $$a, b$$ je to přirozené číslo $$x$$, pro které platí $$a = b + x$$ 
+**Podíl** $$a \div b$$ dvou přirozených čísel $$a, b$$ je to přirozené číslo $$x$$, pro které platí $$a = b \cdot x$$ 
+
+### Obor celých čísel $$\Z$$
+Pro celá čísla platí stejné věty jako pro přirozená čísla, jsou však rozšířeny o další dve:
+
+- jedna vyjadřuje **uzavřenost oboru** celých čísel vzhledem k odčítání: $$a - b$$ je celé číslo
+- druhá vyjadřuje **neutrálnost $$O$$** vzhledem k sčítání celých čísel: $$0 + a = a$$
+
+Ke každému celému číslu $$a$$ existuje takové číslo $$(-a)$$, že platí $$a+(-a) = 0$$. Čísla $$a, (-a)$$ se nazývají **čísla navzájem opačná**.
+
+### Obor racionálních čísel $$\Q$$
+Množina $$Q$$ věech racionálních čísel obsahuje právě ta čísla, jež lze vyjádřit ve tvaru zlomku $$p/q$$, kde $$p$$ je celé číslo a $$q$$ je přirozené číslo.
+
+Tento zápis však není jednoznačný; každé racionální číslo lze vyjádřit ve tvaru zlomku nekonečně mnoha způsoby krácením či rozšiřováním daného zlomku. Mezi všemi těmito vyjádřeními existuje jediné, které má tu vlastnost, že čísla $$p, q$$ jsou nesoudělná (jejich společným dělitelem je jenom číslo jedna). 
+O takovém zlomku říkáme, že je vyjádřen **v základním tvaru**. 
+
+Základní věty, které platí pro operace s racionálními čísly jsou obdobné jako u přirozených čísel.
+
+Při dělení $$a \div b$$, $$b \neq 0$$
+
+**Racionální čísla můžeme zapisovat ve tvaru**:
+- zlomku
+- desetinného čísla
+- nekonečného periodického rozvoje s vyznačenou periodou
+
+### Obor reálných čísel $$\R$$
+**Reálnými čísly** nazýváme čísla, která vyjadřují délky úseček (při zvolené jednotkové úsečce), čísla k nim opačná a nulu. Každé reálné číslo je na číselné ose znázorněno právě jedním bodem.
+Každý bod číselné osy je obrazem právě jednoho reálného čísla.
+
+Množinu všech reálných čísel tvoří čísla racionální a čísla iracionální.
+
+> **Iracionální čísla** lze zapsat jenom takovým desetinným rozvojem, který je nekonečný a neperiodický.
+
+Pro operace s reálnými čísly platí stejné věty jako pro operace s racionálními čísly. Jednou z důležitých vlastností množiny reálných čísel je to, že je to množina uspořádaná. 
+
+### Absolutní hodnota reálného čísla
+Absolutní hodnotu $$|a|$$ reálného čísla $$a$$ definujeme takto:
+
+Je-li $$a \geq 0$$, pak $$|a| = a$$,
+<br>
+je-li $$a \leq 0$$, pak $$|a| = -a$$.
+
+To znamená, že absolutní hodnota nezáporného čísla $$a$$ je rovna číslu $$a$$, absolutní hodnota záporného čísla $$a$$ je rovna opačnému číslu $$-a$$, přitom $$-a$$ je kladné číslo. 
+Tedy pro každé reálné číslo $$a$$ platí $$|a| \geq 0$$.
+
+> Absolutní hodnota každého reálného čísla je rovna vzdálenosti obrazu tohoto čísla na číselné ose od počátku.
+
+Tato vlastnost se zpravidla nazývá geometrický význam absolutní hodnoty reálného čísla $$a$$. Z uvedené vlastnosti vyplývá:
+
+1. Pro všechna reálná čísla $$a$$ je $$|a| \geq 0$$, 
+protože vzdálenost je vždy nezáporné číslo.
+2. Pro všechna reálná čísla $$a$$ platí $$|a| = |-a|$$, 
+neboť opačné číslo $$-a$$ má od počátku stejnou vzdálenost jako číslo $$a$$.
+
+ Vzdálenost obrazů reálných čísel $$a,b$$ na číselné ose je rovna
+ $$|a-b|$$, resp. $$|b-a|$$.
+
+## Výrazy
+Algebraický výraz je tvořen z konstant a proměnných, které jsou dohromady spojeny pomocí algebraických operací a závorek. Proměnná zastupuje čísla z určitého oboru hodnot.
+Pomocí algebraických výrazů můžeme provádět obecné výpočty.
+
+### Výrazy - vzorce
+
+
+
 # Výroky, množiny, základní typy důkazů
 
 ## Výroky
@@ -198,5 +284,4 @@ K důkazu těchto vět se používá důkaz přímý, důkaz sporem a důkaz nep
 ### Důkaz vět, které mají tvar ekvivalence
 Platnost věty typu $$a \leftrightarrow b$$ se nejčastěji dokazuje tak, že se dokážou implikace $$a \implies b$$ a implikace $$b \implies a$$.
 
-# Číselné obory, výrazy
 
