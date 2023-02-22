@@ -59,9 +59,14 @@ category: Informatika
     - pouze na matematické výpočty, nepoužíval dvojkovou soustavu (nebyl univerzálně použitelný)
 - MANIAC (použit k sestavení atomové bomby)
 
-**Neumannova koncepce počítače**
+**Von Neumannova koncepce počítače**
   - matematik, kolem roku 1950 položil základy konstrukce současných počítačů
-    - počítač se skládá z paměti, procesoru, vstupních a výstupních zařízení
+    - počítač se skládá z:
+      - řídící jednotky (řadič) - koordinuje činnost ostatních jednotek a určuje, co mají v kterém okamžiku dělat
+      - aritmeticko-logická jednotka (ALU) - provádí numerické výpočty, vyhodnocuje podmínky,...
+      - operační paměť - uchovává data a program
+      - vstupní zařízení - zařízení, odkud se do počítače dostávají data ke zpracování
+      - výstupní zařízení - do tohoto zařízení zapisuje počítač výsledky své činnosti
     - pro reprezentaci dat se používá dvojková soustava -> počítač je univerzálně použitelný
     - sestaven EDVAC
 
