@@ -32,6 +32,51 @@ Každý krok algoritmu musí být *jednoznačně* a *přesně* definován; v ka�
 **Výstup** <br>
  Algoritmus má alespoň jeden *výstup*, veličinu, která je v požadovaném vztahu k zadaným vstupům, a tím tvoří dpověď na problém, který algoritmus řeší. 
 
+Některé problémy lze řešit více způsoby - různými algoritmy, které se mohou svým postupem značně lišit. Naší snahou je vybrat pro řešení problému takový algoritmus, který je:
+- nejefektivnější
+- řeší problém v co nejkratším čase
+- přehledný
+- srozumitelný
+
+## Zápis algoritmů
+Algoritmy můžeme zapisovat slovně nebo graficky, například pomocí tzv. vývojových diagramů
+
+- **Slovní zápis** většinou se pužívá pro jednodušší postupy
+- **Grafický zápis** - využívá grafické symboly, které mají předem definovaný význam. Nejrozšířenější formy grafického zápisu jsou vývojové diagramy
+
+## Vývojové diagramy
+Ke kreslení vývojových diagramů používáme standardní grafické symboly
+
+### Začátek a konec algoritmu
+Každý zápis vývojového diagramu musí začínat značkou *Start* a končit značkou *konec*. V diagramu se musí vyskytnout obě značky vždy jen jednou.
+
+### Vstup a výstup dat
+Data jsou digitalizované informace. Mohou to být čísla, texty, písmena apod. Většinou zadáme vstupní proměnné do vzorců nebo hodnoty, s nimiž pracujeme v průběhu programu.
+
+### Příkaz
+V obecném pojetí může jít o jakýkoli příkaz, většinou jde o matematické operace či přiřazení, např. $$x:= a+ b$$
+
+### Rozhodování (větvení)
+Pro značku rozhodování můžeme použít jen výraz, na která lze odpovědět *ANO* nebo *NE*
+
+### Příkaz cyklu
+Používá se pro cyklus známým počtem opakování, např. *for i in range(20):*
+
+### Spojky
+Používají v případě, že se vývojový diagram nevejda na jednu stránku a pokračuje na další straně. Pak je vhodné pomocí spojek označit místo návaznosti pomocí čísla.
+
+## Algoritmizace
+*Algoritmizace* je proces, kterým lze prostřednictvím algoritmu řešit nějaký problém
+1. **Formulace problému** - přesné formulování požadavků, určení výchozích hodnot, požadovaných výsledků, jejich forma a přesnost řešení
+2. **Analýza úlohy** - ověření řešitelnosti úlohy, první představy o jejím řešení, zjištění, zda má úloha více řešení
+3. **Vytvoření algoritmu** - sestavení jednoznačného sledů operací, které je třeba provést, aby byla úloha správně vyřešena
+4. **Sestavení programu** - podle vytvořeného algoritmu v konkrétním programovacím jazyce
+5. **Odladění programu** - odstranění chyb z programu
+
+### Typy chyb
+- Syntaktické chyby - jsou chyby v zápise, které odhalí překladač
+- Logické chyby - vznikají nesprávně navrženým algoritmem či špatným předpokladem v etapě formulace nebo analýzy úlohy. Projeví se nesprávnou činností programu nebo špatnými výsledky
+
 ## Metody návrhu
 Algoritmus se navrhuje několika možnými způsoby:
 - **Shora dolů** - postup řešení rozkládáme na jednodušší operace, až dospějeme k elementárním krokům.
@@ -49,4 +94,47 @@ Při návrhu algoritmů se uplatňuje množství přístupů, které abstrahují
 ### Algoritmická složitost
 !!!
 
-## Vývojové diagramy
+
+# Programování
+
+## Programovací jazyky
+**Programovací jazyk** je prostředek pro zápis algoritmů, jež mohou být provedeny na počítači. Zápis algoritmu ve zvoleném programovacím jazyce se nazývá *program*.
+
+Programovací jazyk je komunikačním nástrojem mezi programátore a počítačem, který program interpretuje technickými prostředky. Programovací jazyk je vlastně soubor pravidel pro zápis algoritmu, odborně řečeno se jedná o *formální jazyk*.
+
+Programovací jazyky existují v řadě verzí a implementací (proces uskutečňování teoreticky stanovené myšlenky), mluvíme někdy o dialektech programovacího jazyka.
+
+### Typy programovacích jazyků
+Existuje několik možností kritérií, podle kterých jazyky dělit.
+
+**Dle míry abstrakce**:
+- vyšší programovací jazyky (většina jazyků)
+- nižší programovací jazyky (např. jazyk symbolických adres - assembler, částečně VHDL)
+
+**Dle způsobu překladu a spuštění**:
+- kompilované programovací jazyky (např. C, Pascal, Java)
+  - před spuštěním jdou nejprve kompletně přeloženy kompilátorem
+  - výsledkem je větš rychlost, ale také větší náročnost na správně napsaný kód
+- interpretované programovací jazyky (např. BASIC, Python, Ruby, Perl)
+  - interpretované jazyky, které se pouze interpretují (jsou pomalejší, většina jazyků má proto nějakou jinou možnost, pokud nejsou zpomalovány něčím jiným - shell)
+  - interpretované jazyky, které se překládají, ale pouze do mezikódu, nikoli do strojového kódu (např. Java, Python)
+  - interpretované jazyky, které se po spuštění za běhu programu překládají do strojového kódu počítače (např. Java, pokud se použije systém JIT)
+
+Toto členění není absolutní, řada programovacích jazyků existuje v implementaci jak interpretované, tak kompilované (Java). Mohou se kombinovat oba postupy, zdrojový kód je nejprve kompilován do mezikódu, který je poté interpretován.
+
+**Dle oblasti použití**
+- univerzální jazyky (obecné použití, postrádají specializované funkce)
+- doménově specifické (DSL)
+
+**Vyšší programovací jazyky se dělí takto**
+- Procedurální (imperativní)
+  - Strukturované (př. C, BASIC)
+  - Objektově orientované (př. Java)
+- Neprocedurální (deklarativní)
+  - Funkcionální (př. Lisp, Haskell)
+  - Logické (př. Prolog)
+
+Některé programovací jazyky (C++, Python, Object Pascal, Rust) umožňují kombinovat různé přístupy. Část řešení může být vyjádřena zápisem funkcí a procedur, část řešení může využívat čistě objektový přístup - klasický příklad C++, podobný přístup využívá jazyk Python, který navíc do určité míry podporuje i funkcionální programování.
+Protikladem je jazyk Java, kde i jednoduchá funkce musí být vyjádřena formou třídy.
+
+## Základní příkazy
