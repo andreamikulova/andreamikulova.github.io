@@ -146,7 +146,7 @@ Mezi základní příkazy patří:
 - vstup a výstup programu
 
 ### Podmínky (Větvení)
-Podmínky zapisujeme pomocí klíčového slova *if*, za kterým následuje logický výraz. Pokud je výraz pravdivý, provede se následující příkaz. Pokud ne, následující příkaz se přeskočí a pokračuje se až pod ním. Ve výrazech můžeme používat relační operátory jako je např. rovnost, větší/menší, nerovnost, obecná negace
+Podmínky zapisujeme pomocí klíčového slova *if*, za kterým následuje logický výraz. Pokud je výraz pravdivý, provede se následující příkaz. Pokud ne, následující příkaz se přeskočí a pokračuje se až pod ním, *else*. Ve výrazech můžeme používat relační operátory jako je např. rovnost, větší/menší, nerovnost, obecná negace
 
 ### Cyklus
 Pomocí cyklů můžeme jednoduše říct počítači, aby určitý blok kódu opakoval, kolikrát budeme chtít.
@@ -155,11 +155,25 @@ Pomocí cyklů můžeme jednoduše říct počítači, aby určitý blok kódu o
 For cykly jsou cykly s předem daným počtem opakování. Řídící proměnné cyklu je přiřazena počáteční hodnota, která se zvyšuje v každém průběhu cyklu o krok 
 
 #### While cyklus
-
+Dokud je splněna uvedená podmínka, cyklus pokračuje dál.
 
 ### Deklarace
 **Deklarace** je v informatice zápis, kterým se v počítačovém programu zavádí jméno (identifikátor) a zpravidla určuje jeho datový typ a další aspekty pro proměnné, funkce (procedury), konstanty apod. Překladač je tak informován o příslušném objektu. 
 V jazycích se silnou typovou kontrolou jako je Pascal, C nebo Ada, je nutné všechny objetky deklarovat dříve, než jsou použity v programu. 
+
+### Funkce
+Funkci si můžeme představit jako nějakou pojmenovanou část kódu (posloupnost příkazů), kterou můžeme opakovaně použít tím, že ji v různých částech programu *zavoláme*. Funkci při zavolání předáme parametry, které se dostanou do její vnitřní paměti. 
+
+Funkce pak na základě obdržených parametrů může provádět nějaké operace, při kterých pracuje se svojí vnitřní pamětí (mluvíme tak o *lokální* paměti, změny v ní se neprojeví nikde mimo funkci). 
+
+### Rekurze
+**Rekurze** je velmi důležitá programátorská technika. V podstatě znamená definování nějaké věci (ať už je to nějaký objekt či postup výpočtu) pomocí sebe sama.
+
+Rekurzivně může být například zadána nějaká datová struktura - př. stromy, spojový seznam. Kromě rekurzivních datových struktur se ale často potkáme i s rekurzivním postupem výpočtu programu, nejčastěji realizovaným ve formě funkce, která volá sama sebe - *rekurzivní funkce*.
+
+U rekurzivních funkcí je nejdůležitější věc definovat *koncovou podmínku*, při níž už se rekurze zastaví. Jinak by rekurze běžela donekonečna - došla by ji paměť. 
+
+### Speciální funkce pro různé datové typy
 
 ## Datový typ
 **Datový typ** definuje druh nebo význam hodnot, kterých smí nabývat *proměnná* (nebo konstanta). Datový typ je určen oborem hodnot a zároveň výpočetními operacemi, které lze s hodnotami tohoto typu provádět. Nemůže být určen pouze oborem hodnot, protože existují i datové typy lišící se pouze v operacích, které je s nimi možné provádět.
@@ -181,3 +195,4 @@ U neordinálních datových typů není jednoznačně určen předchůdce a nás
 **Prázdný datový typ** <br>
 - **void** - jedná se o specialitu jazyka C. Tento typ nenabývá žádných hodnot, může sloužit mimo jiné pro deklaraci funkcí
 
+## Třídění
