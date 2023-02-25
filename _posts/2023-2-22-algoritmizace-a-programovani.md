@@ -7,7 +7,7 @@ category: Informatika
 {:toc}
 ---
 
-# Algoritmus
+# Algoritmy
 Algoritmus je popis řešení úlohy (postup) pomocí řady elementárních kroků srozumitelných počítači.
 Je to jakýsi teoretický princip řešení problému (oproti přesnému zápisu v konkrétním programovacím jazyce). Obecně se ale algoritmus může objevit v jakémkoli jiném vědeckém odvětví.
 
@@ -138,3 +138,46 @@ Některé programovací jazyky (C++, Python, Object Pascal, Rust) umožňují ko
 Protikladem je jazyk Java, kde i jednoduchá funkce musí být vyjádřena formou třídy.
 
 ## Základní příkazy
+Mezi základní příkazy patří:
+- manipulace s daty v paměti (uložení či načtení hodnoty)
+- provedení nějakého numerického výpočtu (+,-,*,/)
+- vyhodnocení nějaké konktrétní podmínky a odpovídající větvení programu
+- opakování nějakého příkazu - *cyklus*
+- vstup a výstup programu
+
+### Podmínky (Větvení)
+Podmínky zapisujeme pomocí klíčového slova *if*, za kterým následuje logický výraz. Pokud je výraz pravdivý, provede se následující příkaz. Pokud ne, následující příkaz se přeskočí a pokračuje se až pod ním. Ve výrazech můžeme používat relační operátory jako je např. rovnost, větší/menší, nerovnost, obecná negace
+
+### Cyklus
+Pomocí cyklů můžeme jednoduše říct počítači, aby určitý blok kódu opakoval, kolikrát budeme chtít.
+
+#### For cyklus
+For cykly jsou cykly s předem daným počtem opakování. Řídící proměnné cyklu je přiřazena počáteční hodnota, která se zvyšuje v každém průběhu cyklu o krok 
+
+#### While cyklus
+
+
+### Deklarace
+**Deklarace** je v informatice zápis, kterým se v počítačovém programu zavádí jméno (identifikátor) a zpravidla určuje jeho datový typ a další aspekty pro proměnné, funkce (procedury), konstanty apod. Překladač je tak informován o příslušném objektu. 
+V jazycích se silnou typovou kontrolou jako je Pascal, C nebo Ada, je nutné všechny objetky deklarovat dříve, než jsou použity v programu. 
+
+## Datový typ
+**Datový typ** definuje druh nebo význam hodnot, kterých smí nabývat *proměnná* (nebo konstanta). Datový typ je určen oborem hodnot a zároveň výpočetními operacemi, které lze s hodnotami tohoto typu provádět. Nemůže být určen pouze oborem hodnot, protože existují i datové typy lišící se pouze v operacích, které je s nimi možné provádět.
+
+### Jednoduché datové typy
+Jednoduché datové typy jsou většinou přímo zabudovány do jazyka, přičemzž v běžně používaných jazycích nejsou parametrizovatelné. 
+
+**Ordinální datové typy** <br>
+Hodnoty ordinálního typu tvoří lineárně uspořádanou množinu, kde pro každý prvek je přesně definovaný předchůdce i následovník.
+- **logická hodnota** (boolean) - nabývá hodnot *true* nebo *false*. Je výsledkem porovnání nebo logického výrazu. Jazyk C tento typ nedefinuje, místo toho používá 0 a jakékoli nenulové celé číslo.
+- **celé číslo** (integer) - 
+- **znak** (char, string) - 
+- **výčtový typ** (enumerate)
+
+**Neordinální datové typy** <br>
+U neordinálních datových typů není jednoznačně určen předchůdce a následovník každé hodnoty.
+- **reálné číslo** (float, double, real)
+
+**Prázdný datový typ** <br>
+- **void** - jedná se o specialitu jazyka C. Tento typ nenabývá žádných hodnot, může sloužit mimo jiné pro deklaraci funkcí
+
