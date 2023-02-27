@@ -50,7 +50,7 @@ Ke kreslení vývojových diagramů používáme standardní grafické symboly
 ### Začátek a konec algoritmu
 Každý zápis vývojového diagramu musí začínat značkou *Start* a končit značkou *konec*. V diagramu se musí vyskytnout obě značky vždy jen jednou.
 
-![Start programu](/andy/Downloads/start.png "Start programu")
+![Start programu](/assets/images/start.png)
 
 ### Vstup a výstup dat
 Data jsou digitalizované informace. Mohou to být čísla, texty, písmena apod. Většinou zadáme vstupní proměnné do vzorců nebo hodnoty, s nimiž pracujeme v průběhu programu.
