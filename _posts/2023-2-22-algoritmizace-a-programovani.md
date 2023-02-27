@@ -50,6 +50,8 @@ Ke kreslení vývojových diagramů používáme standardní grafické symboly
 ### Začátek a konec algoritmu
 Každý zápis vývojového diagramu musí začínat značkou *Start* a končit značkou *konec*. V diagramu se musí vyskytnout obě značky vždy jen jednou.
 
+![Start programu](/andy/Downloads/start.png "Start programu")
+
 ### Vstup a výstup dat
 Data jsou digitalizované informace. Mohou to být čísla, texty, písmena apod. Většinou zadáme vstupní proměnné do vzorců nebo hodnoty, s nimiž pracujeme v průběhu programu.
 
@@ -173,7 +175,6 @@ Rekurzivně může být například zadána nějaká datová struktura - př. st
 
 U rekurzivních funkcí je nejdůležitější věc definovat *koncovou podmínku*, při níž už se rekurze zastaví. Jinak by rekurze běžela donekonečna - došla by ji paměť. 
 
-### Speciální funkce pro různé datové typy
 
 ## Datový typ
 **Datový typ** definuje druh nebo význam hodnot, kterých smí nabývat *proměnná* (nebo konstanta). Datový typ je určen oborem hodnot a zároveň výpočetními operacemi, které lze s hodnotami tohoto typu provádět. Nemůže být určen pouze oborem hodnot, protože existují i datové typy lišící se pouze v operacích, které je s nimi možné provádět.
@@ -195,4 +196,30 @@ U neordinálních datových typů není jednoznačně určen předchůdce a nás
 **Prázdný datový typ** <br>
 - **void** - jedná se o specialitu jazyka C. Tento typ nenabývá žádných hodnot, může sloužit mimo jiné pro deklaraci funkcí
 
+### Speciální funkce pro různé datové typy
+
+
 ## Třídění
+**Třídění** znamená, že data přerovnáváme do správného pořadí (např. od největšího po nejmenší). 
+
+Obvykle třídíme exempláře datové struktury typu pascalského záznamu (struktury, třídy apod.) V takové datové struktuře bývá obsažena jedna význačná položka - *klíč*, podle které se záznamy řadí, který je zároveň celočíselný. Budeme tedy třídit pole celých čísel. 
+
+### Přímé metody
+Nejjednodušší třídící algoritmy patří do skupiny *přímých metod*. Jsou krátké, jednoduché a třídí přímo v poli (nepotřebujeme pole pomocné). Tyto algoritmy mají časovou složitost $$O(N2)$$. Jsou tedy použitelné pouze pokud vstupních dat není mnoho. 
+
+**Select Sort** <br>
+Select sort je založen na opakovaném vybírání nejmenšího čísla z dosud nesetříděných čísel. 
+
+**Insert sort** <br>
+
+
+**Bubble sort** <br>
+
+
+### Rychlé metody
+Sofistikované třídící algoritmy, pracují v čase $$O(N log N). 
+
+**Merge Sort** <br>
+
+
+**Quick Sort** <br>
