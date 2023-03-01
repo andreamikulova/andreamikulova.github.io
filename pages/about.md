@@ -12,6 +12,10 @@ Jmenuji se Andrea Mikulová a jsem studentkou gymnázia. Mým momentálním cíl
 Ve volném čase ráda cestuju, tančím a povaluji se po čajovnách. Zajímám se také o psychologii a jazyky.
 {: .fs-5 .fw-300 }
 
+{: .warning }
+> Ostrava
+
+
 
 
 # O mém blogu

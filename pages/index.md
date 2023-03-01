@@ -14,9 +14,6 @@ Dokumentuji zde svou přípravu na Matfyz
 
 ---
 
-{: .warning }
-> Ostrava
-
 
 {%- include post-archive.html -%}
 
