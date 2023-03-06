@@ -14,23 +14,23 @@ Je to jakýsi teoretický princip řešení problému (oproti přesnému zápisu
 ## Vlastnosti algoritmů
 V užším smyslu se slovem algoritmus označují takové postupy, které splňují některé silnější požadavky:
 
-**Elementárnost** <br>
+**Elementárnost**\\
 Algoritmus se skládá z konečného počtu jednoduchých (elementárních) kroků.
 
-**Konečnost (finitnost)** <br>
+**Konečnost (finitnost)**\\
 Každý algoritmus musí skončit v *konečném* počtu kroků.
 
-**Obecnost (univerzálnost)** <br>
-Algoritmus neřeší jeden konkrétní problém (např. jak spočítat 3*5), ale obecnou třídu obdobných problémů (např. jak spočítat součin dvou celých čísel), má širokou množinu možných výstupů.
+**Obecnost (univerzálnost)**\\
+Algoritmus neřeší jeden konkrétní problém (např. jak spočítat 3\*5), ale obecnou třídu obdobných problémů (např. jak spočítat součin dvou celých čísel), má širokou množinu možných výstupů.
 
-**Determinovanost** <br>
-Algoritmus je determinovaný, pokud za stejných podmínek (pro stejné vstupy) poskytuje stejný výstup. 
+**Determinovanost**\\
+Algoritmus je determinovaný, pokud za stejných podmínek (pro stejné vstupy) poskytuje stejný výstup.
 
-**Determinismus** <br>
+**Determinismus**\\
 Každý krok algoritmu musí být *jednoznačně* a *přesně* definován; v každé situaci musí být naprosto zřejmé, co a jak se má provést, jak má provádění algoritmu pokračovat.
 
-**Výstup** <br>
- Algoritmus má alespoň jeden *výstup*, veličinu, která je v požadovaném vztahu k zadaným vstupům, a tím tvoří dpověď na problém, který algoritmus řeší. 
+**Výstup**\\
+ Algoritmus má alespoň jeden *výstup*, veličinu, která je v požadovaném vztahu k zadaným vstupům, a tím tvoří odpověď na problém, který algoritmus řeší.
 
 Některé problémy lze řešit více způsoby - různými algoritmy, které se mohou svým postupem značně lišit. Naší snahou je vybrat pro řešení problému takový algoritmus, který je:
 - nejefektivnější
@@ -41,7 +41,7 @@ Některé problémy lze řešit více způsoby - různými algoritmy, které se 
 ## Zápis algoritmů
 Algoritmy můžeme zapisovat slovně nebo graficky, například pomocí tzv. vývojových diagramů
 
-- **Slovní zápis** většinou se pužívá pro jednodušší postupy
+- **Slovní zápis** většinou se používá pro jednodušší postupy
 - **Grafický zápis** - využívá grafické symboly, které mají předem definovaný význam. Nejrozšířenější formy grafického zápisu jsou vývojové diagramy
 
 ## Vývojové diagramy
@@ -85,8 +85,8 @@ Algoritmus se navrhuje několika možnými způsoby:
 - **Zdola nahoru** - z elementárních kroků vytváříme prostředky, které nakonec umožní zvládnout požadovaný problém
 - **Kombinace obou** - obvyklý postup shora dolů doplníme "částečným krokem" zdola nahoru tím, že se například použijí knihovny funkcí, vyšší programovací jazyk nebo systém pro vytváření programů (CASE).
 
-## Paradigma návrhu algorimů
-Při návrhu algoritmů se uplatňuje množství přístupů, které abstrahují od konktrétní úlohy. K nejúživanějším metodám návrhu algortimů patří:
+## Paradigma návrhu algoritmů
+Při návrhu algoritmů se uplatňuje množství přístupů, které abstrahují od konkrétní úlohy. K nejúživanějším metodám návrhu algoritmů patří:
 - **Rozděl a panuj**
 - **Hladový algoritmus**
 - **Dynamické programování**
@@ -116,11 +116,11 @@ Existuje několik možností kritérií, podle kterých jazyky dělit.
 **Dle způsobu překladu a spuštění**:
 - kompilované programovací jazyky (např. C, Pascal, Java)
   - před spuštěním jdou nejprve kompletně přeloženy kompilátorem
-  - výsledkem je větš rychlost, ale také větší náročnost na správně napsaný kód
+  - výsledkem je větší rychlost, ale také větší náročnost na správně napsaný kód
 - interpretované programovací jazyky (např. BASIC, Python, Ruby, Perl)
   - interpretované jazyky, které se pouze interpretují (jsou pomalejší, většina jazyků má proto nějakou jinou možnost, pokud nejsou zpomalovány něčím jiným - shell)
   - interpretované jazyky, které se překládají, ale pouze do mezikódu, nikoli do strojového kódu (např. Java, Python)
-  - interpretované jazyky, které se po spuštění za běhu programu překládají do strojového kódu počítače (např. Java, pokud se použije systém JIT)
+  - interpretované jazyky, které se po spuštění za běhu programu překládají do strojového kódu počítače (např. Java, pokud se použije systém **JIT**)
 
 Toto členění není absolutní, řada programovacích jazyků existuje v implementaci jak interpretované, tak kompilované (Java). Mohou se kombinovat oba postupy, zdrojový kód je nejprve kompilován do mezikódu, který je poté interpretován.
 
@@ -142,8 +142,8 @@ Protikladem je jazyk Java, kde i jednoduchá funkce musí být vyjádřena formo
 ## Základní příkazy
 Mezi základní příkazy patří:
 - manipulace s daty v paměti (uložení či načtení hodnoty)
-- provedení nějakého numerického výpočtu (+,-,*,/)
-- vyhodnocení nějaké konktrétní podmínky a odpovídající větvení programu
+- provedení nějakého numerického výpočtu (+,-,\*,/)
+- vyhodnocení nějaké konkrétní podmínky a odpovídající větvení programu
 - opakování nějakého příkazu - *cyklus*
 - vstup a výstup programu
 
@@ -154,72 +154,72 @@ Podmínky zapisujeme pomocí klíčového slova *if*, za kterým následuje logi
 Pomocí cyklů můžeme jednoduše říct počítači, aby určitý blok kódu opakoval, kolikrát budeme chtít.
 
 #### For cyklus
-For cykly jsou cykly s předem daným počtem opakování. Řídící proměnné cyklu je přiřazena počáteční hodnota, která se zvyšuje v každém průběhu cyklu o krok 
+For cykly jsou cykly s předem daným počtem opakování. Řídící proměnné cyklu je přiřazena počáteční hodnota, která se zvyšuje v každém průběhu cyklu o krok
 
 #### While cyklus
 Dokud je splněna uvedená podmínka, cyklus pokračuje dál.
 
 ### Deklarace
 **Deklarace** je v informatice zápis, kterým se v počítačovém programu zavádí jméno (identifikátor) a zpravidla určuje jeho datový typ a další aspekty pro proměnné, funkce (procedury), konstanty apod. Překladač je tak informován o příslušném objektu. 
-V jazycích se silnou typovou kontrolou jako je Pascal, C nebo Ada, je nutné všechny objetky deklarovat dříve, než jsou použity v programu. 
+V jazycích se silnou typovou kontrolou jako je Pascal, C nebo Ada, je nutné všechny objekty deklarovat dříve, než jsou použity v programu.
 
 ### Funkce
 Funkci si můžeme představit jako nějakou pojmenovanou část kódu (posloupnost příkazů), kterou můžeme opakovaně použít tím, že ji v různých částech programu *zavoláme*. Funkci při zavolání předáme parametry, které se dostanou do její vnitřní paměti. 
 
-Funkce pak na základě obdržených parametrů může provádět nějaké operace, při kterých pracuje se svojí vnitřní pamětí (mluvíme tak o *lokální* paměti, změny v ní se neprojeví nikde mimo funkci). 
+Funkce pak na základě obdržených parametrů může provádět nějaké operace, při kterých pracuje se svojí vnitřní pamětí (mluvíme tak o *lokální* paměti, změny v ní se neprojeví nikde mimo funkci).
 
 ### Rekurze
 **Rekurze** je velmi důležitá programátorská technika. V podstatě znamená definování nějaké věci (ať už je to nějaký objekt či postup výpočtu) pomocí sebe sama.
 
 Rekurzivně může být například zadána nějaká datová struktura - př. stromy, spojový seznam. Kromě rekurzivních datových struktur se ale často potkáme i s rekurzivním postupem výpočtu programu, nejčastěji realizovaným ve formě funkce, která volá sama sebe - *rekurzivní funkce*.
 
-U rekurzivních funkcí je nejdůležitější věc definovat *koncovou podmínku*, při níž už se rekurze zastaví. Jinak by rekurze běžela donekonečna - došla by ji paměť. 
+U rekurzivních funkcí je nejdůležitější věc definovat *koncovou podmínku*, při níž už se rekurze zastaví. Jinak by rekurze běžela donekonečna - došla by ji paměť.
 
 
 ## Datový typ
 **Datový typ** definuje druh nebo význam hodnot, kterých smí nabývat *proměnná* (nebo konstanta). Datový typ je určen oborem hodnot a zároveň výpočetními operacemi, které lze s hodnotami tohoto typu provádět. Nemůže být určen pouze oborem hodnot, protože existují i datové typy lišící se pouze v operacích, které je s nimi možné provádět.
 
 ### Jednoduché datové typy
-Jednoduché datové typy jsou většinou přímo zabudovány do jazyka, přičemzž v běžně používaných jazycích nejsou parametrizovatelné. 
+Jednoduché datové typy jsou většinou přímo zabudovány do jazyka, přičemž v běžně používaných jazycích nejsou parametrizovatelné.
 
-**Ordinální datové typy** <br>
+**Ordinální datové typy**\\
 Hodnoty ordinálního typu tvoří lineárně uspořádanou množinu, kde pro každý prvek je přesně definovaný předchůdce i následovník.
 - **logická hodnota** (boolean) - nabývá hodnot *true* nebo *false*. Je výsledkem porovnání nebo logického výrazu. Jazyk C tento typ nedefinuje, místo toho používá 0 a jakékoli nenulové celé číslo.
 - **celé číslo** (integer) - 
 - **znak** (char, string) - 
 - **výčtový typ** (enumerate)
 
-**Neordinální datové typy** <br>
+**Neordinální datové typy**\\
 U neordinálních datových typů není jednoznačně určen předchůdce a následovník každé hodnoty.
 - **reálné číslo** (float, double, real)
 
-**Prázdný datový typ** <br>
+**Prázdný datový typ**\\
 - **void** - jedná se o specialitu jazyka C. Tento typ nenabývá žádných hodnot, může sloužit mimo jiné pro deklaraci funkcí
 
 ### Speciální funkce pro různé datové typy
 
 
 ## Třídění
-**Třídění** znamená, že data přerovnáváme do správného pořadí (např. od největšího po nejmenší). 
+**Třídění** znamená, že data přerovnáváme do správného pořadí (např. od největšího po nejmenší).
 
 Obvykle třídíme exempláře datové struktury typu pascalského záznamu (struktury, třídy apod.) V takové datové struktuře bývá obsažena jedna význačná položka - *klíč*, podle které se záznamy řadí, který je zároveň celočíselný. Budeme tedy třídit pole celých čísel. 
 
 ### Přímé metody
 Nejjednodušší třídící algoritmy patří do skupiny *přímých metod*. Jsou krátké, jednoduché a třídí přímo v poli (nepotřebujeme pole pomocné). Tyto algoritmy mají časovou složitost $$O(N2)$$. Jsou tedy použitelné pouze pokud vstupních dat není mnoho. 
 
-**Select Sort** <br>
+**Select Sort**
 Select sort je založen na opakovaném vybírání nejmenšího čísla z dosud nesetříděných čísel. 
 
-**Insert sort** <br>
+**Insert sort**
 
 
-**Bubble sort** <br>
+**Bubble sort**
 
 
 ### Rychlé metody
-Sofistikované třídící algoritmy, pracují v čase $$O(N log N). 
+Sofistikované třídící algoritmy, pracují v čase $$O(N log N).
 
-**Merge Sort** <br>
+**Merge Sort**
 
 
-**Quick Sort** <br>
+**Quick Sort**
