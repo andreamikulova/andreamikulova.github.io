@@ -52,15 +52,15 @@ $$\binom{n}{k}
 
 **Základní pravidla pro počítání s kombinačními čísly**:
 
-$$\binom{n}{0} = \frac{1}{1} = 1$$
-
-$$\binom{n}{1} = n$$
-
-$$\binom{n}{n} = 1$$
-
-$$\binom{n}{n-1} = n$$
-
-$$\binom{n}{k} + \binom{n}{k+1} = \binom{n+1}{k+1}$$
+$$
+\begin{align}
+    \binom{n}{0} &= \frac{1}{1} = 1\\
+    \binom{n}{1} &= n\\
+    \binom{n}{n} &= 1\\
+    \binom{n}{n-1} &= n\\
+    \binom{n}{k} + \binom{n}{k+1} &= \binom{n+1}{k+1}
+\end{align}
+$$
 
 ### Kombinace s opakováním
 Je to neuspořádaná $$k$$-tice vybraná z n prvků, kde se prvky mohou opakovat.
@@ -84,8 +84,25 @@ Počet všech variací s opakováním značíme $$V'(k,n)$$ a platí:
 
 $$V'(k,n) = n^k$$
 
+## Pascalův trojúhelník
+
+$$
+\begin{array}{c}
+1 \\
+1 \quad\, 1 \\
+1 \quad\, 2 \quad\, 1 \\
+1 \quad\, 3 \quad\, 3 \quad\, 1 \\
+1 \quad\, 4 \quad\, 6 \quad\, 4 \quad\, 1 \\
+1 \quad\, 5 \quad 10 \quad 10 \quad 5 \quad\, 1 \\
+1 \quad\, 6 \quad 15 \quad 20 \quad 15 \quad 6 \quad\, 1 \\
+1 \quad\, 7 \quad 21 \quad 35 \quad 35 \quad 21 \quad 7 \quad\, 1 \\
+\vdots
+\end{array}
+$$
+
 # Binomická věta
 Určuje rozvoj $$n$$-té mocniny dvojčlenu.
 
-$$(a+b)^n = \sum \binom{n}{i}a^{n-i}b^i$$
+$$(a+b)^n = \sum^{n}_{i=1} \binom{n}{i}a^{n-i}b^i$$
+
 
