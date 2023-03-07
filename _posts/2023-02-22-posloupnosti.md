@@ -20,7 +20,7 @@ U posloupností nehovoříme o hodnotě funkce v bodě $$n$$, ale o $$n$$-tém �
 1. Vzorcem, pro $$n$$-tý člen
 - značení mírně odlišné od funkcí: $$(a_n)_{n=1}^\infty$$
 
-2. Výpisem prvních několika členů: $$a_n: -4, -2, -4, -2, ...$$
+2. Výpisem prvních několika členů: $$a_n: -4, -2, -4, -2, \ldots$$
 
 ## Rekurentní vyjádření 
 Rekurentní vzorec určuje člen posloupnosti pomocí znalosti jednoho nebo více předcházejících členů. Součástí každého rekurentního vzorce musí být zadání prvního, případně několika prvních členů posloupnosti. Nevýhodou zadání pomocí rekurentního vzorce je to, že libovolný člen posloupnosti můžeme určit jen tehdy, pokud známe členy předcházející.
@@ -80,7 +80,7 @@ V aritmetické posloupnosti $$(a_n)_{n=1}^\infty$$ s diferencí $$d$$ platí pro
 $$a_s = a_r + (s-r)d$$
 
 ### Součet prvních $$n$$ členů aritmetické posloupnosti
-Pro součet $$s_n$$ prvních $$n$$ členů aritmetické posloupnosti $$(a_n)_{n=1}^\infty$$, tj. pro $$a_1 + a_2 + ... + a_n$$, platí:
+Pro součet $$s_n$$ prvních $$n$$ členů aritmetické posloupnosti $$(a_n)_{n=1}^\infty$$, tj. pro $$a_1 + a_2 + \ldots + a_n$$, platí:
 
 $$s_n = \frac{a_1 + a_n}{2} \cdot n$$
 
