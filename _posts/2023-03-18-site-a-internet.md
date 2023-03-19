@@ -8,13 +8,13 @@ category: Informatika
 ---
 
 # Počítačová síť
-**Počítačová síť** je spojení dvou a více počítačů tak, aby mohli navzájem sdílet své prostředky. 
-Zahrnuje jak hardwarové prostředky (počítače, kabely a technická zařízení), softwarové prostředky (např. programy, pracující na základě síťových protokolů), tak i technické prostředky, které zabezpečují spojení a výměnu informací mezi počítači. 
+**Počítačová síť** je spojení dvou a více počítačů tak, aby mohli navzájem sdílet své prostředky.
+Zahrnuje jak hardwarové prostředky (počítače, kabely a technická zařízení), softwarové prostředky (např. programy, pracující na základě síťových protokolů), tak i technické prostředky, které zabezpečují spojení a výměnu informací mezi počítači.
 
 **Pakety** (Datové zprávy)
 - základní jednotka informačního přenosu ve všech moderních počítačových sítích
 - efektivní a spolehlivý přenos dlouhých zpráv
-- přenos dat technologií přepojování paketů 
+- přenos dat technologií přepojování paketů
 - každý paket se skládá z řídících a uživatelských dat
 
 **Sdílení** - poskytnutí různých zařízení jednou pracovní stanici druhé (vstupních a výstupních zařízení, ukládacích zařízení, připojení k internetu, datových souborů). Je připojeno přes nějaké rozhraní, např. USB.
@@ -38,19 +38,19 @@ obrázek
 obrázek 
 
 ### Kruhová topologie uspořádání počítačů (RING)
-- představuje zapojení počítačů tak, že první je propojený s druhým, ten střetím atd., až poslední opět s prvním - čímž uzavírají kruh
+- představuje zapojení počítačů tak, že první je propojený s druhým, ten s třetím atd., až poslední opět s prvním - čímž uzavírají kruh
 - datové zprávy (pakety) se předávají postupně jedním směrem mezi stanicemi - vysílá vždy stanice, která vlastní token (pešek)
 - k zamezení poruchových stavů na optických kabelech se používá dvojité vedení orientované opačnými směry, které v případě poruchy stanice nebo přerušení optického spojení je schopno přemostit místo poruchy opačným směrem (FDDI)
 
 obrázek
 
-## Dělení sítí podle rozlehlosti 
+## Dělení sítí podle rozlehlosti
 
 ### PAN (Personal Area Network - osobní síť)
 - tvoří ji počítače umístěné v těsné blízkosti nebo jiná zařízení (telefony, tiskárny, atd.)
 - pro přenos údajů se nejčastěji využívá bezdrátové připojení (IrDA, Bluetooth, atd.)
 - hlavním cílem sítě je přenos a synchronizace údajů
-- přenosová rychlost obvykle dosajuje desítky Mb/s
+- přenosová rychlost obvykle dosahuje desítky Mb/s
 obrázek
 
 ### LAN (Local Area Network - lokální síť)
@@ -142,13 +142,13 @@ Mezi technické (hardwarové) prvky sítě můžeme zařadit následující prvk
 ### Pasivní prvky
 
 **Koaxální kabel**
-- tvořil jej vnitřní vodič (měděný nebo postřibřený), kolem kterého je nanesena izolující vrstva dialektrika, naní je naneseno vodivé opletení (stínění), které je překryto další izolující vrstvou (vnějším pláštěm)
+- tvořil jej vnitřní vodič (měděný nebo postříbřený), kolem kterého je nanesena izolující vrstva dialektrika, na ní je naneseno vodivé opletení (stínění), které je překryto další izolující vrstvou (vnějším pláštěm)
 - byl zakončen BNC konektorem, který se zasunuje do T konektoru a do síťové karty
 - používaly se pro sběrnicovou topologii sítě, kde rychlost přenášených dat byla 10 Mb/s
 - vlnová impedance kabelu byla 50 $$\Omega$$, označení RG-59
 
 **Kroucená dvoulinka (twisted pair cable - TP cable)**
-- je tvořena páry vodičů, které jsou po své délce pravidělným způsobem zkrouceny
+- je tvořena páry vodičů, které jsou po své délce pravidelným způsobem zkrouceny
 - kroucení vodičů zlepšuje elektrické vlastnosti kabelu
 - minimalizuje rušení mezi jednotlivými páry vodičů a snižuje se interakce mezi dvoulinkou a jejím okolím
 - druhy TP kabelů:
@@ -189,12 +189,12 @@ Mezi technické (hardwarové) prvky sítě můžeme zařadit následující prvk
 
 **Směrovač (Router)**
 - je to zařízení, které provádí směrování paketů v rozlehlé síti WAN (např. při připojení k internetu)
-- propujuje počítače lokální sítě s počítači , které se nacházejí v jiných sítích
+- propojuje počítače lokální sítě s počítači , které se nacházejí v jiných sítích
 - pracuje s logickými IP adresami (IP4 nebo IP6)
 - obsahuje tzv. směrovací (routovací) tabulku, ve které jsou zaznamenané informace o dalších směrovačích, které přísluší jiným sítím
 - pro každý příchozí paket najde ve směrovací tabulce podle IP adresy cílové sítě informaci o tom, kterému sousednímu směrovači má paket odeslat
 
-**Přístupový bod (Acces point - AP)**
+**Přístupový bod (Access point - AP)**
 - přístupový bod komunikuje s bezdrátovými zařízeními, zabezpečuje směřování paketů mezi bezdrátovými zařízeními a také mezi kabelovou sítí
 - přístup k AP může být zabezpečen pomocí filtrace MAC adres síťových zařízení, snažících se o připojení nebo přístupového klíče atd.
 
@@ -221,7 +221,7 @@ obrazek
 - definuje fyzické, elektrické, mechanické a funkční parametry technických prostředků pro komunikaci v síti: např. kabely, konektory, ukončovací prvky atd.
 
 **Linková vrstva**
-- provádí přenos údajů pomocí komunikačního kanálu, pracuje s fyzickou adresou (MAC) síťových karet, kontroluje jejich zdrojové a cílové adresy, odesílá a příjímá datové pakety podle těchto adres atd.
+- provádí přenos údajů pomocí komunikačního kanálu, pracuje s fyzickou adresou (MAC) síťových karet, kontroluje jejich zdrojové a cílové adresy, odesílá a přijímá datové pakety podle těchto adres atd.
 
 **Síťová vrstva**
 - definuje protokoly pro směrování dat mezi počítači nebo sítěmi (tzv. uzly), mezi nimiž není přímé spojení.
@@ -248,7 +248,7 @@ Je členěna do čtyř vrstev (na rozdíl od referenčního modelu OSI/ISO):
 3. síťová vrstva
 4. vrstva síťového rozhraní
 
-obrazek 
+obrazek
 
 **Internetová komunikace a přenos dat využívá architekturu TCP/IP.**
 
@@ -260,7 +260,7 @@ obrazek
 - **IP adresa** jednoznačně identifikuje síťové rozhraní v síti, která používá IP (internetový protokol). V současné době se používá IP6, která je 128bitová, dříve používané IP4 jsou již skoro vyčerpány
 - **Internetová doména (doménové jméno)** - je jednoznačné jméno (identifikátor) sítě nebo počítače, které jsou připojené k internetu. Označují se řádem:
   - 1.řád (top-level) domény - generická (určitá kategorie uživatelů - např. .com (komerční), gov (organizace), mil (armáda)) nebo národní (cz, sk, de, us, ...)
-  - 2.řád domén - reprezentují zpravidla konktrétního uživatele nebo obsah domény, můžeme je objednat u registrátorů, kteří zabezpečují jejich zakoupení u národního správce domény (tzv. NIC - Network Information Centre) příslušné země
+  - 2.řád domén - reprezentují zpravidla konkrétního uživatele nebo obsah domény, můžeme je objednat u registrátorů, kteří zabezpečují jejich zakoupení u národního správce domény (tzv. NIC - Network Information Centre) příslušné země
   - domény vyššího řádu - blíže specifikují a doplňují nabízený obsah a jejich správcem je standardně majitel domény 2. řádu
   - možnost používat doménový alias
 - **MAC adresa (Media Access Control)** - identifikátor síťového zařízení. Je přiřazována síťové kartě při výrobě (fyzická adresa). Skládá se z 48bitů (šestice dvojciferných hexadecimálních čísel oddělených pomlčkami nebo dvojtečkami).
@@ -277,7 +277,7 @@ obrazek
 Vývoj komunikačních sítí můžeme datovat až k poštovní síti, telegrafní síti (budování telegrafních sloupů a drátových rozvodů, později bezdrátové) a telefonní síti.
 
 1946 - první elektronkový počítač ENIAC, 1969 - první počítačová síť ARPAnet; určená pro účely americké armády a došlo k propojení 4 amerických univerzit.
-Projekt byl financován ministerstvem obrany USA, dúvodů pro vznik počítačové sítě bylo několik:
+Projekt byl financován ministerstvem obrany USA, důvodů pro vznik počítačové sítě bylo několik:
 - experiment pro využití přepojování paketů v síti
 - umožnit vzdálený přístup k počítačům
 - úspěšná komunikace v případě jaderné války
@@ -314,13 +314,13 @@ Internet pracuje na základě protokolů TCP/IP.
 - TCP - protokol transportní vrstvy zabezpečuje spojení a kontrolu doručení údajů (paketů)
 - IP - protokol síťové vrstvy zajišťuje vlastní přenos, přičemž cíl identifikuje prostřednictvím jeho IP adresy a portu (služby, aplikace), přes který komunikuje
 - Prostřednictvím adresy IP4 (32b) nebo dnes adresy IP6 (128b) můžeme identifikovat počítač v rámci sítě WAN nebo LAN
-- S IP adresou však pracují směřovače (routery) na síťové vrstvě komunikačního modelu
+- S IP adresou však pracují směrovače (routery) na síťové vrstvě komunikačního modelu
 - Uživatelé pracují s doménovými jmény, které jsou DNS servery převáděny na adresy IP
 
 **Překlad doménových jmen na IP adresy a opačně**
-1. Zajišuje systém DNS (Domain Name System), tvoří jej soustava navzájem spolupracujících serverů s databázemi obsahujícími údaje o doménách a přiřazených IP adresách
+1. Zajišťuje systém DNS (Domain Name System), tvoří jej soustava navzájem spolupracujících serverů s databázemi obsahujícími údaje o doménách a přiřazených IP adresách
 2. Po zadání adresy uživatelem se tato adresa odešle na DNS server, který pro ni vyhledá IP adresu cílového počítače
-3. IP adresa se vrací jako výsledek dotazu a jejím základě, směřovače sestaví cestu k adresátovi, uživatelův počítač jej kontaktuje
+3. IP adresa se vrací jako výsledek dotazu a jejím základě, směrovače sestaví cestu k adresátovi, uživatelův počítač jej kontaktuje
 
 **Adresa URL (Uniform Resource Locator)**
 - Celosvětový standard 
