@@ -22,27 +22,33 @@ Zahrnuje jak hardwarové prostředky (počítače, kabely a technická zařízen
 ## Dělení sítí podle topologie
 
 ### Sběrnicová topologie uspořádání počítačů (BUS)
+
+![Sběrnicová_topologie](/assets/images/sbernice.jpg)
+
 - je jednoduchá
 - účastníci sítě jsou připojeni na společné koaxiální vedení (tenký koaxiální kabel RG58/50 $$\Omega$$), prostřednictvím odbočovacích prvků (T-konektory BNC)
 - na konci sběrnice musí být ukončovací člen - terminátor (50 $$\Omega$$)
 - ve sběrnicové topologii se nemusí vyskytovat centrální nebo řídící stanice (server)
 - datové zprávy (pakety), se šíří všemi směry a všechny stanice k nim mají přístup
 
-obrázek
 
 ### Hvězdicová topologie uspořádání počítačů (STAR)
+
+![Hvězdicová_topologie](/assets/images/hvezda.png)
+
 - je tvořena uzly, které jsou připojeny do jednoho centrálního bodu (většinou kroucenou dvojlinkou UTP), do přepínače (SWITCH) nebo dříve do rozbočovače (HUB)
 - výhodou této topologie je, že při výpadku jednoho segmentu sítě, ostatní uzly pracují bez problémů dále
 - nevýhodou je fatální porucha centrálního bodu (switche nebo hubu), potom nepracuje žádný z uzlů této sítě, které jsou k tomuto bodu připojeny kabelem UTP
 
-obrázek 
 
 ### Kruhová topologie uspořádání počítačů (RING)
+
+![Kruhová_topologie](/assets/images/kruh.jpg)
+
 - představuje zapojení počítačů tak, že první je propojený s druhým, ten s třetím atd., až poslední opět s prvním - čímž uzavírají kruh
 - datové zprávy (pakety) se předávají postupně jedním směrem mezi stanicemi - vysílá vždy stanice, která vlastní token (pešek)
 - k zamezení poruchových stavů na optických kabelech se používá dvojité vedení orientované opačnými směry, které v případě poruchy stanice nebo přerušení optického spojení je schopno přemostit místo poruchy opačným směrem (FDDI)
 
-obrázek
 
 ## Dělení sítí podle rozlehlosti
 
@@ -51,7 +57,7 @@ obrázek
 - pro přenos údajů se nejčastěji využívá bezdrátové připojení (IrDA, Bluetooth, atd.)
 - hlavním cílem sítě je přenos a synchronizace údajů
 - přenosová rychlost obvykle dosahuje desítky Mb/s
-obrázek
+
 
 ### LAN (Local Area Network - lokální síť)
 - je počítačová síť, kterou využívají domácnosti, podniky, instituce, školy, atd.
@@ -75,10 +81,17 @@ kteří za umožnění přístupu do ní obvykle platí provozovateli této sít
 ## Dělení sítí podle role
 
 ### Client-to-server
+
+![Client_to_server](/assets/images/klient_server.png)
+
+
 - je architektura založena na dvou typech počítačů, a to na **serveru**, který poskytuje služby nebo údaje tzv. podřazeným počítačům označovaným jako **klienti** (pracovní stanice nebo uzly)
 - na jednom počítači může běžet i více serverových služeb a v rámci sítě může pracovat několik stanic jako server
 
 ### Peer-to-peer
+
+![Peer_to_peer](/assets/images/peer_to_peer.png)
+
 - je označení pro počítačovou síť, ve které jsou všechny pracovní stanice rovnocenné a každá z nich může, ale nemusí, vyčlenit část svých prostředků i ostatním stanicím (tiskárny, disková kapacita atd.)
 - výhodou tohoto zapojení je, že v případě poruchy libovolné stanice mohou ostatní bez omezení pokračovat v práci
 
@@ -142,6 +155,9 @@ Mezi technické (hardwarové) prvky sítě můžeme zařadit následující prvk
 ### Pasivní prvky
 
 **Koaxální kabel**
+
+![Koaxální_kabel](/assets/images/koaxalni_kabel.png)
+
 - tvořil jej vnitřní vodič (měděný nebo postříbřený), kolem kterého je nanesena izolující vrstva dialektrika, na ní je naneseno vodivé opletení (stínění), které je překryto další izolující vrstvou (vnějším pláštěm)
 - byl zakončen BNC konektorem, který se zasunuje do T konektoru a do síťové karty
 - používaly se pro sběrnicovou topologii sítě, kde rychlost přenášených dat byla 10 Mb/s

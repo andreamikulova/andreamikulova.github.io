@@ -55,17 +55,31 @@ Každý zápis vývojového diagramu musí začínat značkou *Start* a končit 
 ### Vstup a výstup dat
 Data jsou digitalizované informace. Mohou to být čísla, texty, písmena apod. Většinou zadáme vstupní proměnné do vzorců nebo hodnoty, s nimiž pracujeme v průběhu programu.
 
+![Vstup_vystup](/assets/images/data.png)
+
 ### Příkaz
 V obecném pojetí může jít o jakýkoli příkaz, většinou jde o matematické operace či přiřazení, např. $$x:= a+ b$$
+
+![Příkaz](/assets/images/prikaz.png)
 
 ### Rozhodování (větvení)
 Pro značku rozhodování můžeme použít jen výraz, na která lze odpovědět *ANO* nebo *NE*
 
+![Rozhodovani](/assets/images/rozhodovani.png)
+
 ### Příkaz cyklu
-Používá se pro cyklus známým počtem opakování, např. *for i in range(20):*
+Používá se pro cyklus známým počtem opakování, např. *for i in range(20):* Z programátorského hlediska se jedná
+o podmínku. Pomocí podmínek se obvykle zapisují i cykly, kde jednu větev na
+konci navedeme zpět na začátek podmínky, čímž vzniká smyčka.
+
+![Cyklus](/assets/images/cykly.png)
 
 ### Spojky
-Používají v případě, že se vývojový diagram nevejda na jednu stránku a pokračuje na další straně. Pak je vhodné pomocí spojek označit místo návaznosti pomocí čísla.
+Používají v případě, že se vývojový diagram nevejda na jednu stránku a pokračuje na další straně. Pak je vhodné pomocí spojek označit místo návaznosti pomocí čísla. Značí se kolečkem. 
+
+**Příklad algoritmu ověření funkčnosti žárovky zapsaného jako vývojový diagram:**
+
+![Vývojový_diagram_žárovka](/assets/images/vd_zarovka.png)
 
 ## Algoritmizace
 *Algoritmizace* je proces, kterým lze prostřednictvím algoritmu řešit nějaký problém
