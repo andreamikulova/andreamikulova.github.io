@@ -20,16 +20,21 @@ Zahrnuje jak hardwarové prostředky (počítače, kabely a technická zařízen
 **Sdílení** - poskytnutí různých zařízení jednou pracovní stanici druhé (vstupních a výstupních zařízení, ukládacích zařízení, připojení k internetu, datových souborů). Je připojeno přes nějaké rozhraní, např. USB.
 
 ## Dělení sítí podle topologie
+Je důležité rozlišovat 2 druhy:
+1. Fyzická topologie - popusije reálnou konstrukci sítě, jednotlivé uzly a jak jsou zařízení rozmístěna a pospojována kabely
+2. Logická topologie - jak data sítí protákají (nemusí kopírovat fyzickou)
+
+Nejjednoduší je přímé spojení dvou PC
 
 ### Sběrnicová topologie uspořádání počítačů (BUS)
 
 ![Sběrnicová_topologie](/assets/images/sbernice.jpg)
 
-- je jednoduchá
-- účastníci sítě jsou připojeni na společné koaxiální vedení (tenký koaxiální kabel RG58/50 $$\Omega$$), prostřednictvím odbočovacích prvků (T-konektory BNC)
+- je jednoduchá, ale zastaralá - neefektivně řešené vysílání
+- jedna centrální linka a na ní napojeny všechny počítače - účastníci sítě jsou připojeni na společné koaxiální vedení (tenký koaxiální kabel RG58/50 $$\Omega$$), prostřednictvím odbočovacích prvků (T-konektory BNC)
 - na konci sběrnice musí být ukončovací člen - terminátor (50 $$\Omega$$)
 - ve sběrnicové topologii se nemusí vyskytovat centrální nebo řídící stanice (server)
-- datové zprávy (pakety), se šíří všemi směry a všechny stanice k nim mají přístup
+- datové zprávy (pakety), se šíří všemi směry a všechny stanice k nim mají přístup $$\rightarrow$$ kolize a potřeba opakovat vysílání (u velkých sítí řešeno Bridgem)
 
 
 ### Hvězdicová topologie uspořádání počítačů (STAR)
@@ -37,39 +42,62 @@ Zahrnuje jak hardwarové prostředky (počítače, kabely a technická zařízen
 ![Hvězdicová_topologie](/assets/images/hvezda.png)
 
 - je tvořena uzly, které jsou připojeny do jednoho centrálního bodu (většinou kroucenou dvojlinkou UTP), do přepínače (SWITCH) nebo dříve do rozbočovače (HUB)
-- výhodou této topologie je, že při výpadku jednoho segmentu sítě, ostatní uzly pracují bez problémů dále
+- u dnešního Ethernetu prakticky jediná využívaná
+- výhodou této topologie je, že při výpadku jednoho segmentu sítě, ostatní uzly pracují bez problémů dále, může vysílat i více PC najednou
+- nevýhoda: pokud selže centrální prvek, spadne celá síť
+- dvojitá hvězda - 2 switche jako záloha
 - nevýhodou je fatální porucha centrálního bodu (switche nebo hubu), potom nepracuje žádný z uzlů této sítě, které jsou k tomuto bodu připojeny kabelem UTP
-
+- rozšířená hvězda - více hvězd spojených centrálními prvky (subsítě)
 
 ### Kruhová topologie uspořádání počítačů (RING)
 
 ![Kruhová_topologie](/assets/images/kruh.jpg)
 
-- představuje zapojení počítačů tak, že první je propojený s druhým, ten s třetím atd., až poslední opět s prvním - čímž uzavírají kruh
-- datové zprávy (pakety) se předávají postupně jedním směrem mezi stanicemi - vysílá vždy stanice, která vlastní token (pešek)
+- představuje zapojení počítačů tak, že první je propojený s druhým, ten s třetím atd., až poslední opět s prvním - čímž vytváří kruh, uzavřen jiným zařízením (hub, router)
+- datové zprávy (pakety) se předávají postupně jedním směrem mezi stanicemi - každý PC může posílat paket jen nejbližšímu sousedovi - vysílá vždy stanice, která vlastní token (pešek, právo vysílat)
+- nevýhody: velmi komplikované zapojení nebo vypojení PC z kruhu, při výpadku jednoho PC vypadne celá síť (ne nutně)
 - k zamezení poruchových stavů na optických kabelech se používá dvojité vedení orientované opačnými směry, které v případě poruchy stanice nebo přerušení optického spojení je schopno přemostit místo poruchy opačným směrem (FDDI)
+- je řešen 2 technologiemi:
+1. Token ring
+- v síti jeden náhodně vybraný PC, který celou síť moderuje (nikdo nesmí držet token příliš dlouho)
+- fyzická topologie hvězda (centrum MAU - media access unit)
+- v praxi síť dělena - více MAU
+- logický kruh je pak vytvořen tak, že PC přijde z MAU paket a když není pro něj tak ho tam pošle zpátky
+- obrázek
+2. FDDI
+- fyzicky i logicky kruh
+- robustnější, pro větší sítě (rekordní rozloha až 200 km)
+- jako první využívala optiku (jednosměrná, proto kruh)
+- používá dva kruhy (jeden záložní)
+- concentrator - oddělení jedno (SAS) a dvoukruhové (DAS) sítě (DAS drahý)
 
+### MESH
+- full mesh - každý s každým (spíše u routerů páteřních sítí)
+- partial mesh - některé spojení přímo jiné ne
 
 ## Dělení sítí podle rozlehlosti
+Toto dělení je velmi subjektivní, dnes už v praxi málo využíváno. Bezvýznamné - neovlivňuje tok dat.
 
 ### PAN (Personal Area Network - osobní síť)
 - tvoří ji počítače umístěné v těsné blízkosti nebo jiná zařízení (telefony, tiskárny, atd.)
-- pro přenos údajů se nejčastěji využívá bezdrátové připojení (IrDA, Bluetooth, atd.)
+- pro přenos údajů se nejčastěji využívá bezdrátové připojení (IrDA, Bluetooth, atd.), u internetu se prakticky nevyužívá
 - hlavním cílem sítě je přenos a synchronizace údajů
 - přenosová rychlost obvykle dosahuje desítky Mb/s
 
 
 ### LAN (Local Area Network - lokální síť)
-- je počítačová síť, kterou využívají domácnosti, podniky, instituce, školy, atd.
+- je počítačová síť, kterou využívají domácnosti, podniky, instituce, školy, atd., typické je sdílení prostředků mezi počítači (tiskárny)
 - pracuje v režimu neustálého spojení
 - maximální vzdálenosti mezi počítači jsou stovky metrů až několik kilometrů
 - většinou jsou umístěné v jedné nebo více blízkých budovách 
 - rychlost přenosu dat dosahuje řádově Gb/s
+- technologie: přepínaný ethernet nebo Wi-Fi
 
 ### MAN (Metropolitan Area Network - městská, metropolitní síť)
-- je speciálním případem LAN, pro kterou je charakteristická větší rozloha jako pro standardní LAN
+- je speciálním případem LAN (několik málo spojených LAN, často optikou) , pro kterou je charakteristická větší rozloha jako pro standardní LAN
 - zatímco klasická LAN je většinou využívána zaměstnanci vlastníka sítě, MAN slouží velkému množství různých uživatelů, 
 kteří za umožnění přístupu do ní obvykle platí provozovateli této sítě
+- např. Pražská akademická síť PASNET (sdružující VŠ)
 
 ### WAN (Wide Area Network - rozlehlá síť)
 - používá prostředky pro dálkový přenos údajů a nevyžaduje neustálé spojení
@@ -78,23 +106,42 @@ kteří za umožnění přístupu do ní obvykle platí provozovateli této sít
 - rychlost WAN závisí na typu spojení a pohybuje se v řádu desítek Gb/s
 - nejznámější sítí WAN je internet
 
+### GAN (Global Area Network - globální)
+- Internet = největší WAN = GAN
+
 ## Dělení sítí podle role
 
 ### Client-to-server
 
 ![Client_to_server](/assets/images/klient_server.png)
 
-
 - je architektura založena na dvou typech počítačů, a to na **serveru**, který poskytuje služby nebo údaje tzv. podřazeným počítačům označovaným jako **klienti** (pracovní stanice nebo uzly)
 - na jednom počítači může běžet i více serverových služeb a v rámci sítě může pracovat několik stanic jako server
+- je základem internetu (DNS, HTTP, E-mail)
+- s rostoucím počtem klesá kapacita
+- výhody: snadná správa, údržba a bezpečnost
 
 ### Peer-to-peer
 
 ![Peer_to_peer](/assets/images/peer_to_peer.png)
 
 - je označení pro počítačovou síť, ve které jsou všechny pracovní stanice rovnocenné a každá z nich může, ale nemusí, vyčlenit část svých prostředků i ostatním stanicím (tiskárny, disková kapacita atd.)
+- komunikují přímo
+- v praxi je nastavení takové architektury komplikované, proto se používá server, který jen nastaví podmínky
+- hlavní výhodou je, že s rostoucím počtem uživatelů roste kapacita sítě, použití u sdílení souborů
 - výhodou tohoto zapojení je, že v případě poruchy libovolné stanice mohou ostatní bez omezení pokračovat v práci
+- typický zástupce je BitTorrent - server se označuje jako tracker, ten (jako server) soubor rozdělí na části a pošle klientům, ti si ji mezi sebou vymění
 
+## Dělení sítí podle vlastnictví
+
+### Veřejná datová síť
+- síť zřízená společností, která zajišťuje přenos dat mezi klienty tj. zřídila síť, aby po ní (po zaplacení) mohli komunikovat klienti
+
+### Privátní síť
+- síť buduje jedna organizace a ta za ni zodpovídá a používá je, může ale nemusí být připojen k internetu; používá se zvláštní rozsah IP adres; připojení ven je realizováno přes NAT (tj. celá síť vystupuje jako jeden homogenní celek)
+
+### Virtuální privátní síť
+- počítače v různých sítích spolu komunikují pomoci typicky šifrovaného protokolu - tváří se jako privátní síť
 
 ## Software počítačových sítí
 
@@ -187,23 +234,39 @@ Mezi technické (hardwarové) prvky sítě můžeme zařadit následující prvk
 1. Rozhraní zajišťující přenos dat z počítače do sítě a naopak podle pravidel daných síťovými standardy (přístupová metoda, síťový protokol)
 2. Technicky mohou být řešeny pro koaxální kabel a BNC konektor, kroucenou dvoulinkou (UTP, STP), bezdrátové rozhraní (pro kmitočet 2.4 GHz nebo 5 GHz) nebo optický kabel
 
+**Bridge**
+- linková (2.) vrstva ISO/OSI = pracuje na základě MAC adres (tabulka MAC -> port)
+- 2 využítí:
+  - spojuje 2 sítě s různými technologiemi (např. TR a Ethernet)
+  - rozděluje Ethernet BUS na více kolizních domén (méně PC = méně kolizí)
+- pokud nemá záznam, posílá všude; pokud příjemce a odesílatel leží v jedné síti nedělá nic
+- dnes nepoužívaný - nahrazen switchi
+
 **Opakovač (repeater)**
+- první vrstva OSI/ISO
 - je jednoduchý aktivní síťový prvek
-- jeho úkolem je přijímat poškozený signál a opravený, zesílený a správně časovatelný jej poslat dále
+- jeho úkolem je přijímat poškozený signál a opravený, zesílený a správně časovatelný jej poslat dále - především u sběrnicové, nelze mít dlouhý páteřní kabel kvůli zeslabování signálu (reapter data **zesiluje**)
 - umožňuje zvýšit dosah přenosového kanálu bez ztráty kvality a obsahu signálu
 - nedokáže filtrovat data (pakety), proto je rozesílá všem počítačovým stanicím v dané síti
+- pošle data z jednoho portu na druhý, nepoužívá se
 
 **Rozbočovač (Hub, Koncentrátor)**
-- funguje na principu opakovače, veškerá data, která přicházejí od jednoho koncového uzlu okamžitě rozesílá všem ostatním zařízením
+- funguje na principu opakovače (multiport repeater), veškerá data, která přicházejí od jednoho koncového uzlu okamžitě rozesílá všem ostatním zařízením
 - u větších dochází ke zbytečnému přetěžování těch zařízení, kterým data ve skutečnosti nejsou určena
+- hvězdicová topologie
 
 **Přepínač (Switch)**
+- multiport bridge
+- linková vrstva (tabulka CAM (contents addressable memory))
+- základ zapojení do hvězdy
 - je velmi podobný rozbočovači (HUBu) s tím rozdílem, že se chová jako "inteligentní" HUB
-- analyzuje pakety a posílá je do té větve sítě, kde se nachází cílová adresa (filtrace paketů podle MAC adreasy)
+- analyzuje pakety a posílá je do té větve sítě, kde se nachází cílová adresa (filtrace paketů podle MAC adresy)
 - tím dochází k menšímu zatížení daného segmentu sítě, než v případě použití rozbočovačů
 - switch může plnit funkci tzv. mostu (bridge), dokáže fyzicky propojit několik částí (segmentů), lokální (místní) sítě a řídit komunikaci mezi nimi
+- je taky základem technologie přepínaného ethernetu (náhrada za BUS)
 
 **Směrovač (Router)**
+- 3.síťová vrstva - pracuje na základě 
 - je to zařízení, které provádí směrování paketů v rozlehlé síti WAN (např. při připojení k internetu)
 - propojuje počítače lokální sítě s počítači , které se nacházejí v jiných sítích
 - pracuje s logickými IP adresami (IP4 nebo IP6)
