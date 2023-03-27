@@ -193,7 +193,7 @@ kteří za umožnění přístupu do ní obvykle platí provozovateli této sít
 - o deset let později Linus Torvalds vytvořil jádro systému
 
 
-## Hardware počítačových sítí 
+## Hardware počítačových sítí
 Mezi technické (hardwarové) prvky sítě můžeme zařadit následující prvky:
 
 1. Pasivní prvky - zajišťují pouze přenos dat - patří sem kabely, konektory, ukončovací prvky (terminátory)
@@ -336,9 +336,9 @@ obrazek
 ### Důležité pojmy
 
 - **IANA (Internet Assigned Numbers Authority)** - je organizace, která dohlíží celosvětově na přidělování IP adres a spravuje kořenové DNS
-- **IP adresa** jednoznačně identifikuje síťové rozhraní v síti, která používá IP (internetový protokol). V současné době se používá IP6, která je 128bitová, dříve používané IP4 jsou již skoro vyčerpány
+- **IP adresa** jednoznačně identifikuje síťové rozhraní v síti, která používá IP (internetový protokol). V současné době se používá IPv6, která je 128bitová, dříve používané IPv4 jsou již skoro vyčerpány
 - **Internetová doména (doménové jméno)** - je jednoznačné jméno (identifikátor) sítě nebo počítače, které jsou připojené k internetu. Označují se řádem:
-  - 1.řád (top-level) domény - generická (určitá kategorie uživatelů - např. .com (komerční), gov (organizace), mil (armáda)) nebo národní (cz, sk, de, us, ...)
+  - 1.řád (top-level) domény - generická (určitá kategorie uživatelů - např. `.com` (komerční), `.gov` (organizace), `.mil` (armáda)) nebo národní (`.cz`, `.sk`, `.de`, `.us`, ...)
   - 2.řád domén - reprezentují zpravidla konkrétního uživatele nebo obsah domény, můžeme je objednat u registrátorů, kteří zabezpečují jejich zakoupení u národního správce domény (tzv. NIC - Network Information Centre) příslušné země
   - domény vyššího řádu - blíže specifikují a doplňují nabízený obsah a jejich správcem je standardně majitel domény 2. řádu
   - možnost používat doménový alias
@@ -346,11 +346,11 @@ obrazek
 - **DNS (Domain Name System)** - jde o soustavu vzájemně spolupracujících serverů, které disponují databázemi s údaji o doménách a jim přiřazených IP adresách.
 - **URL (Uniform Resource Locator)** - jednotný ukazatel na zdroje, standard, který provádí pravidla pro přesné určení objektu.
 - **WWW (World Wide Web)** - **(celosvětová pavučina)** - jde o službu, poskytující informace ve formě hypertextu
-- **HTTP (HTTPS) (Hyper Transfer Protocol)** - po zadání požadavků na získání informací naváže spojení TCP a připojí se na port cílového počítače (HTTP 80 nebo HTTPS 443)
+- **HTTP (HTTPS) (Hyper Transfer Protocol)** - po zadání požadavků na získání informací naváže spojení _TCP_ a připojí se na port cílového počítače (__HTTP 80_ nebo _HTTPS 443_)
 - **HTML (Hyper Text Markup Language)** - jazyk, zabezpečující zobrazení a formátování textu, případně grafických informací webových stránek.
-- **FTP (File Transfer Protocol)** - služba, která umožňuje přenos souborů. Pracuje na portech 20 (data) a 21 (příkazy). Na FTP serveru je možno vytvořit libovolný počet účtů a přidělit jim různá práva pro přístup
+- **FTP (File Transfer Protocol)** - služba, která umožňuje přenos souborů. Pracuje na portech _20_ (data) a _21_ (příkazy). Na FTP serveru je možno vytvořit libovolný počet účtů a přidělit jim různá práva pro přístup
 - **E-mail (electronic mail) - elektronická pošta**, která umožňuje psaní a příjem zpráv s tím, že adresát na libovolném místě ve světě dostane zprávu téměř okamžitě
-- **E-mailová schránka** - má svoji jedinečnou elektronickou (e-mailovou) adresu. Je složena ze dvou částí spojených znakem @. První část identifikuje uživatele a druhá část server, kde se nachází jeho e-mailová schránka.
+- **E-mailová schránka** - má svoji jedinečnou elektronickou (e-mailovou) adresu. Je složena ze dvou částí spojených znakem `@`. První část identifikuje uživatele a druhá část server, kde se nachází jeho e-mailová schránka.
 
 ### Historie Internetu
 Vývoj komunikačních sítí můžeme datovat až k poštovní síti, telegrafní síti (budování telegrafních sloupů a drátových rozvodů, později bezdrátové) a telefonní síti.
@@ -390,9 +390,9 @@ Wi-Fi sítě pracují na frekvenci 2,4 a 5 GHz. Rychlost přenosu dat je od 2 Mb
 
 ### Jak funguje Internet
 Internet pracuje na základě protokolů TCP/IP.
-- TCP - protokol transportní vrstvy zabezpečuje spojení a kontrolu doručení údajů (paketů)
-- IP - protokol síťové vrstvy zajišťuje vlastní přenos, přičemž cíl identifikuje prostřednictvím jeho IP adresy a portu (služby, aplikace), přes který komunikuje
-- Prostřednictvím adresy IP4 (32b) nebo dnes adresy IP6 (128b) můžeme identifikovat počítač v rámci sítě WAN nebo LAN
+- **TCP** - protokol transportní vrstvy zabezpečuje spojení a kontrolu doručení údajů (paketů)
+- **IP** - protokol síťové vrstvy zajišťuje vlastní přenos, přičemž cíl identifikuje prostřednictvím jeho IP adresy a portu (služby, aplikace), přes který komunikuje
+- Prostřednictvím adresy IPv4 (32b) nebo dnes adresy IPv6 (128b) můžeme identifikovat počítač v rámci sítě WAN nebo LAN
 - S IP adresou však pracují směrovače (routery) na síťové vrstvě komunikačního modelu
 - Uživatelé pracují s doménovými jmény, které jsou DNS servery převáděny na adresy IP
 
