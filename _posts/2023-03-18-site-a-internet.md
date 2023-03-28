@@ -58,18 +58,18 @@ Nejjednoduší je přímé spojení dvou PC
 - nevýhody: velmi komplikované zapojení nebo vypojení PC z kruhu, při výpadku jednoho PC vypadne celá síť (ne nutně)
 - k zamezení poruchových stavů na optických kabelech se používá dvojité vedení orientované opačnými směry, které v případě poruchy stanice nebo přerušení optického spojení je schopno přemostit místo poruchy opačným směrem (FDDI)
 - je řešen 2 technologiemi:
-1. Token ring
-- v síti jeden náhodně vybraný PC, který celou síť moderuje (nikdo nesmí držet token příliš dlouho)
-- fyzická topologie hvězda (centrum MAU - media access unit)
-- v praxi síť dělena - více MAU
-- logický kruh je pak vytvořen tak, že PC přijde z MAU paket a když není pro něj tak ho tam pošle zpátky
-- obrázek
-2. FDDI
-- fyzicky i logicky kruh
-- robustnější, pro větší sítě (rekordní rozloha až 200 km)
-- jako první využívala optiku (jednosměrná, proto kruh)
-- používá dva kruhy (jeden záložní)
-- concentrator - oddělení jedno (SAS) a dvoukruhové (DAS) sítě (DAS drahý)
+    1. Token ring
+        - v síti jeden náhodně vybraný PC, který celou síť moderuje (nikdo nesmí držet token příliš dlouho)
+        - fyzická topologie hvězda (centrum MAU - media access unit)
+        - v praxi síť dělena - více MAU
+        - logický kruh je pak vytvořen tak, že PC přijde z MAU paket a když není pro něj tak ho tam pošle zpátky
+        - obrázek
+    2. FDDI
+        - fyzicky i logicky kruh
+        - robustnější, pro větší sítě (rekordní rozloha až 200 km)
+        - jako první využívala optiku (jednosměrná, proto kruh)
+        - používá dva kruhy (jeden záložní)
+        - concentrator - oddělení jedno (SAS) a dvoukruhové (DAS) sítě (DAS drahý)
 
 ### MESH
 - full mesh - každý s každým (spíše u routerů páteřních sítí)
