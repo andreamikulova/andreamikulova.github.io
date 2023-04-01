@@ -86,8 +86,8 @@ kořeny jsou čísla:
 
 $$
 \begin{align}
-x_1 &= 0 \\
-x_2 &= \frac{-b}{a}
+    x_1 &= 0 \notag\\
+    x_2 &= \frac{-b}{a} \notag
 \end{align}
 $$
 
@@ -103,14 +103,21 @@ Po vypočítání diskriminantu nastávají 3 možnosti:
 - Je-li $$D > 0$$ má rovnice dva reálné kořeny
 
 ### Vztahy mezi kořeny a koeficienty kvadratické rovnice
-Pro kořeny $$x_1$$, $$x_2$$ kvadratické rovnice platí:
-$$x_1 + x_2 = \frac{-b}{a}$$, $$x_1x_2 = \frac{c}{a}$$
--> Viétovy vzorce
+Pro kořeny $$x_1$$, $$x_2$$ kvadratické rovnice platí Viétovy vzorce:
+
+
+$$
+\begin{align}
+    x_1 + x_2 &= \frac{-b}{a}\notag\\
+    x_1 . x_2 &= \frac{c}{a}\notag
+\end{align}
+$$
+
 
 # Kvadratické nerovnice
 Způsoby řešení:
 - Rozložíme na kvadratické činitele (kvadratický trojčlen), nalezneme nulové body - množinou všech řešení je nalezený interval
-- Grafické řešení - má-li nerovnice dava kořeny, protíná přímka parabolu ve dvou bodech, pokud má jeden dvojnásobný kořen, protíná přímka parabolu pouze v ednom místě, když nemá žádný kořen, neprotíná ji vůbec.
+- Grafické řešení - má-li nerovnice dva kořeny, protíná přímka parabolu ve dvou bodech, pokud má jeden dvojnásobný kořen, protíná přímka parabolu pouze v jednom místě, když nemá žádný kořen, neprotíná ji vůbec.
 
 
 
@@ -127,23 +134,23 @@ Může mít buď jedno řešení, nekonečně mnoho řešení, nebo žádné ře
 Spočívá v tom, že z některé z obou rovnic vyjádříme tu neznámou, u níž je nenulový koeficient, 
 pomocí druhé neznámé a příslušný výraz za ni dosadíme do zbývající rovnice. Získáme tak lineární rovnici s jednou neznámou.
 
-#### Ekvivalentní úpravy 
+#### Ekvivalentní úpravy
 Při použití dosazovací metody řešíme danou soustavu rovnic pomocí ekvivalentních úprav. To jsou takové úpravy, které tuto soustavu převádí na novou soustavu se stejnou množinou všech řešení.
 Při dosazovací metodě používáme tyto ekvivalentní úpravy:
 - ekvivalentní úpravy jednotlivých rovnic soustavy
 - dosazení výrazu, kterým z jedné rovnice vyjádříme některou neznámou pomocí druhé neznámé, za příslušnou neznámou do zbývající rovnice
 
 
-### Sčítačí metoda
+### Sčítací metoda
 Sčítací metoda se používá při řešení soustavy, jestliže všechny čtyři koeficienty jsou nenulové. Příslušná soustava se převede na takovou ekvivalentní soustavu, že v jedné její rovnici "chybí" (alespoň) jedna neznámá.
 
-#### Ekvivalentní úpravy 
+#### Ekvivalentní úpravy
 Při použití sčítací metody používáme tuto ekvivalentní úpravu:
-- přičtení některé rovnice soustavy k zbývající rovnici této soustavy (přesnějí: přičtení levé strany k levé straně a pravé strany k pravé straně)
+- přičtení některé rovnice soustavy k zbývající rovnici této soustavy (přesněji: přičtení levé strany k levé straně a pravé strany k pravé straně)
 - vynásobení některé rovnice soustavy nenulovým číslem a současné přičtení násobku zbývající rovnice soustavy k této rovnici
 
 ### Grafické řešení
-Obrazem množiny všech řešení soudtavy dvou nebo více takových rovnic je množina všech společných bodů příslušných přímek.
+Obrazem množiny všech řešení soustavy dvou nebo více takových rovnic je množina všech společných bodů příslušných přímek.
 Tyto přímky mohou být různoběžné, nebo rovnoběžné různé, nebo splývající. Podle toho, která z těchto situací nastává, má příslušná soustava jedno, nebo žádné, nebo nekonečně mnoho řešení.
 
 ## Soustava lineárních rovnic s více neznámými
@@ -152,7 +159,7 @@ Tyto přímky mohou být různoběžné, nebo rovnoběžné různé, nebo splýv
 1. Soustavu upravíme tak, aby v první rovnici byl u neznámé, kterou zapisujeme jako první, nenulový koeficient. Pokud tomu tak není přímo v dané soustavě, změníme pořadí rovnic, popř. změníme pořadí, v němž v rovnicích zapisujeme neznámé.
 2. První rovnici opíšeme, ke druhé a třetí rovnici (popř. k jejich nenulovým násobkům) přičteme takové násobky první rovnice, aby v obou těchto rovnicích neznámá zapisovaná jako první "zmizela".
 3. Soustavu upravíme tak, aby v druhé rovnici byl u neznámé, kterou zapisujeme jako druhou, nenulový koeficient. Pokud to je potřebné, můžeme navzájem vyměnit druhou a třetí rovnici nebo změnit pořadí zápisu druhé a třetí neznámé.
-4. První a druhou rovnici opíšeme, ktřetí rovnici (popř. k jejímu nenulovému násobku) přičteme takový násobek druhé rovnice, aby v ní neznámá zapisovaná jako druhá "zmizela".
+4. První a druhou rovnici opíšeme, k třetí rovnici (popř. k jejímu nenulovému násobku) přičteme takový násobek druhé rovnice, aby v ní neznámá zapisovaná jako druhá "zmizela".
 
 #### Ekvivalentní úpravy
 - ekvivalentní úpravy jednotlivých rovnic soustavy (zejména jejich násobení nenulovými čísly)
@@ -162,7 +169,7 @@ Tyto přímky mohou být různoběžné, nebo rovnoběžné různé, nebo splýv
 - vynechání rovnice, která je násobkem jiné rovnice soustavy
 
 ## Soustava lineárních a kvadratických rovnic
-Souřadnice x, y hledaných průsečíků musí splňvat rovnice obou křivek. Po dosazení lineární rovnice do rovnice paraboly, získáme kvadratickou rovnici a její kořeny. Poté vypočteme dosazením funkční hodnoty průsečíků.
+Souřadnice $$x$$, $$y$$ hledaných průsečíků musí splňovat rovnice obou křivek. Po dosazení lineární rovnice do rovnice paraboly, získáme kvadratickou rovnici a její kořeny. Poté vypočteme dosazením funkční hodnoty průsečíků.
 
 ## Soustava dvou nebo více lineárních nerovnic s dvěma neznámými
 Můžeme postupovat tak, že vyřešíme každou nerovnici zvlášť, množina řešení je pak průnik množin všech řešení jednotlivých nerovnic.
