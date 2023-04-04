@@ -108,8 +108,15 @@ Při návrhu algoritmů se uplatňuje množství přístupů, které abstrahují
 - **Hledání s návratem (backtracking)**
 
 ### Algoritmická složitost
-!!!
+U každého algoritmu nás zajímají dvě vlastnosti: čas, po který algoritmus běží, a paměť, kterou při tom spotřebzje. 
 
+Čas měříme v počtu provedených operací. Pro jednoduchost budeme předpokládat, že aritmetické operace, přiřazování, porovnávání apod. nás stojí jednotkový (konstantní) čas. 
+Množství použité paměti můžeme zjistit tak, že prostě spočítáme, kolik bytů paměti náš prohram použil.
+
+Jak čas, tak paměť se obvykle liší podle toho, jaký vstup náš program zrovna dostal - na velké vstupy spotřebuje více času i paměti než na ty malé. Budeme proto oba parametry určovat v závislosti na velikosti vstupu a hledat funkci, která nám tuto závislost popíše. 
+Takové funkci se odborně říká **časová (popř. paměťová, prostorová)** složitost.
+
+Více o složitosti naleznete [zde.](https://ksp.mff.cuni.cz/kucharky/slozitost/)
 
 # Programování
 
@@ -199,19 +206,19 @@ Jednoduché datové typy jsou většinou přímo zabudovány do jazyka, přičem
 **Ordinální datové typy**\\
 Hodnoty ordinálního typu tvoří lineárně uspořádanou množinu, kde pro každý prvek je přesně definovaný předchůdce i následovník.
 - **logická hodnota** (boolean) - nabývá hodnot *true* nebo *false*. Je výsledkem porovnání nebo logického výrazu. Jazyk C tento typ nedefinuje, místo toho používá 0 a jakékoli nenulové celé číslo.
-- **celé číslo** (integer) - 
-- **znak** (char, string) - 
+- **celé číslo** (integer) 
+- **znak** (char, string) 
 - **výčtový typ** (enumerate)
 
 **Neordinální datové typy**\\
 U neordinálních datových typů není jednoznačně určen předchůdce a následovník každé hodnoty.
 - **reálné číslo** (float, double, real)
 
-**Prázdný datový typ**\\
+**Prázdný datový typ**
 - **void** - jedná se o specialitu jazyka C. Tento typ nenabývá žádných hodnot, může sloužit mimo jiné pro deklaraci funkcí
 
 ### Speciální funkce pro různé datové typy
-
+??? 
 
 ## Třídění
 **Třídění** znamená, že data přerovnáváme do správného pořadí (např. od největšího po nejmenší).
@@ -219,21 +226,28 @@ U neordinálních datových typů není jednoznačně určen předchůdce a nás
 Obvykle třídíme exempláře datové struktury typu pascalského záznamu (struktury, třídy apod.) V takové datové struktuře bývá obsažena jedna význačná položka - *klíč*, podle které se záznamy řadí, který je zároveň celočíselný. Budeme tedy třídit pole celých čísel. 
 
 ### Přímé metody
-Nejjednodušší třídící algoritmy patří do skupiny *přímých metod*. Jsou krátké, jednoduché a třídí přímo v poli (nepotřebujeme pole pomocné). Tyto algoritmy mají časovou složitost $$O(N2)$$. Jsou tedy použitelné pouze pokud vstupních dat není mnoho. 
+Nejjednodušší třídící algoritmy patří do skupiny *přímých metod*. Jsou krátké, jednoduché a třídí přímo v poli (nepotřebujeme pole pomocné). Tyto algoritmy mají časovou složitost $$O(N^2)$$. Jsou tedy použitelné pouze pokud vstupních dat není mnoho. 
 
 **Select Sort**
 Select sort je založen na opakovaném vybírání nejmenšího čísla z dosud nesetříděných čísel. 
+Nalezené číslo prohodíme s prvkem na začátku pole a postup opakujeme.
 
 **Insert sort**
-
+Funguje na podobném principu jako třídění přímým výběrem. Na začátku pole vytváříme správně utříděnou posloupnost, kterou postupně rozšiřujeme.
 
 **Bubble sort**
-
+Postupně se porovnávají dvojice sousedních prvků, řekněme zleva doprava, a pokud v porovnávané dvojici následuje menší číšlo, tato dvě čísla se prohodí.
+Celý postup opakujeme, dokud probíhají nějaké výměny.
 
 ### Rychlé metody
 Sofistikované třídící algoritmy, pracují v čase $$O(N log N).
 
 **Merge Sort**
-
+Založený na principu slévání (spojování) již setříděných posloupností dohromady. Jednoduše stačí porovnávat nejmenší prvky obou posloupností a menší z těchto prvlů vždy odstranit a přesunout do nové posloupnosti.
+Tento algoritmus je velmi složitý a pro zjednodušení a zachování časové složitosti se používájí modifikace, např. s pomocným polem.
 
 **Quick Sort**
+Tento algoritmus je založen na metodě Rozděl a panuj. Nejprve si zvolíme nějaké číslo, kterému budeme říkat pivot. Poté pole přeuspořádáme a rozdělíme je na dvě části tak, že žádný prvke v první části nebude větší než pivot a žádný prvek v druhé části naopak menší.
+Prvky v obou částech pak setřídíme rekurzivním zavoláním téhož algoritmu.
+
+Více o třídění naleznete [zde](https://ksp.mff.cuni.cz/kucharky/trideni/)
