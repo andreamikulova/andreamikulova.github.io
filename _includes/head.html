@@ -1,9 +1,11 @@
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--% seo %-->
-	<link rel="shortcut icon" href="{{ 'favicon.ico' | relative_url }}" type="image/x-icon">
-	<link href="{{ '/assets/katex/katex.min.css' | relative_url }}" type="text/css" rel="stylesheet"/>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Jekyll v{{- jekyll.version -}}">
+	<meta name="author" content="{{- page.author | default: site.author | escape -}}">
+	<link rel="stylesheet" href="{{- '/assets/css/just-the-docs-default.css' | relative_url -}}">
+	<link rel="shortcut icon" href="{{- 'favicon.ico' | relative_url -}}" type="image/x-icon">
+	<link href="{{- '/assets/katex/katex.min.css' | relative_url -}}" type="text/css" rel="stylesheet"/>
+	<title>{{- site.title | escape -}}{%- if page.title -%}{{- page.title | prepend: " - " | escape -}}{%- endif -%}</title>
 </head>
