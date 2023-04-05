@@ -21,14 +21,14 @@ Zahrnuje jak hardwarové prostředky (počítače, kabely a technická zařízen
 
 ## Dělení sítí podle topologie
 Je důležité rozlišovat 2 druhy:
-1. Fyzická topologie - popusije reálnou konstrukci sítě, jednotlivé uzly a jak jsou zařízení rozmístěna a pospojována kabely
-2. Logická topologie - jak data sítí protákají (nemusí kopírovat fyzickou)
+1. Fyzická topologie - popisuje reálnou konstrukci sítě, jednotlivé uzly a jak jsou zařízení rozmístěna a pospojována kabely
+2. Logická topologie - jak data sítí protékají (nemusí kopírovat fyzickou)
 
-Nejjednoduší je přímé spojení dvou PC
+Nejjednodušší je přímé spojení dvou PC
 
 ### Sběrnicová topologie uspořádání počítačů (BUS)
 
-![Sběrnicová_topologie](/assets/images/sbernice.jpg)
+![Sběrnicová topologie](/assets/images/sbernice.jpg)
 
 - je jednoduchá, ale zastaralá - neefektivně řešené vysílání
 - jedna centrální linka a na ní napojeny všechny počítače - účastníci sítě jsou připojeni na společné koaxiální vedení (tenký koaxiální kabel RG58/50 $$\Omega$$), prostřednictvím odbočovacích prvků (T-konektory BNC)
@@ -39,7 +39,7 @@ Nejjednoduší je přímé spojení dvou PC
 
 ### Hvězdicová topologie uspořádání počítačů (STAR)
 
-![Hvězdicová_topologie](/assets/images/hvezda.png)
+![Hvězdicová topologie](/assets/images/hvezda.png)
 
 - je tvořena uzly, které jsou připojeny do jednoho centrálního bodu (většinou kroucenou dvojlinkou UTP), do přepínače (SWITCH) nebo dříve do rozbočovače (HUB)
 - u dnešního Ethernetu prakticky jediná využívaná
@@ -51,7 +51,7 @@ Nejjednoduší je přímé spojení dvou PC
 
 ### Kruhová topologie uspořádání počítačů (RING)
 
-![Kruhová_topologie](/assets/images/kruh.jpg)
+![Kruhová topologie](/assets/images/kruh.jpg)
 
 - představuje zapojení počítačů tak, že první je propojený s druhým, ten s třetím atd., až poslední opět s prvním - čímž vytváří kruh, uzavřen jiným zařízením (hub, router)
 - datové zprávy (pakety) se předávají postupně jedním směrem mezi stanicemi - každý PC může posílat paket jen nejbližšímu sousedovi - vysílá vždy stanice, která vlastní token (pešek, právo vysílat)
@@ -89,13 +89,13 @@ Toto dělení je velmi subjektivní, dnes už v praxi málo využíváno. Bezvý
 - je počítačová síť, kterou využívají domácnosti, podniky, instituce, školy, atd., typické je sdílení prostředků mezi počítači (tiskárny)
 - pracuje v režimu neustálého spojení
 - maximální vzdálenosti mezi počítači jsou stovky metrů až několik kilometrů
-- většinou jsou umístěné v jedné nebo více blízkých budovách 
+- většinou jsou umístěné v jedné nebo více blízkých budovách
 - rychlost přenosu dat dosahuje řádově Gb/s
 - technologie: přepínaný ethernet nebo Wi-Fi
 
 ### MAN (Metropolitan Area Network - městská, metropolitní síť)
 - je speciálním případem LAN (několik málo spojených LAN, často optikou) , pro kterou je charakteristická větší rozloha jako pro standardní LAN
-- zatímco klasická LAN je většinou využívána zaměstnanci vlastníka sítě, MAN slouží velkému množství různých uživatelů, 
+- zatímco klasická LAN je většinou využívána zaměstnanci vlastníka sítě, MAN slouží velkému množství různých uživatelů,
 kteří za umožnění přístupu do ní obvykle platí provozovateli této sítě
 - např. Pražská akademická síť PASNET (sdružující VŠ)
 
@@ -113,7 +113,7 @@ kteří za umožnění přístupu do ní obvykle platí provozovateli této sít
 
 ### Client-to-server
 
-![Client_to_server](/assets/images/klient_server.png)
+![Client to server](/assets/images/klient_server.png)
 
 - je architektura založena na dvou typech počítačů, a to na **serveru**, který poskytuje služby nebo údaje tzv. podřazeným počítačům označovaným jako **klienti** (pracovní stanice nebo uzly)
 - na jednom počítači může běžet i více serverových služeb a v rámci sítě může pracovat několik stanic jako server
@@ -123,7 +123,7 @@ kteří za umožnění přístupu do ní obvykle platí provozovateli této sít
 
 ### Peer-to-peer
 
-![Peer_to_peer](/assets/images/peer_to_peer.png)
+![Peer to peer](/assets/images/peer_to_peer.png)
 
 - je označení pro počítačovou síť, ve které jsou všechny pracovní stanice rovnocenné a každá z nich může, ale nemusí, vyčlenit část svých prostředků i ostatním stanicím (tiskárny, disková kapacita atd.)
 - komunikují přímo
@@ -165,7 +165,7 @@ kteří za umožnění přístupu do ní obvykle platí provozovateli této sít
 ### Síťový operační systém Windows Server
 - je to serverový operační systém
 - je stabilní, škálovatelný, bezpečný a výkonný
-- jednoduché vytváření intranetových a internetových serverů 
+- jednoduché vytváření intranetových a internetových serverů
 - možnosti Windows Server jsou velmi obsáhlé patří mezi ně:
   - souborový a tiskový server
   - webový server
@@ -178,7 +178,7 @@ kteří za umožnění přístupu do ní obvykle platí provozovateli této sít
 
 ### Operační systém Linux
 - GNU/Linux - jde o tzv. svobodný operační systém
-- je zadarmo a může být používán k libovolným účelům 
+- je zadarmo a může být používán k libovolným účelům
 - zdrojové kódy a rozsáhlá dokumentace lehce dostupná na internetu
 - systém můžeme libovolně studovat, měnit
 - systém je dodáván v distribucích (např. Debian, Fedora, Slackware, SUSE, ...) - distribucí existuje velké množství, některé jsou zaměřeny na servery, jiné na desktop, atd.
@@ -226,7 +226,7 @@ Mezi technické (hardwarové) prvky sítě můžeme zařadit následující prvk
   1. mnohovidová vlákna (Multi-mode)
   2. jednovidová vlákna (single-mode)
 
-### Aktivní prvky 
+### Aktivní prvky
 
 **Síťové karty (NIC - network interface cards)**
 1. Rozhraní zajišťující přenos dat z počítače do sítě a naopak podle pravidel daných síťovými standardy (přístupová metoda, síťový protokol)
@@ -234,7 +234,7 @@ Mezi technické (hardwarové) prvky sítě můžeme zařadit následující prvk
 
 **Bridge**
 - linková (2.) vrstva ISO/OSI = pracuje na základě MAC adres (tabulka MAC -> port)
-- 2 využítí:
+- 2 využití:
   - spojuje 2 sítě s různými technologiemi (např. TR a Ethernet)
   - rozděluje Ethernet BUS na více kolizních domén (méně PC = méně kolizí)
 - pokud nemá záznam, posílá všude; pokud příjemce a odesílatel leží v jedné síti nedělá nic
@@ -284,15 +284,15 @@ Mezi technické (hardwarové) prvky sítě můžeme zařadit následující prvk
 ## Referenční model počítačové sítě OSI/RM
 - Open Systems Interconnection Basic Reference Model
 
-Popisuje a rozděluje síťovou komunikaci. protokoly a hardware. Dělí se do sedmi vrstev, při každé komunikaci musí data projít všemi vrstvami $$\rightarrow$$ zbytečná 
+Popisuje a rozděluje síťovou komunikaci. protokoly a hardware. Dělí se do sedmi vrstev, při každé komunikaci musí data projít všemi vrstvami $$\rightarrow$$ zbytečná
 komplikovanost a zátěž (především vrchní vrstvy jsou pro mnoho aplikací nepodstatné).
-Důvodem vzniku byla snaha o standardizaci internetové komunikace (SW i HW), aby sítě postavené jiným výrobcem mohly vzájemně komunikovat. Byl tedy vyvíjen pouze teoreticky a prakticky je održen od reality. 
-**Nikdy nebyl uveden do praxe, žádná síť nefunguje na jeho principech**, díky svému detailnímu popisu a rozdělení je využíván pro záklapdní popis obecného fungování sítí.
+Důvodem vzniku byla snaha o standardizaci internetové komunikace (SW i HW), aby sítě postavené jiným výrobcem mohly vzájemně komunikovat. Byl tedy vyvíjen pouze teoreticky a prakticky je odtržen od reality.
+**Nikdy nebyl uveden do praxe, žádná síť nefunguje na jeho principech**, díky svému detailnímu popisu a rozdělení je využíván pro základní popis obecného fungování sítí.
 
 ![Referenční model](/assets/images/rm.webp)
 
 **Layer 1 - Fyzická vrstva**
-- zajišťuje fyzicé spojení mezi dvěma a více body (kabeláž, síťový hardware,...)
+- zajišťuje fyzické spojení mezi dvěma a více body (kabeláž, síťový hardware,...)
 - nijak se nestará o data, jen je přenáší jako posloupnost reprezentovaných bitů
 - obsahuje definice: způsobu přenosu signálu (napětí, světlo); parametry kabelů (maximální délka) a jejich koncovek (piny); frekvenci bezdrátových sítí; způsob komunikace (síťová, paralelní)
 - patří zde zařízení, která nijak neupravují, ani nečtou data: hub, repeater, NIC - síťová karta, DSL modem
@@ -308,17 +308,17 @@ Důvodem vzniku byla snaha o standardizaci internetové komunikace (SW i HW), ab
     - řeší adresování (v případě více než dvoubodového spoje), doručování paketů v lokální síti
   - podvrstva Logical Link Control (LLC)
     - řízení přístupu k médie; u starších sdílených linek token ring, sběrnice (naslouchání)
-    - původné osmá vrstva
+    - původně osmá vrstva
 - zařízení: switch (vyjímečně L3) a bridge
 
 **Layer 3 - Síťová vrstva** a **Layer 4 - Transportní vrstva**
 - viz TCP/IP
 
 **Layer 5 - Relační vrstva**
-- zabývá se řízením spojení mezi systémy (obnovení při výpadku, synchronizace, určení vysílajícícho zařízení)
+- zabývá se řízením spojení mezi systémy (obnovení při výpadku, synchronizace, určení vysílajícího zařízení)
 - např.:
   - protokol Samba - využíván ve Windows např. pro sdílení tiskáren; obecně se řadí do 7. vrstvy, ale má některé vlastnosti navíc
-  - NetBIOS - dříve používané API pro komunikaci v síti; umožňoval vytvoření sítě (v rámci existujících sítí) s vlastnmi jmény PC a snadnou komunikaci a spojení mezi nimi - asi jediný opravdový L5 protokol
+  - NetBIOS - dříve používané API pro komunikaci v síti; umožňoval vytvoření sítě (v rámci existujících sítí) s vlastními jmény PC a snadnou komunikaci a spojení mezi nimi - asi jediný opravdový L5 protokol
 - asi nejzbytečnější vrstva - u většiny komunikace by vůbec ničemu nesloužila
 
 **Layer 6 - Prezentační vrstva**
@@ -331,7 +331,7 @@ Důvodem vzniku byla snaha o standardizaci internetové komunikace (SW i HW), ab
 **Layer 7 - Aplikační vrstva**
 - umožňuje aplikacím komunikovat po síti
 - základem tzv. aplikační entity - služby využívané programy pro komunikaci (v původní koncepci byl i program součástí této vrstvy dnes jsou řazeny "nad model" a entity využívají jako knihovny)
-- samostatné aplikační entity OSI/RM nejsou (jako model) používany
+- samostatné aplikační entity OSI/RM nejsou (jako model) používány
 - z TCP/IP sem lze zařadit: Telnet a SSH (ovládání počítačů), FTP a NFS (sdílení souborů), SMTP a IMAP (emaily), HTTP
 
 ## Internet
@@ -340,17 +340,17 @@ Důvodem vzniku byla snaha o standardizaci internetové komunikace (SW i HW), ab
 
 ![Architektura TCP/IP](/assets/images/tcp.png)
 
-Model TCP/IP byl vyvíjen "za pochodu" firmami, které tvořily základ prvního internetu (DARPA, AT&T,...). Vývoj probíhal od jednoduššího ke složtějšímu.
-Zakladní rozdíl od OSI/RM, který byl vytvářen teoreticky $$\rightarrow$$ odtržen od reality, nereaguje na reálné problémy a požadavky (např. potřeba řízení toku dat podle vytížení není dodnes implementována).
+Model TCP/IP byl vyvíjen "za pochodu" firmami, které tvořily základ prvního internetu (DARPA, AT&T,...). Vývoj probíhal od jednoduššího ke složitějšímu.
+Základní rozdíl od OSI/RM, který byl vytvářen teoreticky $$\rightarrow$$ odtržen od reality, nereaguje na reálné problémy a požadavky (např. potřeba řízení toku dat podle vytížení není dodnes implementována).
 
 Navzdory názvu obsahuje kompletní specifikaci většiny potřebných (a dnes používaných) protokolů, rozdělení a parametry síťového HW, popisy komunikace i orgány starající se o správu internetu (IETF, IANA, ICANN)
 a formát standardizace (RFC dokumenty), definuje také formát IP adres, systém DNS a mnoho dalšího.
 
-Pokud nějaká technologie existovala už předtím a byla úspěšná a používaná, implementuje ji nezměněnou $$\rightarrow$$ neprosazuje za každou cenu vlastní řešení (proto spojuje L1 a L2 - vše už objeveno, nteřeba nic přidat ani klasifikovat).
-Základní schéma podobné OSI/RM (vrsty), ale **snižuje počet vrstev na 4**
+Pokud nějaká technologie existovala už předtím a byla úspěšná a používaná, implementuje ji nezměněnou $$\rightarrow$$ neprosazuje za každou cenu vlastní řešení (proto spojuje L1 a L2 - vše už objeveno, netřeba nic přidat ani klasifikovat).
+Základní schéma podobné OSI/RM (vrstvy), ale **snižuje počet vrstev na 4**
 - je kladen větší důraz na síťovou část, neřeší tolik část zpracování dat, věc softwaru ne internetu
 - preferuje jednoduchost nespojitá a nespolehlivá komunikace
-- jediná "komplikovanost" společná s OSI/RM je nutnost využít všechny vrstvy (ale je jich alespoň míň) až na výjimky (dvoubodé spoje) se musí použít i Ip adresa i v LAN
+- jediná "komplikovanost" společná s OSI/RM je nutnost využít všechny vrstvy (ale je jich alespoň méně) až na výjimky (dvoubodé spoje) se musí použít i Ip adresa i v LAN
 
 Obsahuje tedy 4 vrstvy:
 - Aplikační (v OSI Aplikační + Prezenční + Relační), ale neobsahuje všechny služby - model se stará jen o síťovou komunikaci
@@ -367,27 +367,25 @@ Obsahuje tedy 4 vrstvy:
 - přenáší IP datagramy
 - základní zařízení je router (směrovač) - řeší jak routing tak forwarding; propojuje vzájemné sítě
   - má povědomí o topologii sítí, do kterých směřuje směrovací tabulky
-  - pro sdílení informací o sítích mezi routery se používá více protoklů 
+  - pro sdílení informací o sítích mezi routery se používá více protokolů
   - pro zmenšení směrovacích tabulek je internet dělen na Autonomní systémy (množina sítí pod jedním fyzickým subjektem; např. poskytovatel připojení ISP), pak dělíme směrování na interní (v rámci AS) a externí (mezi AS)
   - např. BGP (jediný externí), OSPF, RIP, IGRP...
   - snaha o zrychlení komunikace = snahy o obcházení původního modelu $$\rightarrow$$ peering přímé spojení dvou nebo více sítí nehledě na logiku (routování složitý proces)
 - směřování probíhá podle IP adresy, IP je zároveň prakticky jediný protokol
   - dnes existují 2 verze: IPv4 a IPv6 (protokol i adresy)
   - IPv6 vznikla, když začaly docházet IPv4 adresy (definitivně došly v 2015)
-  - mnoho operátorů kvůli drahému přechodu dlouhou dobu implementovalo všemožné techniky, aby se vyhnuli vyčerpání IPv4 
+  - mnoho operátorů kvůli drahému přechodu dlouhou dobu implementovalo všemožné techniky, aby se vyhnuli vyčerpání IPv4
   - kromě samotného směrování, obsahuje IP datagram ještě tyto informace:
     - TTL (time to live) - brání zacyklení, každý router toto číslo snižuje o 1, pokud dosáhne nuly, je zahozen a zpátky pošle zprávu "Nebylo možno doručit"
     - Fragmentace - každá síť má nastavenou hodnotu MTU (maximum transmission unit), která definuje jak velký objem dat můžeme poslat. Pokud je datagram větší, dochází k fragmentaci tj. rozdělení na několik samostatných IP datagramů (každý obsahuje informace z jaké "série" pochází a kolikátý je)
     - kontrolní součty k ověření nepoškození datagramu (vyžadováno, ale prakticky na nic, protože stejnou položku už obsahuje nižší linková vrstva)
     - DSCP (differentiated services code point) implementace QOS
 
-  
   - IPsec
     - upravená verze IP protokolu, umožňující šifrování a autentizaci
     - původně se podle filozofie TCP/IP šifrování řešilo až na úrovni aplikací
     - přidání podpory do 3. vrstvy má značné výhody - podpora v OS = aplikace jednodušší (pošle data a ta se automaticky šifrují a na druhé straně dostane aplikace od systému dešifrovaná data)
     - navíc aplikační protokoly často omezeny jen na některé služby (SSH), IPsec univerzální
-
 
   - IPv4
     - skládá se ze 4 oktetů (osm bitů), obvykle zapisována v desítkové soustavě, odděleno tečkou
@@ -412,7 +410,7 @@ Obsahuje tedy 4 vrstvy:
 - zajišťuje předávání dat mezi systémy, navázání a ukončení spojení
 - je-li požadována, garantuje doručení dat
 - umožňuje rozlišit více odesílatelů z jednoho uzlu (pracuje s porty) tj. různé servery/klienty
-  - tzv. multiplex (sběr dat od více služeb a jeijch společný přenos) a demultiplex (data ze síťové vrstvy dělí mezi jednotlivé služby)
+  - tzv. multiplex (sběr dat od více služeb a jejich společný přenos) a demultiplex (data ze síťové vrstvy dělí mezi jednotlivé služby)
   - porty se dělí podle registrace u IANA
 - řídí tok dat (řeší zahlcení, odesílání dat po zpracování předchozích, znovu odeslání dat, posílání dat po částech podle kapacity linky)
 - v TCP/IP 2 protokoly: TCP a UDP
@@ -421,19 +419,18 @@ Obsahuje tedy 4 vrstvy:
 Funguje spojovaně, nejdřív se naváže spojení, domluví se jeho parametry a pak se posílají data, na konci dojde ke "konkrétnímu" ukončení spojení.
 Data se posílají po předem domluvené trase a zajišťuje spolehlivost dodání dat.
 Komunikace probíhá pomocí bufferů; server zná jeho velikost a posílá do něj data až do zaplnění; z druhé strany zpracovává klient; po uvolnění určité části je znovu zaplněn. Volné místo
-v bufferu kienta se označuje jako "okénko" (kolik dat ještě můžu přijmout). Pracuje s tzv. segmenty (data jsou rozdělena a znovu spojena, vyšším vrstvám se předává celá zpráva např HTML stránka přijata v několika segmentech a zobrazena jako výsledek).
+v bufferu klienta se označuje jako "okénko" (kolik dat ještě můžu přijmout). Pracuje s tzv. segmenty (data jsou rozdělena a znovu spojena, vyšším vrstvám se předává celá zpráva např HTML stránka přijata v několika segmentech a zobrazena jako výsledek).
 Poměr velikost bufferu:okénka:velikost segmentu ovlivňuje rychlost a kvalitu přenosu (v praxi nutno vzít v potaz i nižší vrstvy)
 
 ### UDP
-Nespojované (data se pošlou do sítě a je na druhé straně, aby na ně čekala a přijala je) a nespolehlivé (pošlu a nestarám se). Jsou jednodušší, menší nároky. 
+Nespojované (data se pošlou do sítě a je na druhé straně, aby na ně čekala a přijala je) a nespolehlivé (pošlu a nestarám se). Jsou jednodušší, menší nároky.
 Pracuje s UDP datagramy (neplést s IP), vzhledem k tomu, že nepoužívá parametry pro spojovanou komunikaci může přenést mnohem více data ve stejně velkém "balíku".
 Např. stream videa; začnu sdílet a je na uživatelích, aby je připojily
 
-  
 ### DNS (Domain Name System)
 
 Byl standardizován v rámci TCP/IP modelu (samotný protokol na Aplikační vrstvě). Slouží k překladu mezi obecnějším názvem služby (doménové jméno) a jeho IP reprezentací (uživatel není nucen si pamatovat IP adresy serverů).
-S rozvojem internetu přebírá i další funkce: dnes funguje jakoo univerzální internetová databáze (emaily, informace pro internetové služby - facebook, google, informace pro prohlížeč, nebo easter eggs). 
+S rozvojem internetu přebírá i další funkce: dnes funguje jako univerzální internetová databáze (emaily, informace pro internetové služby - facebook, google, informace pro prohlížeč, nebo easter eggs).
 Rozděluje se podle typu záznamů (každý záznam obsahuje typ a jednu nebo více hodnot), např. A (IPv4 adresa), AAAA (IPv4), NS (odkaz na další DNS server), TXT (poznámky), ...
 
 Má hierarchickou strukturu (decentralizovaná jako zbytek internetu):
@@ -446,8 +443,8 @@ Má hierarchickou strukturu (decentralizovaná jako zbytek internetu):
   - firemní
   - infrastrukturní
   - rezervované
-- samotné adresy webových stránek se neukládají do TLD, dalším mezisťupněm jsou servery registrátora, který zajišťuje zveřejnění adresy na internetu
-- počet úrovní je v podstatě neomezený (např. kdm.karlin.mff.cuni.cz - česko, Karlova Univerzita, MatFyz, Karlín, Katedra didaktiky)
+- samotné adresy webových stránek se neukládají do TLD, dalším mezistupněm jsou servery registrátora, který zajišťuje zveřejnění adresy na internetu
+- počet úrovní je v podstatě neomezený (např. [kdm.karlin.mff.cuni.cz](https://kdm.karlin.mff.cuni.cz/) - česko, Karlova Univerzita, MatFyz, Karlín, Katedra didaktiky)
   - seznam všech adres pro jednu doménu se nazývá zóna
 - obvykle PC nekomunikuje přímo s root servery, ale s tzv. resolverem (druh DNS serveru), kterému předá požadavek a on mu vrátí adresu - výhodou cashování, resolver si pamatuje často používané adresy a vrací je rychleji a bez zatěžování root serverů
 
@@ -457,7 +454,7 @@ DNSSEC
 
 
 ### URL (Uniform Resource Locater)
-- adresování na aplikační vrstvě (nižší vrstvy končí adresování u portu; specifické služby). 
+- adresování na aplikační vrstvě (nižší vrstvy končí adresování u portu; specifické služby).
 - specifikuje co chceme aby služba vrátila (text, obrázek, video...)
 - URL typ URI (Uniform Resource Identifier) - vzhledem k tomu, že z praktických důvodů je jeho jediným druhem jsou pojmy často zaměňovány
   - standart přesné specifikace objektu
@@ -515,7 +512,7 @@ Projekt byl financován ministerstvem obrany USA, důvodů pro vznik počítačo
 - NSFNET - síť pro vědu a výzkum
 - ARPAnet - původní univerzitní síť
 
-V 90. letech počátky komerční sítě Internet. Internet jako celek nemá žádného vlastníka, existují pouze konkrétní majitelé dílčích sítí. 
+V 90. letech počátky komerční sítě Internet. Internet jako celek nemá žádného vlastníka, existují pouze konkrétní majitelé dílčích sítí.
 ČR připojena k Internetu v roce 1992.
 
 ### Připojení k Internetu
@@ -550,7 +547,7 @@ Internet pracuje na základě protokolů TCP/IP.
 3. IP adresa se vrací jako výsledek dotazu a jejím základě, směrovače sestaví cestu k adresátovi, uživatelův počítač jej kontaktuje
 
 **Adresa URL (Uniform Resource Locator)**
-- Celosvětový standard 
+- Celosvětový standard
 - Obsahuje 3 části:
   1. identifikace služby typu objektu nebo protokolu, jehož prostřednictvím se získává přístup k objektu
   2. adresa uzlu v počítačové síti zadávaná prostřednictvím IP adresy nebo doménového jména
@@ -558,5 +555,6 @@ Internet pracuje na základě protokolů TCP/IP.
 
 
 ### Sociální sítě
-Virtuální internetový prostor, na kterém má každý registrovaný uživatel svůj profil a může posílat zprávy a sdílet soubory s ostatními uživateli. 
-Obecně se sem řadí i internetová diskuzní fóra; obvykle zameřena na jedno nebo více témat, např. Stack OverFlow, ČSFD. Dnes nejznámější sociální sítě: Facebook, Instagram, TikTok atd.
+Virtuální internetový prostor, na kterém má každý registrovaný uživatel svůj profil a může posílat zprávy a sdílet soubory s ostatními uživateli.
+Obecně se sem řadí i internetová diskuzní fóra; obvykle zaměřena na jedno nebo více témat, např. Stack OverFlow, ČSFD. Dnes nejznámější sociální sítě: Facebook, Instagram, TikTok atd.
+
