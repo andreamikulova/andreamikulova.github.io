@@ -71,7 +71,6 @@ callouts:
     color: red
 
 plugins:
-  - jekyll-seo-tag
   - jektex
 
 kramdown:
