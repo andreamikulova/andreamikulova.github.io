@@ -240,7 +240,7 @@ Postupně se porovnávají dvojice sousedních prvků, řekněme zleva doprava, 
 Celý postup opakujeme, dokud probíhají nějaké výměny.
 
 ### Rychlé metody
-Sofistikované třídící algoritmy, pracují v čase $$O(N log N).
+Sofistikované třídící algoritmy, pracují v čase $$O(N log N)$$.
 
 **Merge Sort**
 Založený na principu slévání (spojování) již setříděných posloupností dohromady. Jednoduše stačí porovnávat nejmenší prvky obou posloupností a menší z těchto prvlů vždy odstranit a přesunout do nové posloupnosti.

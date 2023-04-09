@@ -122,7 +122,7 @@ Existuje však ještě jedno tvrzení o shodných trojúhelnících:
 - **Věta ssu**: Dva trojúhelníky jsou shodné, shodují-li se ve dvou stranách a úhlu proti větší z nich.
 
 ### Podobnost trojúhelníků
-Pro každé dvě úsečky $$Ab, CD$$ můžeme stanovit kladné číslo $$k$$, pro které platí $$k = |AB| \div |CD|$$ neboli $$|AB| = k \cdot |CD|$$.
+Pro každé dvě úsečky $$AB, CD$$ můžeme stanovit kladné číslo $$k$$, pro které platí $$k = |AB| \div |CD|$$ neboli $$|AB| = k \cdot |CD|$$.
 Číslo $$k$$ se nazývá **poměr úseček** $$AB, CD$$.
 
 Definice podobnosti trojúhelníků:\\
@@ -141,7 +141,6 @@ O podobnosti trojúhelníků lze rozhodnout nejen pomocí délek stran, ale i po
 - **Věta $$uu$$: Dva trojúhelníky jsou podobné, shodují-li se ve dvou úhlech.** V podobných trojúhelnících jsou všechny odpovídající si úhly shodné.
 - **Věta $$sus$$: Dva trojúhelníky jsou podobné, shodují-li se v jednom úhlu a v poměru délek stran ležících na jeho ramenech.**
 
-## Mnohoúhelníky
 
 ## Čtyřúhelníky
 $$n$$-úhelník, kde $$n = 4$$, se nazývá **čtyřúhelník**. 
@@ -189,20 +188,81 @@ Bod $$S$$ se nazývá **střed kružnice**, číslo $$r$$ je **poloměr kružnic
   Vzájemnou polohu přimky a kružnice charakterizuje také vzdálenost středu kružnice a přímky.
 
 **Vzájemná poloha dvou kružnic**:
-- Dvě kružnice, které mají 
+- Dvě kružnice, které mají společný střed, nazýváme **soustředné**, nemají buď žádný společný bod nebo jsou totožné.
+- Pokud jsou kružnice nesoustředné, leží bu vně druhé, nebo mají vnější dotyk, nebo se protínají ve dvou bodech.
 
 ## Euklidovy věty
+Euklidovy věty byly odvozeny na základě podobnosti trojúhelníků
+
+### Euklidova věta o výšce
+> V každém pravoúhlém trojúhelníku je druhá mocnina výšky k přeponě rovna součinu délek obou úseků přepony.
+
+$$v^2 = c_a \cdot c_b$$
+
+### Euklidova věta o odvěsně
+> V každém pravoúhlém trojúhelníku je druhá mocnina délky odvěsny rovna součinu délek přepony a přilehlého úseku.
+
+$$a^2 = c \cdot c_a$$
 
 ## Pythagorova věta
+Pythagorova věta je bezprostředním důsledkem Euklidových vět.
+
+> V každém pravoúhlém trojúhelníku je druhá mocnina délky přepony rovna součtu druhých mocnin délek obou odvěsen
+
+$$a^2 + b^2 = c^2$$
 
 # Konstrukční úlohy
+Nejpoužívanější metodou řešení planimetrických konstrukčních úloh je **metoda množin všech bodů dané vlastnosti**, poté se používá také **metoda algebraická** a **metoda geometrických zobrazení**.
 
 ## Množina bodů dané vlastnosti
+**Kružnice $$k(S;r)$$ je množina všech bodů, které mají od bodu $$S$$ vzdálenost $$r$$**
+
+> **Množina $$M$$ všech bodů roviny $$\rho$$, které mají danou vlastnost**, je množina bodů, pro kterou současně platí:
+> 1. Každý bod množiny $$M$$ má danou  vlastnost.
+> 2. Každý bod roviny, který má danou vlastnost, aptří do množiny $$M$$.
 
 ## Kontrukce trojúhelníků
+**Trojúhelník** je zpravidla určen třemi vhodně zvolenými prvky. K určovacím prvkům počítáme jaho strany, úhly, výšky, těžnice, poloměry opsané a vepsané kružnice.
 
 ## Konstrukce čtyřúhelníků
-
-## Konstrukce kružnic
+Při konstrukci **čtyřúhelníků** jde obvykle o konstrukci trojúhelníků, na které je čtyřúhelník rozdělen úhlopříčkami.
+K určovacím prvkům čtyřúhelníku patří jeho strany, úhly, úhlopříčky, úhel úhlopříček, výšky, poloměry opsané a vepsané.
 
 # Zobrazení v rovině
+> **Zobrazení $$Z$$ v rovině** je předpis, který každému bodu $$X$$ roviny přiřazuje právě jeden bod $$X'$$ roviny. Bod $$X$$ se nazývá **vzor**, bod $$X'$$ jeho **obraz**; zapisujeme $$Z: X \rightarrow X'$$
+
+Body $$X$$, pro jejichž obrazy platí $$X' = X$$, se nazývají **samodružné body zobrazení**. Zobrazení, ve kterém je každý bod samodružný, se nazývá **identita**.
+
+## Shodné zobrazení
+Zobrazení (v rovině) je **shodné zobrazení, shodnost**, jestliže obrazem úsečky $$AB$$ je úsečka $$A'B'$$.
+
+Příklad s průsvitkou: Jestliže je třeba přemišťování obracet průsvitku, jde o **nepřímou shodnost**, neobrátíme-li průsvitku, jde o **shodnost přímou**.
+
+### Osová souměrnost 
+> Je dána přímka $$o$$. **Osová souměrnost s osou $$o$$** je shodné zobrazení $$O(o)$$, které přiřazuje:
+> 1. každému bodu $$X \notin o$$ bod $$X'$$ tak, že přímka $$XX'$$ je kolmá k přímce $$o$$ a střed úsečky $$XX'$$ leží na přímce $$o$$.
+> 2. každému bodu $$Y \in o$$ bod $$Y = Y'$$
+
+### Středová souměrnost
+> Je dán bod $$S$$. **STředová souměrnost se středem $$S$$** je shodné zobrazení $$S(S)$$, které přiřazuje:
+> 1. každému bodu $$X \neq S$$ bod $$X'$$ tak, že bod $$S$$ je středem úsečky $$XX'$$,
+> 2. bodu $$S$$ bod $$S' = S$$.
+
+### Posunutí
+> Je dána orientovaná úsečka $$AB$$. **Posunutí (translace)** je shodné zobrazení $$T(AB)$$, které každému bodu $$X$$ přiřadí bod $$X'$$ tak, že orientované úsečky $$XX'$$ a $$AB$$ mají stejnou délku a jsou souhlasně orientované.
+
+### Otočení
+> Je dán orientovaný úhel, jehož jedna velikost je $$\varphi$$, a bod $$S$$. **Otočení (rotace)** je shodné zobrazení $$R(S, \varphi)$$, které přiřazuje:
+> 1. každému bodu $$X \neq S$$ bod $$X'$$ tak, že $$|X'S| = |XS|$$ a orientovaný úhel $$XSX'$$ má velikost $$\varphi$$
+> 2. bodu $$S$$ bod $$S'=S$$
+
+## Podobné zobrazení
+> **Podobné zbrazení** nebo také **podobnost** je geometrické zobrazení (v rovině), pro které existuje kladné číslo $$k$$ tak, že pro každé dvě dvojice bodů $$A, A'$$ a $$B, B'$$ vzoru a obrazu je splněn vztah $$| A'B' | = k \cdot | AB |$$.
+
+Číslo $$k$$ se nazývá **poměr podobnosti**
+
+### Stejnolehlost
+> Je dán bod $$S$$ a reálné číslo $$K (K \neq 0)$$. **Stejnolehlost (homotetie)** se **středem $$S$$** a **koeficientem $$K$$** je zobrazení $$H(S,K)$$, které přiřazuje:
+> 1. každému bodu $$X \neq S$$ bod $$X'$$ tak, že platí $$|SX'| = |K| \cdot |SX|$$;
+> přitom pro $$K > 0$$ leží bod $$X'$$ na polopřímce $$SX$$, pro $$K<0$$ je bod $$X'$$ bodem polopřímky opačné k polopřímce $$SX$$
+> 2. bodu $$S$$ bod $$S' = S$$
