@@ -219,10 +219,10 @@ Nejpoužívanější metodou řešení planimetrických konstrukčních úloh je
 
 > **Množina $$M$$ všech bodů roviny $$\rho$$, které mají danou vlastnost**, je množina bodů, pro kterou současně platí:
 > 1. Každý bod množiny $$M$$ má danou  vlastnost.
-> 2. Každý bod roviny, který má danou vlastnost, aptří do množiny $$M$$.
+> 2. Každý bod roviny, který má danou vlastnost, patří do množiny $$M$$.
 
-## Kontrukce trojúhelníků
-**Trojúhelník** je zpravidla určen třemi vhodně zvolenými prvky. K určovacím prvkům počítáme jaho strany, úhly, výšky, těžnice, poloměry opsané a vepsané kružnice.
+## Konstrukce trojúhelníků
+**Trojúhelník** je zpravidla určen třemi vhodně zvolenými prvky. K určovacím prvkům počítáme jeho strany, úhly, výšky, těžnice, poloměry opsané a vepsané kružnice.
 
 ## Konstrukce čtyřúhelníků
 Při konstrukci **čtyřúhelníků** jde obvykle o konstrukci trojúhelníků, na které je čtyřúhelník rozdělen úhlopříčkami.
@@ -236,15 +236,15 @@ Body $$X$$, pro jejichž obrazy platí $$X' = X$$, se nazývají **samodružné 
 ## Shodné zobrazení
 Zobrazení (v rovině) je **shodné zobrazení, shodnost**, jestliže obrazem úsečky $$AB$$ je úsečka $$A'B'$$.
 
-Příklad s průsvitkou: Jestliže je třeba přemišťování obracet průsvitku, jde o **nepřímou shodnost**, neobrátíme-li průsvitku, jde o **shodnost přímou**.
+Příklad s průsvitkou: Jestliže je třeba přemisťování obracet průsvitku, jde o **nepřímou shodnost**, neobrátíme-li průsvitku, jde o **shodnost přímou**.
 
-### Osová souměrnost 
+### Osová souměrnost
 > Je dána přímka $$o$$. **Osová souměrnost s osou $$o$$** je shodné zobrazení $$O(o)$$, které přiřazuje:
 > 1. každému bodu $$X \notin o$$ bod $$X'$$ tak, že přímka $$XX'$$ je kolmá k přímce $$o$$ a střed úsečky $$XX'$$ leží na přímce $$o$$.
 > 2. každému bodu $$Y \in o$$ bod $$Y = Y'$$
 
 ### Středová souměrnost
-> Je dán bod $$S$$. **STředová souměrnost se středem $$S$$** je shodné zobrazení $$S(S)$$, které přiřazuje:
+> Je dán bod $$S$$. **Středová souměrnost se středem $$S$$** je shodné zobrazení $$S(S)$$, které přiřazuje:
 > 1. každému bodu $$X \neq S$$ bod $$X'$$ tak, že bod $$S$$ je středem úsečky $$XX'$$,
 > 2. bodu $$S$$ bod $$S' = S$$.
 
@@ -253,16 +253,18 @@ Příklad s průsvitkou: Jestliže je třeba přemišťování obracet průsvitk
 
 ### Otočení
 > Je dán orientovaný úhel, jehož jedna velikost je $$\varphi$$, a bod $$S$$. **Otočení (rotace)** je shodné zobrazení $$R(S, \varphi)$$, které přiřazuje:
-> 1. každému bodu $$X \neq S$$ bod $$X'$$ tak, že $$|X'S| = |XS|$$ a orientovaný úhel $$XSX'$$ má velikost $$\varphi$$
+> 1. každému bodu $$X \neq S$$ bod $$X'$$ tak, že $$\lvert X'S \rvert = \lvert XS \rvert$$ a orientovaný úhel $$XSX'$$ má velikost $$\varphi$$
 > 2. bodu $$S$$ bod $$S'=S$$
 
 ## Podobné zobrazení
-> **Podobné zbrazení** nebo také **podobnost** je geometrické zobrazení (v rovině), pro které existuje kladné číslo $$k$$ tak, že pro každé dvě dvojice bodů $$A, A'$$ a $$B, B'$$ vzoru a obrazu je splněn vztah $$| A'B' | = k \cdot | AB |$$.
+> **Podobné zobrazení** nebo také **podobnost** je geometrické zobrazení (v rovině), pro které existuje kladné číslo $$k$$ tak, že pro každé dvě dvojice bodů $$A, A'$$ a $$B, B'$$ vzoru a obrazu je splněn vztah $$\lvert A'B' \rvert = k \cdot \lvert AB \rvert$$.
 
 Číslo $$k$$ se nazývá **poměr podobnosti**
 
 ### Stejnolehlost
 > Je dán bod $$S$$ a reálné číslo $$K (K \neq 0)$$. **Stejnolehlost (homotetie)** se **středem $$S$$** a **koeficientem $$K$$** je zobrazení $$H(S,K)$$, které přiřazuje:
-> 1. každému bodu $$X \neq S$$ bod $$X'$$ tak, že platí $$|SX'| = |K| \cdot |SX|$$;
+> 1. každému bodu $$X \neq S$$ bod $$X'$$ tak, že platí $$\lvert SX' \rvert = \lvert K \rvert \cdot \lvert SX \rvert$$;
 > přitom pro $$K > 0$$ leží bod $$X'$$ na polopřímce $$SX$$, pro $$K<0$$ je bod $$X'$$ bodem polopřímky opačné k polopřímce $$SX$$
 > 2. bodu $$S$$ bod $$S' = S$$
+
+
