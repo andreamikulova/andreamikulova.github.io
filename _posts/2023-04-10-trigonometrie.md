@@ -7,7 +7,7 @@ category: Matematika
 {:toc}
 ---
 
-Oblast goniometrie, která je věnována užití goiniometrických funkcí při řešení úloh o trojúhelnících, bývá označována jako *trigonometrie*.
+Oblast goniometrie, která je věnována užití goniometrických funkcí při řešení úloh o trojúhelnících, bývá označována jako *trigonometrie*.
 
 ## Sinová věta
 > Pro každý trojúhelník $$ABC$$, jehož vnitřní úhly mají velikosti $$\alpha , \beta, \gamma$$ a strany $$a,b,c$$ platí
