@@ -27,7 +27,7 @@ Slovy:\\
 > $$a^2 = b^2 + c^2 - 2bc \cos \alpha.$$
 
 *Kosinovou větu používáme* pokud jsou zadané
-- délky všech strany trojúhelníku (a chceme určit vnitřní úhly)
+- délky všech stran trojúhelníku (a chceme určit vnitřní úhly)
 - délky dvou stran a úhel jimi sevřený
 
 ## Další trigonometrické věty
