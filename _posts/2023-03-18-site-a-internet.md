@@ -7,6 +7,14 @@ category: Informatika
 {:toc}
 ---
 
+{: .note }
+> Motivací ke vzniku tohoto článku, kromě vypracovávání maturitních otázek, byla ještě legendární přednáška [Vojty Káněho](https://vkane.cz/) o sítích
+> na Matfyzu na Malé Straně v učebně S0 :D
+
+![Přednáška v S0](/assets/images/prednaska_v_S0.jpg)
+
+> Dále bych chtěla ještě poděkovat mému spolužákovi [Šimonu Adámkovi](https://gitlab.com/Simon_Adamek) za pomoc při vypracovávání.
+
 # Počítačová síť
 **Počítačová síť** je spojení dvou a více počítačů tak, aby mohli navzájem sdílet své prostředky.
 Zahrnuje jak hardwarové prostředky (počítače, kabely a technická zařízení), softwarové prostředky (např. programy, pracující na základě síťových protokolů), tak i technické prostředky, které zabezpečují spojení a výměnu informací mezi počítači.
@@ -142,55 +150,6 @@ kteří za umožnění přístupu do ní obvykle platí provozovateli této sít
 
 ### Virtuální privátní síť
 - počítače v různých sítích spolu komunikují pomoci typicky šifrovaného protokolu - tváří se jako privátní síť
-
-## Software počítačových sítí
-
-### Síťový operační systém Novell Netware
-- komunikace v sítích klient server
-- výkonný a bezpečný server pro souborové služby
-- změna systému - u novějších verzí grafické služby (dříve pouze spravování v příkazovém řádku)
-- používá pro správu souborů adresářovou službu NDS (Novell Distributed System)
-- zahrnuty Linuxové prvky
-- nejnovější nástroje správy používají služby portálu přes internetový prohlížeč
-- při přihlášení je nutné používat mimo jména a hesla uživatele, jméno stromu, kontext a jméno serveru
-- u nejnovějších systémů možno použít pro práci s tiskem NDPS (Novell Distributed Printing Services) - možnost správy přes webové rozhraní
-- výhodou je cenová dostupnost
-- další služby Serveru Novell Netware:
-  - poštovní služby
-  - správa stanic
-  - FTP server
-  - proxy server
-  - web server
-
-### Síťový operační systém Windows Server
-- je to serverový operační systém
-- je stabilní, škálovatelný, bezpečný a výkonný
-- jednoduché vytváření intranetových a internetových serverů
-- možnosti Windows Server jsou velmi obsáhlé patří mezi ně:
-  - souborový a tiskový server
-  - webový server
-  - poštovní server
-  - terminálový server
-  - server pro vzdálené připojení a VPN server
-  - server adresářových služeb
-  - DNS server, DHCP server a WINS server
-  - streamovací server pro média
-
-### Operační systém Linux
-- GNU/Linux - jde o tzv. svobodný operační systém
-- je zadarmo a může být používán k libovolným účelům
-- zdrojové kódy a rozsáhlá dokumentace lehce dostupná na internetu
-- systém můžeme libovolně studovat, měnit
-- systém je dodáván v distribucích (např. Debian, Fedora, Slackware, SUSE, ...) - distribucí existuje velké množství, některé jsou zaměřeny na servery, jiné na desktop, atd.
-- výhody těchto systémů:
-  - velká základna aplikací zdarma
-  - stabilita systémů
-  - lehká dostupnost a široká podpora
-  - pravidelné a moderní koncepce upgrade
-  - ochrana před viry a spywarem
-- vývoj probíhá více než dvacet let
-- v roce 1984 jej vytvořil Richard Stallman
-- o deset let později Linus Torvalds vytvořil jádro systému
 
 
 ## Hardware počítačových sítí
@@ -335,6 +294,13 @@ Důvodem vzniku byla snaha o standardizaci internetové komunikace (SW i HW), ab
 - z TCP/IP sem lze zařadit: Telnet a SSH (ovládání počítačů), FTP a NFS (sdílení souborů), SMTP a IMAP (emaily), HTTP
 
 ## Internet
+Internet je celosvětový systém propojených počítačových sítí, ve kterých mezi sebou počítače komunikují a sdílejí data. Počet připojených zařízení se podle odhadů pohybuje v desítkách miliard.
+
+Zahrnuje množství služeb k různým účelům:
+- nejtypičtější je služba WWW (k odkazování a prohlížení webových stránek a souborů), email instant messaging, videohovory, cloudové ukládání a zálohování souborů...
+  - přes systém WWW je dnes distribuováno velké množství služeb - sociální sítě, bankovnictví, e-shopy, souborová uložiště i plnohodnotné aplikace (Photopea, Office)
+- k významu internetu přispěl i trend poskytování výkonných počítačových prostředků přes síť - cloud computing
+- využití pro hostování umělé inteligence, aplikací, zálohování, správu vlastního výkonného serveru, shromažďování a práci s daty z různých senzorů
 
 ## Architektura TCP/IP
 
@@ -500,6 +466,8 @@ DNSSEC
 ### Historie Internetu
 Vývoj komunikačních sítí můžeme datovat až k poštovní síti, telegrafní síti (budování telegrafních sloupů a drátových rozvodů, později bezdrátové) a telefonní síti.
 
+První myšlenka vznikla během studené války - potřeba decentralizovat náhrady za telefonní síť s ústřednami (v případě výpadku ústředny bez připojení velká oblast).
+
 1946 - první elektronkový počítač ENIAC, 1969 - první počítačová síť ARPAnet; určená pro účely americké armády a došlo k propojení 4 amerických univerzit.
 Projekt byl financován ministerstvem obrany USA, důvodů pro vznik počítačové sítě bylo několik:
 - experiment pro využití přepojování paketů v síti
@@ -515,23 +483,33 @@ Projekt byl financován ministerstvem obrany USA, důvodů pro vznik počítačo
 V 90. letech počátky komerční sítě Internet. Internet jako celek nemá žádného vlastníka, existují pouze konkrétní majitelé dílčích sítí.
 ČR připojena k Internetu v roce 1992.
 
-### Připojení k Internetu
-- Připojení k internetu poskytuje organizace nebo firma, kterou označujeme jako provozovatel (provider, ISP - Internet Service Provider)
-- ISP v našich podmínkách mohou být např. pro připojení po telefonních linkách (př. firma O2) pomocí technologie ADSL nebo XDSL
-- mezi nejrychlejší a cenově přístupné patří připojení k internetu přes kabelovou televizi např. firmou UPC
-- celá řada regionálních a místních poskytovatelů připojení využívá technologii Wi-Fi nebo WiMax
-- současně s rozvojem mobilní telefonní sítě GSM (Global System for Mobile communication) a inteligentních telefonů je stále více využíváno služeb ISP od operátorů (O2, T-Mobile, Vodafone), technologiemi 2G (GPRS a EDGE), 3G (CDMA, UMTS, HSPA), 4G-LTE a budoucí 5G
-- jinou možností je připojení do internetu pomocí satelitních stanic např. NetSystem
+### HW nároky připojení k internetu
+- hardwarové nároky - připojení k internetu není výpočetně náročné, minimální požadavek NIC - síťová karta, nebo WiFi karta a zavedení internetu do domácnosti,
 
-**Wi-Fi** sítě, jsou dva základní způsoby:
-1. sítě využívající centrálního síťového prvku (access point)
-2. sítě v režimu Ad-hoc (síť peer-to-peer), jednotlivá Wi-Fi zařízení (např. notebooky) komunikují přímo, není nutný AP (access point)
+### SW nároky připojení k internetu
+Softwarové nároky se odvíjejí od toho, co chceme dělat
 
-Wi-Fi sítě pracují na frekvenci 2,4 a 5 GHz. Rychlost přenosu dat je od 2 Mb/s až po 54 Mb/s (možnost 600-800 Mb/s)...
+**Pro uživatele**
+- je základem samozřejmě podpora v OS a připojení počítače k síti
+- minimem je dnes webový prohlížeč - Chrome, Firefox, Internet Explorer :)
+- mailový klient je obvykle integrován do prohlížeče, ale samostatná aplikace umožňuje prohlížení více schránek najednou
+- další např. pro synchronizaci souborů (Google Drive, Onedrive), videohovory (Skype, Microsoft Team), instant messaging (převážně mobilní zařízení; Messenger, WhatsApp, Telegram, Signal)
+- trend je spíše převádění dříve lokálních aplikací do online podoby než obráceně - většina služeb má i webové rozhraní
+- pro poskytování služeb po internetu je potřeba server dané služby (HTTP, SSH, FTP)
+- na serveru často běží další program a server je jen prostředek ke komunikaci s klientem
 
-**WiMax (Worldwide Interoperability of Microwave Access, celosvětově kompatibilní mikrovlnný přístup)**
-- většinou bezdrátová metropolitní síťová technologie, založená na standardech normy IEEE 802.16-2004
-- pracují na frekvenci 2 až 11 GHz, teoreticky do 50 km rychlostí 75 Mb/s
+### Typy připojení
+- připojení zajišťuje poskytovatel internetu - ISP 
+- u nás ještě existuje společnost CETIN, vlastníci celou fyzickou infrastrukturu (kabelová vedení, DSLAMY), kterou ISP pronajímá (např. natažení optiky k novostavbě neřeší operátor, ale právě CETIN, nebo zrychlení technologie xDSL je záležitost právě CETINu)
+- celorepublikově 3 největší - 02, T-Mobile, Vodafone
+
+- **xDSL**
+- **mobilní/LTE** internet
+- Wi-Fi internet
+- Internet přes kabelové televizní rozvody
+- optický kabel
+- satelit
+- spolky
 
 ### Jak funguje Internet
 Internet pracuje na základě protokolů TCP/IP.
@@ -553,8 +531,28 @@ Internet pracuje na základě protokolů TCP/IP.
   2. adresa uzlu v počítačové síti zadávaná prostřednictvím IP adresy nebo doménového jména
   3. relativní adresa v rámci uzlu a jeho jméno
 
-
 ### Sociální sítě
 Virtuální internetový prostor, na kterém má každý registrovaný uživatel svůj profil a může posílat zprávy a sdílet soubory s ostatními uživateli.
 Obecně se sem řadí i internetová diskuzní fóra; obvykle zaměřena na jedno nebo více témat, např. Stack OverFlow, ČSFD. Dnes nejznámější sociální sítě: Facebook, Instagram, TikTok atd.
+
+## Vlastnosti informací a vyhledávání
+Informace v informatice je definována jako kódovaná data, která lze počítačově zpracovat a uložit, při vysílání je to protiklad šumu
+
+Vlastnosti:
+- pravdivá
+- srozumitelná - různé jazyky, různé kódy, šifrování
+- relevantní
+- etická
+
+### Vyhledávání
+- pro vyhledávání informací na internetu se dnes používají webové vyhledávače - tvoří si seznam webových stránek indexováním, během toho procesu si zároveň ukládá podstatné části webů 
+- základem je vyhledávací robot (slangově spider), který se snaží projít věechny weby na internetu a zaindexovat je (stránku lze přidat ručně, nebo jsou nalézány pomocí odkazů na již nalezených webech, index je postupně obnovován)
+- samotné vrácení seznamu stránek na základě uživatelova požadavku závisí na množství parametrů
+- SEO - soubor technik, jak udělat stránku "hezčí" pro robota, obsahuje soubor doporučení, jak stránku vytvořit, aby se umístila na předních místech seznamu
+- vyhledávače: Google, DuckDuckGo, Bing, Yahoo; v česku Seznam
+- dříve se používaly tzv. katalogy
+
+### Dezinformace
+Na webových stránkách, blozích nebo sociálních sítích se vyskytuje velké množství informací a s tím se rozmáhá i trend záměrného šíření informací, které jsou lživé (dezinformace, fake news). Je často zaměňována s hoaxy,
+které ale typicky mají více recesivní povahu a snaží se vyvolat paniku. Příkladem dezinformací můžou být některé "zpravodajské" weby, které schválně manipulují s fakty - Sputnik, AC24,...
 

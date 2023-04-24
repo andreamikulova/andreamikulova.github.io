@@ -136,7 +136,7 @@ category: Informatika
 ### Osmičková soustava
 - 0-7
 - dnes se už moc nevyužívá
-- pozůstatky např. přístupová práva v Unixu
+- pozůstatky např. přístupová práva v Unixu nebo kódy Unicode; využití kvůli lehkému převodu s dvojkovou a menšímu počtu znaků než u 16-kové
 
 ### Desítková (dekadická) soustava
 - 0-9
@@ -144,10 +144,57 @@ category: Informatika
 - používá se v běžném životě, ve vědě, v technice
 
 ### Šestnáctková (hexadecimální) soustava
-- 0-9 + A-F (11, 12, 13, 14, 15)
+- 0-9; A-F 
+- čísla jsou kratší než ve dvojkové tzn. lépe zapamatovatelná a použitelná, menší pravděpodobnost chyby
+- např. kódy barev, binární reprezentace souborů, programování (první "programovací jazyk" byly šestnáctkové kódy instrukcí)
 
 ## Kódování dat
 Před zpracováním dat v počítači, je nutné převést znaky do tvaru, kterému počítač rozumí, to znamená přiřadit datům určité kombinace bitů. Tento proces se nazývá **kódování**.
 
 Kód je v podstatě přepis pro jednoznačné přiřazení určité kombinace bitů příslušnému znaku. Kombinací bitů se říká kódové slovo. Data lze zpátky dekódovat.
 
+### Kódování znaků
+Založeno na principu znakové sady tj. množiny, která každému znaku přiřazuje binární reprezentaci (mimo počítače sem lze zařadit např. Morseovu abecedu).
+Nejstarší IBM EBCDIC - používal se déle než měl, problémy s kolizemi s ASCII.
+
+**ASCII (American Standard Code for Information Interchange)**
+- historicky nezrozšířenější znaková sada; i dnešní znakové sady s ní zůstávají částečně kompatibilní
+- obsahuje anglickou abecedu, speciální znaky (, $, % nebo znaky pro vytvoření tabulek - rovná čára, roh, kříž), interpunkční znaménka, matem. symboly a řídící sekvence 
+- původně sedmibitová; nestandardní, brzy rozšířena na 8-bit
+- tím vzniklo místo, do kterého si každý národ přidal vlastní znaky $$\rightarrow$$ nekompatibilita
+
+**Unicode**
+- reakce na nekompatibilní ASCII kódy
+- obsahuje prakticky všechna písma používaná na zemi (včetně znakových), fonetické znaky, emoji, číslicové fonty, historická písma...
+- zpětně kompatibilní s ISO Latin 2 (důležité pro starší weby)
+- definuje tabulku znaků a příslušné kódy, ale neřeší jejich uložení v binární formě = několik dalších standardů
+- nejpoužívanější UTF-8, výhodou flexibilní délka znaku, tj. původní ASCII znaky mají pouze 8-bitů, u dalších znaků se rozšiřuje až do 32; pro jednoznačné určení se používají přdpony
+- nebo UTF-32 přímé kódování - velmi nehospodárné k místu, ale jednoduché na čtení
+- dnes jediný prakticky používaný
+- poslední verze 2021
+
+### Komprese
+- dělíme na **ztrátovou** (odstranění přebytečných dat) a **bezztrátovou** (dochází k odstranění redudantních dat, která lze rekonstruovat)
+- ztrátová se používá např. u videa, zvuku (mp3), nebo u obrázků (JPG, PNG) - běžný člověk drobné snížení kvality nepozná a zmenšuje se tím velikost souboru
+- bezztrátová - obrázky (PNG), zvuk (Flac), komprese souborů
+- často je zaměňována s archivací, protože se často vyskytují společně
+- archivací myslíme spojení většího množství souborů do jednoho 
+- většina programů tento archiv pak bezztrátově komprimuje (ZIP, RAR, 7ZIP)
+- základním parametrem je kompresní poměr - nekomprimovaná:komprimovaným datům
+- používá se k zmenšení velikosti - posílání dat sítí, zálohování, archivace (tar - tape archiver, původně pro magnetické pásky)...
+- rychlost dnešních CPU umožňuje kompresi i kritických částí OS - např. komprese celého Linux kernelu
+
+### Šifrování
+- nazýváme tak změnu znaků tak, aby původní text nebyl čitelný a ideálně ani odvoditelný, ale aby při znalosti kódu bylo možné původni informaci rekontruovat
+- při výběru šifry je důležitý faktor čas, hrubou silou jde prolomit každou šifru; šifra by se měla volit dle poměru hodnota informace:potřebný čas na dešifrování
+- potřeba dešifrovat hesla byla jedna z prvních počítačových úloh - 2. světová válka, A. Turring, bomba
+- obecně nejslabším článkem všech šifer je uživatel
+- nejjednodušší šifrovací metody je naprosté nahrazení, podle nějaké tabulky či pravidel (př. Caesarova šifra)
+- v počítačové kryptografii se šifry dělí na
+  - symetrické - šifruje i dešifruje pomocí jediného klíče/hesla
+  - asymetrické - používá dvojici klíčů - veřejný pro šifrování a soukromý pro dešifrování (každý může zašifrovat zprávu a můžu ji přečíst jen já)
+
+### Kódování souborů - grafika, zvuk, video
+**Zvuk**
+- tzv. digitální zvuk; původní analogový uchovával celou zvukovou vlnu (gramofony), kterou bylo možné dělit na nekonečně malé úseky;
+- 
