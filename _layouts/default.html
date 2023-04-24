@@ -3,11 +3,9 @@ layout: table_wrappers
 ---
 
 <!DOCTYPE html>
-
 <html lang="cs">
 {% include head.html %}
 <body>
-  <a class="skip-to-main" href="#main-content">Skip to main content</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="svg-link" viewBox="0 0 24 24">
       <title>Link</title>
@@ -35,7 +33,6 @@ layout: table_wrappers
     </symbol>
     {% include icons/external_link.html %}
   </svg>
-
   <div class="side-bar">
     <div class="site-header">
       <a href="{{ '/' | relative_url }}" class="site-title lh-tight">{% include title.html %}</a>
@@ -93,17 +90,7 @@ layout: table_wrappers
         {% endfor %}
       {% endif %}
     </nav>
-
-    {% capture nav_footer_custom %}
-      {%- include nav_footer_custom.html -%}
-    {% endcapture %}
-    {% if nav_footer_custom != "" %}
-      {{ nav_footer_custom }}
-    {% else %}
-      <footer class="site-footer">
-        This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
-      </footer>
-    {% endif %}
+    {%- include nav_footer_custom.html -%}
   </div>
   <div class="main" id="top">
     <div id="main-header" class="main-header">
@@ -149,7 +136,6 @@ layout: table_wrappers
         {% else %}
           {{ content }}
         {% endif %}
-
         {% if page.has_children == true and page.has_toc != false %}
           <hr>
           {% include toc_heading_custom.html %}
@@ -171,16 +157,6 @@ layout: table_wrappers
           </footer>
       </div>
     </div>
-
-    {% if site.search_enabled != false %}
-      {% if site.search.button %}
-        <a href="#" id="search-button" class="search-button">
-          <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-search"></use></svg>
-        </a>
-      {% endif %}
-
-      <div class="search-overlay"></div>
-    {% endif %}
   </div>
 </body>
 </html>

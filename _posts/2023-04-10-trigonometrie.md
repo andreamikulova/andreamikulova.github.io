@@ -7,7 +7,7 @@ category: Matematika
 {:toc}
 ---
 
-Oblast goniometrie, která je věnována užití goiniometrických funkcí při řešení úloh o trojúhelnících, bývá označována jako *trigonometrie*.
+Oblast goniometrie, která je věnována užití goniometrických funkcí při řešení úloh o trojúhelnících, bývá označována jako *trigonometrie*.
 
 ## Sinová věta
 > Pro každý trojúhelník $$ABC$$, jehož vnitřní úhly mají velikosti $$\alpha , \beta, \gamma$$ a strany $$a,b,c$$ platí
@@ -27,7 +27,7 @@ Slovy:\\
 > $$a^2 = b^2 + c^2 - 2bc \cos \alpha.$$
 
 *Kosinovou větu používáme* pokud jsou zadané
-- délky všech strany trojúhelníku (a chceme určit vnitřní úhly)
+- délky všech stran trojúhelníku (a chceme určit vnitřní úhly)
 - délky dvou stran a úhel jimi sevřený
 
 ## Další trigonometrické věty
