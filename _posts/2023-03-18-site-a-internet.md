@@ -8,8 +8,8 @@ category: Informatika
 ---
 
 {: .note }
-> Motivací ke vzniku tohoto článku, kromě vypracovávání maturitních otázek, byla ještě legendární přednáška [Vojty Káněho](https://vkane.cz/) o sítích
-> na Matfyzu na Malé Straně v učebně S0 :D
+> Motivací ke vzniku tohoto článku, kromě vypracovávání maturitních otázek, byla ještě legendární přednáška [Vojty Káně](https://vkane.cz/) o sítích
+> na Matfyzu na Malé Straně v učebně S0 v jednu ráno :D
 
 ![Přednáška v S0](/assets/images/prednaska_v_S0.jpg)
 
