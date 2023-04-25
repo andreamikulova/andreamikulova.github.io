@@ -12,7 +12,7 @@ category: Informatika
 > byla ještě legendární přednáška [Vojty Káně](https://vkane.cz/) o sítích
 > na Matfyzu na Malé Straně v učebně S0 v jednu ráno :D
 >
-> ![Přednáška v S0](/assets/images/prednaska_v_S0.jpg)
+> ![Přednáška v S0](/assets/images/site-a-internet/prednaska_v_S0.jpg)
 >
 > Dále bych chtěla ještě poděkovat mému spolužákovi [Šimonu Adámkovi](https://gitlab.com/Simon_Adamek) za pomoc při vypracovávání.
 
