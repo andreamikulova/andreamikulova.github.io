@@ -8,20 +8,14 @@ category: Informatika
 ---
 
 {: .note }
-<<<<<<< HEAD
-> Motivací ke vzniku tohoto článku, kromě vypracovávání maturitních otázek, byla ještě legendární přednáška [Vojty Káně](https://vkane.cz/) o sítích
+> Motivací ke vzniku tohoto článku, kromě vypracovávání maturitních otázek,
+> byla ještě legendární přednáška [Vojty Káně](https://vkane.cz/) o sítích
 > na Matfyzu na Malé Straně v učebně S0 v jednu ráno :D
-
-![Přednáška v S0](/assets/images/prednaska_v_S0.jpg)
-
-=======
-> Motivací ke vzniku tohoto článku, kromě vypracovávání maturitních otázek, byla ještě legendární přednáška [Vojty Káněho](https://vkane.cz/) o sítích
-> na Matfyzu na Malé Straně v učebně S0 :D
 >
-> ![Přednáška v S0](/assets/images/site-a-internet/prednaska_v_S0.jpg)
+> ![Přednáška v S0](/assets/images/prednaska_v_S0.jpg)
 >
->>>>>>> 316339615e26bc5c74d8d2f980c4b0b5ab6cb57d
 > Dále bych chtěla ještě poděkovat mému spolužákovi [Šimonu Adámkovi](https://gitlab.com/Simon_Adamek) za pomoc při vypracovávání.
+
 
 # Počítačová síť
 **Počítačová síť** je spojení dvou a více počítačů tak, aby mohli navzájem sdílet své prostředky.
