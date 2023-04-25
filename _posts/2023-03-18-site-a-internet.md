@@ -8,11 +8,19 @@ category: Informatika
 ---
 
 {: .note }
+<<<<<<< HEAD
 > Motivací ke vzniku tohoto článku, kromě vypracovávání maturitních otázek, byla ještě legendární přednáška [Vojty Káně](https://vkane.cz/) o sítích
 > na Matfyzu na Malé Straně v učebně S0 v jednu ráno :D
 
 ![Přednáška v S0](/assets/images/prednaska_v_S0.jpg)
 
+=======
+> Motivací ke vzniku tohoto článku, kromě vypracovávání maturitních otázek, byla ještě legendární přednáška [Vojty Káněho](https://vkane.cz/) o sítích
+> na Matfyzu na Malé Straně v učebně S0 :D
+>
+> ![Přednáška v S0](/assets/images/site-a-internet/prednaska_v_S0.jpg)
+>
+>>>>>>> 316339615e26bc5c74d8d2f980c4b0b5ab6cb57d
 > Dále bych chtěla ještě poděkovat mému spolužákovi [Šimonu Adámkovi](https://gitlab.com/Simon_Adamek) za pomoc při vypracovávání.
 
 # Počítačová síť
@@ -36,7 +44,7 @@ Nejjednodušší je přímé spojení dvou PC
 
 ### Sběrnicová topologie uspořádání počítačů (BUS)
 
-![Sběrnicová topologie](/assets/images/sbernice.jpg)
+![Sběrnicová topologie](/assets/images/site-a-internet/sbernice.jpg)
 
 - je jednoduchá, ale zastaralá - neefektivně řešené vysílání
 - jedna centrální linka a na ní napojeny všechny počítače - účastníci sítě jsou připojeni na společné koaxiální vedení (tenký koaxiální kabel RG58/50 $$\Omega$$), prostřednictvím odbočovacích prvků (T-konektory BNC)
@@ -47,7 +55,7 @@ Nejjednodušší je přímé spojení dvou PC
 
 ### Hvězdicová topologie uspořádání počítačů (STAR)
 
-![Hvězdicová topologie](/assets/images/hvezda.png)
+![Hvězdicová topologie](/assets/images/site-a-internet/hvezda.png)
 
 - je tvořena uzly, které jsou připojeny do jednoho centrálního bodu (většinou kroucenou dvojlinkou UTP), do přepínače (SWITCH) nebo dříve do rozbočovače (HUB)
 - u dnešního Ethernetu prakticky jediná využívaná
@@ -59,7 +67,7 @@ Nejjednodušší je přímé spojení dvou PC
 
 ### Kruhová topologie uspořádání počítačů (RING)
 
-![Kruhová topologie](/assets/images/kruh.jpg)
+![Kruhová topologie](/assets/images/site-a-internet/kruh.jpg)
 
 - představuje zapojení počítačů tak, že první je propojený s druhým, ten s třetím atd., až poslední opět s prvním - čímž vytváří kruh, uzavřen jiným zařízením (hub, router)
 - datové zprávy (pakety) se předávají postupně jedním směrem mezi stanicemi - každý PC může posílat paket jen nejbližšímu sousedovi - vysílá vždy stanice, která vlastní token (pešek, právo vysílat)
@@ -121,7 +129,7 @@ kteří za umožnění přístupu do ní obvykle platí provozovateli této sít
 
 ### Client-to-server
 
-![Client to server](/assets/images/klient_server.png)
+![Client to server](/assets/images/site-a-internet/klient_server.png)
 
 - je architektura založena na dvou typech počítačů, a to na **serveru**, který poskytuje služby nebo údaje tzv. podřazeným počítačům označovaným jako **klienti** (pracovní stanice nebo uzly)
 - na jednom počítači může běžet i více serverových služeb a v rámci sítě může pracovat několik stanic jako server
@@ -131,7 +139,7 @@ kteří za umožnění přístupu do ní obvykle platí provozovateli této sít
 
 ### Peer-to-peer
 
-![Peer to peer](/assets/images/peer_to_peer.png)
+![Peer to peer](/assets/images/site-a-internet/peer_to_peer.png)
 
 - je označení pro počítačovou síť, ve které jsou všechny pracovní stanice rovnocenné a každá z nich může, ale nemusí, vyčlenit část svých prostředků i ostatním stanicím (tiskárny, disková kapacita atd.)
 - komunikují přímo
@@ -248,7 +256,7 @@ komplikovanost a zátěž (především vrchní vrstvy jsou pro mnoho aplikací 
 Důvodem vzniku byla snaha o standardizaci internetové komunikace (SW i HW), aby sítě postavené jiným výrobcem mohly vzájemně komunikovat. Byl tedy vyvíjen pouze teoreticky a prakticky je odtržen od reality.
 **Nikdy nebyl uveden do praxe, žádná síť nefunguje na jeho principech**, díky svému detailnímu popisu a rozdělení je využíván pro základní popis obecného fungování sítí.
 
-![Referenční model](/assets/images/rm.webp)
+![Referenční model](/assets/images/site-a-internet/rm.webp)
 
 **Layer 1 - Fyzická vrstva**
 - zajišťuje fyzické spojení mezi dvěma a více body (kabeláž, síťový hardware,...)
@@ -298,13 +306,13 @@ Internet je celosvětový systém propojených počítačových sítí, ve kter�
 
 Zahrnuje množství služeb k různým účelům:
 - nejtypičtější je služba WWW (k odkazování a prohlížení webových stránek a souborů), email instant messaging, videohovory, cloudové ukládání a zálohování souborů...
-  - přes systém WWW je dnes distribuováno velké množství služeb - sociální sítě, bankovnictví, e-shopy, souborová uložiště i plnohodnotné aplikace (Photopea, Office)
+  - přes systém WWW je dnes distribuováno velké množství služeb - sociální sítě, bankovnictví, e-shopy, souborová úložiště i plnohodnotné aplikace (Photopea, Office)
 - k významu internetu přispěl i trend poskytování výkonných počítačových prostředků přes síť - cloud computing
 - využití pro hostování umělé inteligence, aplikací, zálohování, správu vlastního výkonného serveru, shromažďování a práci s daty z různých senzorů
 
 ## Architektura TCP/IP
 
-![Architektura TCP/IP](/assets/images/tcp.png)
+![Architektura TCP/IP](/assets/images/site-a-internet/tcp.png)
 
 Model TCP/IP byl vyvíjen "za pochodu" firmami, které tvořily základ prvního internetu (DARPA, AT&T,...). Vývoj probíhal od jednoduššího ke složitějšímu.
 Základní rozdíl od OSI/RM, který byl vytvářen teoreticky $$\rightarrow$$ odtržen od reality, nereaguje na reálné problémy a požadavky (např. potřeba řízení toku dat podle vytížení není dodnes implementována).
@@ -545,11 +553,11 @@ Vlastnosti:
 - etická
 
 ### Vyhledávání
-- pro vyhledávání informací na internetu se dnes používají webové vyhledávače - tvoří si seznam webových stránek indexováním, během toho procesu si zároveň ukládá podstatné části webů 
-- základem je vyhledávací robot (slangově spider), který se snaží projít věechny weby na internetu a zaindexovat je (stránku lze přidat ručně, nebo jsou nalézány pomocí odkazů na již nalezených webech, index je postupně obnovován)
+- pro vyhledávání informací na internetu se dnes používají webové vyhledávače - tvoří si seznam webových stránek indexováním, během toho procesu si zároveň ukládá podstatné části webů
+- základem je vyhledávací robot (slangově spider), který se snaží projít všechny weby na internetu a zaindexovat je (stránku lze přidat ručně, nebo jsou nalézány pomocí odkazů na již nalezených webech, index je postupně obnovován)
 - samotné vrácení seznamu stránek na základě uživatelova požadavku závisí na množství parametrů
 - SEO - soubor technik, jak udělat stránku "hezčí" pro robota, obsahuje soubor doporučení, jak stránku vytvořit, aby se umístila na předních místech seznamu
-- vyhledávače: Google, DuckDuckGo, Bing, Yahoo; v česku Seznam
+- vyhledávače: Google, DuckDuckGo, Bing, Yahoo; v Česku Seznam
 - dříve se používaly tzv. katalogy
 
 ### Dezinformace
