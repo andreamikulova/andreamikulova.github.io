@@ -4,4 +4,7 @@ title: Přátelé
 nav_order: 4
 ---
 
-- Natky blog
+# Moji přátelé
+
+- [člověk](odkaz)
+
