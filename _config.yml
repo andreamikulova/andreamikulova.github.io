@@ -2,7 +2,7 @@ title: "Andin blog"
 author: "Andy"
 description: "Ostravačka a matfyzačka v jednom"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://andreamikulova.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://andy.ggu.cz" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 
