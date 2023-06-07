@@ -22,4 +22,4 @@ Děkuji za pomoc při přípravě na maturitu. Většina článků z informatiky
 ## KSPáci
 - [Vojta Káně](https://vkane.cz/) 
 - [Honza Černohorský](https://grsc.cz/)
-- [Olga Cinková](https://olgacinkova.github.io/recept-na-kralika/)
+- [Olga Cinková](https://olgacinkova.github.io/)
