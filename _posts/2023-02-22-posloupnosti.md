@@ -28,21 +28,21 @@ Rekurentní vzorec určuje člen posloupnosti pomocí znalosti jednoho nebo víc
 Př.:
 
 $$
-\begin{align}
+\begin{aligned}
     a_{1} &= 4\\
-    a_{n} + 1 &= a_n + 3
-\end{align}
+    a_{n + 1} &= a_n + 3
+\end{aligned}
 $$
 
 ### Fibonacciho posloupnost
 **Fibonacciho posloupnost** je nekonečná posloupnost přirozených čísel, začínající 0, 1, 1, 2, 3, 5, 8, $$\ldots$$, kde každé číslo je součtem dvou předchozích. Rekurentní vyjádření tedy je:
 
 $$
-\begin{align}
+\begin{aligned}
     a_{1} &= 1\\
     a_{2} &= 1\\
     a_{n+2} &= a_{n+1} + a_{n}
-\end{align}
+\end{aligned}
 $$
 
 ## Vlastnosti posloupností
@@ -51,7 +51,7 @@ Posloupnost $$(a_n)_{n=1}^\infty$$ se nazývá **rostoucí**, právě tehdy kdy�
 Posloupnost $$(a_n)_{n=1}^\infty$$ se nazývá **klesající**, právě tehdy když pro všechna $$r, s \in \N$$ platí: Je-li $$r < s$$, pak $$a_r > a_s$$ (neboli $$a_n > a_{n+1}$$). 
 
 Posloupnost $$(a_n)_{n=1}^\infty$$ se nazývá **neklesající**, právě tehdy když pro všechna $$r, s \in \N$$ platí: Je-li $$r < s$$, pak $$a_r \leq a_s$$. <br>
-Posloupnost $$(a_n)_{n=1}^\infty$$ se nazývá **nerostoucí**, právě tehdy když pro všechna $$r, s \in \N$$ platí: Je-li $$r < s$$, pak $$a_r \geq a_s$$. 
+Posloupnost $$(a_n)_{n=1}^\infty$$ se nazývá **nerostoucí**, právě tehdy když pro všechna $$r, s \in \N$$ platí: Je-li $$r < s$$, pak $$a_r \geq a_s$$.
 
 > Posloupnosti, které jsou nerostoucí nebo neklesající, se nazývají **monotónní** posloupnosti.
 
@@ -117,3 +117,4 @@ $$s_n = a_1 \cdot n$$
 b) je-li $$q \ne 1$$, pak
 
 $$s_n = a_1 \cdot \frac{q^n - 1}{q - 1}$$
+
