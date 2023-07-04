@@ -114,3 +114,31 @@
 .btn-green {
   @include btn-color($white, $green-100);
 }
+
+.phone-menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+
+	.phone-menu-item {
+		font-size: 2em;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		max-height: 2em;
+		padding: auto auto;
+	}
+
+	.phone-menu-item:nth-child(odd) {
+		background-color: darken($base-button-color, 15%);
+	}
+}
