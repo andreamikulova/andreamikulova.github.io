@@ -16,6 +16,9 @@ Computer Wizard.\
 Lektor na [KAM](https://www.mff.cuni.cz/en/kam) a vedoucí [KSP](https://ksp.mff.cuni.cz/). 
 Medvěd je neuvěřitelná inspirace a motivace pro všechny studenty MFF a KSPáky. Také velice podpořil mou čajovou závislost.
 
+### [Prokop Randáček](https://rdck.dev/)
+Based shitposter, overall cool týpek. 
+
 ### [Šimon Adámek](https://gitlab.com/Simon_Adamek) 
 Děkuji za pomoc při přípravě na maturitu. Většina článků z informatiky vznikla z velké části díky Šimonovi.
 
