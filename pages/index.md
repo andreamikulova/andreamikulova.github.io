@@ -9,7 +9,7 @@ permalink: /
 # Vítejte na mém osobním blogu
 {: .fs-9 }
 
-Dokumentuji zde svou přípravu na Matfyz
+Dokumentuji zde své studium na Matfyzu
 {: .fs-6 .fw-300 }
 
 ---
