@@ -204,3 +204,15 @@ body {
   height: $sp-5;
   color: $link-color;
 }
+.video-display {
+  width: 100%;
+  padding: 5px;
+  //text-align: right;
+  margin: 10px auto;
+
+  i {
+	float: right;
+    font-size: 1em;
+    margin-right: 10px;
+	}
+}

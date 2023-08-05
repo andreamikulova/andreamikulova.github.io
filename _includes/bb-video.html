@@ -1,0 +1,8 @@
+<div class="video-display">
+	<video controls>
+			<source src="{{- include.video -}}" type="video/mp4">
+			Your browser does not support the video tag.
+	</video>
+	<span>Více videí na <a href="{{- include.link -}}">{{- include.link | replace: "https://", "" -}}</a> <i><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></i></span>
+</div>
+
