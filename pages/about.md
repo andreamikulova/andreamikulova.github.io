@@ -17,7 +17,8 @@ Ve volném čase ráda cestuji, tančím a povaluji se po čajovnách. Zajímám
 ## Kontakt
 
 - Email: [andreamikulova02@gmail.com](mailto:andreamikulova02@gmail.com)
-- Instragram: @sandminesshawty
+- Instragram: @andymikulova
+- Telegram: @andymikulova
 
 
 # O mém blogu
