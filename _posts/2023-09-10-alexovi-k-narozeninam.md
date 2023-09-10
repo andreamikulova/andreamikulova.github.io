@@ -1,5 +1,5 @@
 ---
-title: ALexovi k narozeninám
+title: Alexovi k narozeninám
 category: Malba
 ---
 
