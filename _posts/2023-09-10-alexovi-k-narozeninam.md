@@ -8,7 +8,7 @@ abych mu jako dárek k jeho 30. narozeninám namalovala obraz. Ze začátku jsem
 Jeho požadavky byly, aby:
 
 1. Obraz odrážel jeho osobnost
-2. Obraz odrážel mou ososbnost
+2. Obraz odrážel mou osobnost
 3. Obraz zobrazoval nějakou reálnou situaci
 
 Kupodivu poslední požadavek byl pro mě největší výzvou, protože při malování se více opírám o pocity, které právě cítím
