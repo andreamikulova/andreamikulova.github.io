@@ -6,9 +6,11 @@ nav_order: 2
 
 # O mně
 
-Jmenuji se Andrea Mikulová a jsem studentkou gymnázia. Mým momentálním cílem je odmaturovat a připravit se na studium informatiky na Matfyzu.
+Jmenuji se Andrea Mikulová a jsem studentkou gymnázia.
+Mým momentálním cílem je odmaturovat a připravit se na studium informatiky na Matfyzu.
 
-Ve volném čase ráda cestuji, tančím a povaluji se po čajovnách. Zajímám se také o psychologii a jazyky.
+Ve volném čase ráda cestuji, tančím a povaluji se po čajovnách.
+Zajímám se také o psychologii a jazyky.
 
 {: .warning }
 > Ostrava
@@ -17,9 +19,9 @@ Ve volném čase ráda cestuji, tančím a povaluji se po čajovnách. Zajímám
 ## Kontakt
 
 - Email: [andreamikulova02@gmail.com](mailto:andreamikulova02@gmail.com)
-- Instragram: @andymikulova
-- Telegram: @andymikulova
-
+- Matrix: [@andy:ks.matfyz.cz](https://matrix.to/#/@andy:ks.matfyz.cz)
+- Telegram: [@andymikulova](https://t.me/andymikulova)
+- Instragram: [@andymikulova](https://www.instagram.com/andymikulova/)
 
 # O mém blogu
 
