@@ -6,11 +6,9 @@ nav_order: 2
 
 # O mně
 
-Jmenuji se Andrea Mikulová a jsem studentkou gymnázia.
-Mým momentálním cílem je odmaturovat a připravit se na studium informatiky na Matfyzu.
+Jmenuji se Andrea Mikulová a jsem studentkou informatiky na Matematicko-fyzikální fakultě Univerzity Karlovy.
 
-Ve volném čase ráda cestuji, tančím a povaluji se po čajovnách.
-Zajímám se také o psychologii a jazyky.
+Ve volném čase ráda cestuji, tančím, maluji a povaluji se po čajovnách. Občas zajdu na nějaký ten festival či koncert.
 
 {: .warning }
 > Ostrava
