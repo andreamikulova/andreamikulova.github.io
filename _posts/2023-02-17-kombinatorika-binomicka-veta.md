@@ -48,7 +48,7 @@ $$K(k,n)= \binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 #### Kombinační číslo
 Kombinační číslo je matematická funkce, která udává počet kombinací, tzn. způsobů, jak vybrat $$k$$-prvkovou podmnožinu z $$n$$-prvkové množiny. Kombinační čísla zapisujeme:
 
-$$\binom{n}{k}
+$$\binom{n}{k}$$
 
 **Základní pravidla pro počítání s kombinačními čísly**:
 
